@@ -23,3 +23,15 @@ function initializePage() {
     jumbotronHeader.text(projectTitle);
 }
 }
+
+function change() {
+    var selectBox = document.getElementById("strength");
+    var selected = selectBox.options[selectBox.selectedIndex].value;
+
+    if(selected === '1'){
+        $('#WeakHank').show();
+    }
+    else{
+        $('#WeakHank').hide();
+    }
+}
