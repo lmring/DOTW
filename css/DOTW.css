@@ -18,6 +18,7 @@
 body {
      border: 1px dotted gray;
      padding: 20px;
+		 text-align: center;
 }
 
 .jumbotron {
@@ -40,4 +41,11 @@ body {
 
 .jumbotron p {
      color: #6e6e6e;
+}
+
+
+.wrapper {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
 }
