@@ -1,9 +1,4 @@
 /* applies to anything of class "example-class-selector" */
-.container {
-	text-align: center;
-	color: #228B22;
-	font-family:cursive;
-}
 
 
 
@@ -18,7 +13,6 @@
 body {
      border: 1px dotted gray;
      padding: 20px;
-		 text-align: center;
 }
 
 .jumbotron {

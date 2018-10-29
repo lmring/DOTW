@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="DOTW.css" rel="stylesheet">
+	<link href="css/DOTW.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
 </head>
@@ -17,8 +17,14 @@
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+<div class="wrapper">
 		<div class="container-fluid">
 			<div class="row">
+				<div class="col-md-2 col-sm-offset-1">
+					<a href="./index.html">
+						<button type="button" class="btn btn-primary btn-lg"> Home </button>
+					</a>
+				</div>
 				<div class="col-md-2">
 					<a href="./Statistics.html">
 						<button type="button" class="btn btn-default btn-lg"> Statistics </button>
@@ -30,74 +36,73 @@
 					</a>
 				</div>
 				<div class="col-md-2">
-					<a href="./index.html">
-						<button type="button" class="btn btn-primary btn-lg"> Home </button>
-					</a>
-				</div>
-				<div class="col-md-2">
 					<a href="./Roleplay.html">
 						<button type="button" class="btn btn-default btn-lg"> Roleplay </button>
 					</a>
-				</div
+				</div>
 				<div class="col-md-2">
 					<a href="./Spells.html">
 						<button type="button" class="btn btn-default btn-lg"> Spells </button>
 					</a>
 				</div>
 			</div>
+		</div>
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-6">
 					<a href="./Attributes.html">
 						<button type="button" class="btn btn-default btn-lg btn-block"> What are Attributes? </button>
 					</a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-6">
 					<a href="./Skills.html">
 						<button type="button" class="btn btn-default btn-lg btn-block"> What are Skills? </button>
 					</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-6">
 					<a href="./Saves.html">
 						<button type="button" class="btn btn-default btn-lg btn-block"> What are Saves? </button>
 					</a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-6">
 					<a href="./Hit Points.html">
 						<button type="button" class="btn btn-default btn-lg btn-block"> What are Hit Points? </button>
 					</a>
 				</div>
 		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-2">
-					<a href="./Statistics.html">
-						<button type="button" class="btn btn-default btn-lg"> Statistics </button>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a href="./Equipment.html">
-						<button type="button" class="btn btn-default btn-lg"> Equipment </button>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a href="./index.html">
-						<button type="button" class="btn btn-primary btn-lg"> Home </button>
-					</a>
-				</div>
-				<div class="col-md-2">
-					<a href="./Roleplay.html">
-						<button type="button" class="btn btn-default btn-lg"> Roleplay </button>
-					</a>
-				</div
-				<div class="col-md-2">
-					<a href="./Spells.html">
-						<button type="button" class="btn btn-default btn-lg"> Spells </button>
-					</a>
-				</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-sm-offset-1">
+				<a href="./index.html">
+					<button type="button" class="btn btn-primary btn-lg"> Home </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Statistics.html">
+					<button type="button" class="btn btn-default btn-lg"> Statistics </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Equipment.html">
+					<button type="button" class="btn btn-default btn-lg"> Equipment </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Roleplay.html">
+					<button type="button" class="btn btn-default btn-lg"> Roleplay </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Spells.html">
+					<button type="button" class="btn btn-default btn-lg"> Spells </button>
+				</a>
 			</div>
 		</div>
+	</div>
+</div>
   <!-- include JavaScript near the end of the HTML file -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/introHCI.js"></script>
