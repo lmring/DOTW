@@ -50,12 +50,24 @@ select {
 	color: white;
 }
 
+.btn-red:hover {
+	color:white;
+}
+
 .btn-blue {
 	background-color: darkblue;
 	color: white;
 }
 
+.btn-blue:hover {
+	color:white;
+}
+
 .btn-home {
 	background-color: darkgreen;
 	color: white;
+}
+
+.btn-home:hover {
+	color:white;
 }
