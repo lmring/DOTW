@@ -24,7 +24,7 @@ function initializePage() {
 }
 }
 
-function change() {
+function StrengthChange() {
     var selectBox = document.getElementById("strength");
     var selected = selectBox.options[selectBox.selectedIndex].value;
 
@@ -45,7 +45,7 @@ function change() {
 		}
 }
 
-function change() {
+function DexterityChange() {
     var selectBox = document.getElementById("dexterity");
     var selected = selectBox.options[selectBox.selectedIndex].value;
 
@@ -66,7 +66,7 @@ function change() {
 		}
 }
 
-function change() {
+function ConstitutionChange() {
     var selectBox = document.getElementById("constitution");
     var selected = selectBox.options[selectBox.selectedIndex].value;
 
@@ -87,7 +87,7 @@ function change() {
 		}
 }
 
-function change() {
+function IntelligenceChange() {
     var selectBox = document.getElementById("intelligence");
     var selected = selectBox.options[selectBox.selectedIndex].value;
 
@@ -108,7 +108,7 @@ function change() {
 		}
 }
 
-function change() {
+function WisdomChange() {
     var selectBox = document.getElementById("wisdom");
     var selected = selectBox.options[selectBox.selectedIndex].value;
 
@@ -129,7 +129,7 @@ function change() {
 		}
 }
 
-function change() {
+function CharismaChange() {
     var selectBox = document.getElementById("charisma");
     var selected = selectBox.options[selectBox.selectedIndex].value;
 
