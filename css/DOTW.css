@@ -13,6 +13,7 @@
 body {
      border: 1px dotted gray;
      padding: 20px;
+		 background-color: lemonchiffon;
 }
 
 .jumbotron {
@@ -23,8 +24,8 @@ body {
 
 .jumbotron:after {
      content:"";
-     background: url("http://www.superhero-therapy.com/wp-content/uploads/2017/07/red_dragon_by_sandara-d6hpycs-1.jpg");
-     opacity: 0.2;
+     background-image: url("http://www.superhero-therapy.com/wp-content/uploads/2017/07/red_dragon_by_sandara-d6hpycs-1.jpg");
+     opacity: 0.5;
      top: 0;
      left: 0;
      bottom: 0;
@@ -39,9 +40,11 @@ body {
 
 
 .wrapper {
+	border: 10px double darkblue;
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto;
+	background-color: white;
 }
 
 select {
