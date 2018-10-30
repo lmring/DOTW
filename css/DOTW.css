@@ -11,7 +11,6 @@
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
      padding: 20px;
 		 background-color: lemonchiffon;
 }
@@ -20,27 +19,14 @@ body {
 	position: relative;
 	background: none;
 	text-align: center;
+	color: white;
+	background-image: url("http://www.superhero-therapy.com/wp-content/uploads/2017/07/red_dragon_by_sandara-d6hpycs-1.jpg");
 }
 
-.jumbotron:after {
-     content:"";
-     background-image: url("http://www.superhero-therapy.com/wp-content/uploads/2017/07/red_dragon_by_sandara-d6hpycs-1.jpg");
-     opacity: 0.5;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;
-}
-
-.jumbotron p {
-     color: #6e6e6e;
-}
 
 
 .wrapper {
-	border: 10px double darkblue;
+	outline: 10px double white;
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto;
