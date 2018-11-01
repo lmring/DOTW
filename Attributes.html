@@ -8,17 +8,16 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/DOTW.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+
 
 </head>
 
 <body>
-	<div class="wrapper">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
+	<div class="wrapper"> <!-- centers page and limits width -->
+		<!-- header start -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-2 col-sm-offset-1">
+				<div class="col-md-2 col-sm-offset-1"> <!--offset required for 5 column row -->
 					<a href="./index.html">
 						<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
 					</a>
@@ -45,8 +44,12 @@
 				</div>
 			</div>
 		</div>
+		<!-- header end -->
 			<h1>Attributes</h1>
 <div class="container-fluid">
+	<div class ="row">
+		<h2>Strength</h2>
+	</div>
 <div class="row">
 	<div class="col-md-6">
 			<select class="form-control" id="strength" onchange="StrengthChange()">
@@ -71,30 +74,59 @@
 				<option value="19">19</option>
 				<option value="20">20</option>
 			</select>
-			<div class="container-fluid" id="StrengthLowHankImg">
+			<div class="container-fluid collapse" id="StrengthLowHankImg"> <!-- divs with the collapse tag are initially hidded -->
 				<img src="HankStr1.png" alt="Weak Hank"></img>
 			</div>
-			<div class="container-fluid collapse" id="StrengthMediumHankImg">
+			<div class="container-fluid" id="StrengthMediumHankImg">
 				<img src="HankStr3.png" alt="Medium Hank"></img>
 			</div>
 			<div class="container-fluid collapse" id="StrengthHighHankImg">
 				<img src="HankStr5.png" alt="Strong Hank"></img>
 			</div>
 		</div>
+		<div class="col-md-6">
+			<h3>A measure of bodily power, athletic training, and the extent you can exert raw physical force.</h3>
+			<h4>Strength is useful for</h4>
+				<ul>
+					<li>Melee fighters who rely on weapons
+					<ul>
+						<li>Barbarians</li>
+						<li>Fighters</li>
+						<li>Paladins</li>
+					</ul>
+					</li>
+					<li>Spellcasters who have melee weapons as their alternate way of doing damage</li>
+					<li>The following checks
+						<ul>
+							<li>Wrestling</li>
+							<li>Lifting heavy objects</li>
+							<li>Breaking free from your bonds</li>
+						</ul>
+					</li>
+					<li>The following skills
+						<ul>
+							<li>Athletics</li>
+						</ul>
+					</li>
+				</ul>
+		</div>
 	</div>
 </div>
 <div class="row">
-			<div class="container-fluid" id="StrengthLowHank">
+			<div class="container-fluid collapse" id="StrengthLowHank">
 				<h2>Hank is Weak</h2>
 			</div>
-			<div class="container-fluid collapse" id="StrengthMediumHank">
+			<div class="container-fluid" id="StrengthMediumHank">
 				<h2>Hank is Medium</h2>
 			</div>
 			<div class="container-fluid collapse" id="StrengthHighHank">
 				<h2>Hank is Strong</h2>
 			</div>
 		</div>
-			<div class="container-fluid">
+<div class="container-fluid">
+	<div class ="row">
+		<h2>Dexterity</h2>
+	</div>
 			<div class="row">
 				<div class="col-md-6">
 						<select class="form-control" id="dexterity" onchange="DexterityChange()">
@@ -119,30 +151,83 @@
 							<option value="19">19</option>
 							<option value="20">20</option>
 						</select>
-						<div class="container-fluid" id="StrengthLowHankImg">
+						<div class="container-fluid collapse" id="StrengthLowHankImg">
 							<img src="HankStr1.png" alt="Weak Hank"></img>
 						</div>
-						<div class="container-fluid collapse" id="StrengthMediumHankImg">
+						<div class="container-fluid" id="StrengthMediumHankImg">
 							<img src="HankStr3.png" alt="Medium Hank"></img>
 						</div>
 						<div class="container-fluid collapse" id="StrengthHighHankImg">
 							<img src="HankStr5.png" alt="Strong Hank"></img>
 						</div>
 					</div>
+					<div class="col-md-6">
+						<h3>A measure of agility, reflexes, and balance. One of the most important attributes in the game, as it determines many different things.</h3>
+							<h4>Dexterity is useful for</h4>
+							<ul>
+								<li>Ranged weapons users such as
+									<ul>
+										<li>Fighters</li>
+										<li>Rangers</li>
+									</ul>
+								</li>
+								<li>Spellcasters who have ranged weapons as their alternate way of doing damage</li>
+								<li>Finesse weapons user such as
+									<ul>
+										<li>Bards</li>
+										<li>Monks
+											<ul>
+												<li>When a monk uses a monk weapon, they use dexterity.</li>
+											</ul>
+										</li>
+										<li>Rogues</li>
+									</ul>
+								</li>
+								<li>Armor Class
+									<ul>
+										<li>Depending on the armor you wear, your dexterity modifier may or may not come into play.</li>
+										<li>Monks have all of their armor decided by their dexterity and wisdom.</li>
+									</ul>
+								</li>
+								<li>Having high initiative
+									<ul>
+										<li>Everytime you go into battle, you roll initiative, which uses your dex modifier.</li>
+										<li>The higher the initiative, the earlier your turn to attack is.</li>
+									</ul>
+								</li>
+								<li>The following checks
+									<ul>
+										<li>Enduring certain magical spells</li>
+										<li>Having quick reflexes or a good reaction time</li>
+										<li>Disabling a trap</li>
+									</ul>
+								</li>
+								<li>The following skills
+									<ul>
+										<li>Acrobatics</li>
+										<li>Stealth</li>
+										<li>Sleight of Hand</li>
+									</ul>
+								</li>
+							</ul>
+					</div>
 				</div>
 			</div>
-						<div class="container-fluid" id="DexterityLowHank">
+						<div class="container-fluid collapse" id="DexterityLowHank">
 							<h2>Hank is Weak</h2>
 						</div>
-						<div class="container-fluid collapse" id="DexterityMediumHank">
+						<div class="container-fluid" id="DexterityMediumHank">
 							<h2>Hank is Medium</h2>
 						</div>
 						<div class="container-fluid collapse" id="DexterityHighHank">
 							<h2>Hank is Strong</h2>
 						</div>
-						<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-6">
+<div class="container-fluid">
+	<div class ="row">
+		<h2>Constitution</h2>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
 									<select class="form-control" id="constitution" onchange="ConstitutionChange()">
 									  <option value="1">1</option>
 									  <option value="2">2</option>
@@ -165,31 +250,59 @@
 										<option value="19">19</option>
 										<option value="20">20</option>
 									</select>
-									<div class="container-fluid" id="StrengthLowHankImg">
+									<div class="container-fluid collapse" id="StrengthLowHankImg">
 										<img src="HankStr1.png" alt="Weak Hank"></img>
 									</div>
-									<div class="container-fluid collapse" id="StrengthMediumHankImg">
+									<div class="container-fluid" id="StrengthMediumHankImg">
 										<img src="HankStr3.png" alt="Medium Hank"></img>
 									</div>
 									<div class="container-fluid collapse" id="StrengthHighHankImg">
 										<img src="HankStr5.png" alt="Strong Hank"></img>
 									</div>
 								</div>
+								<div class="col-md-6">
+									<h3>A measure of health, stamina, and vital force.</h3>
+									<h4>Constitution is useful for</h4>
+										<ul>
+											<li>Anyone who is going to be in the front lines, especially tanks, such as
+												<ul>
+													<li>Barbarians</li>
+													<li>Monks</li>
+													<li>Fighters</li>
+													<li>Paladins</li>
+												</ul>
+											</li>
+											<li>Determining your hit points
+												<ul>
+													<li>Your constitution modifier will be added to all hit points you get.</li>
+												</ul>
+											</li>
+											<li>The following checks
+												<ul>
+													<li>Holding your breath</li>
+													<li>Going without rest or sleep</li>
+													<li>Drinking alcohol...hic!</li>
+													<li>Resisting poison attacks</li>
+												</ul>
+											</li>
+										</ul>
+								</div>
 							</div>
-						</div>
 						<div class="row">
-									<div class="container-fluid" id="ConstitutionLowHank">
+									<div class="container-fluid collapse" id="ConstitutionLowHank">
 										<h2>Hank is Weak</h2>
 									</div>
-									<div class="container-fluid collapse" id="ConstitutionMediumHank">
+									<div class="container-fluid" id="ConstitutionMediumHank">
 										<h2>Hank is Medium</h2>
 									</div>
 									<div class="container-fluid collapse" id="ConstitutionHighHank">
 										<h2>Hank is Strong</h2>
 									</div>
 								</div>
-							<div class="container-fluid">
-								<div class="col-md-6">
+							</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
 										<select class="form-control" id="intelligence" onchange="IntelligenceChange()">
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -256,6 +369,7 @@
 										</ul>
 									</div>
 								</div>
+							</div>
 								<div class="container-fluid">
 								<div="row">
 												<div class="container-fluid" id="IntelligenceLowHank">
