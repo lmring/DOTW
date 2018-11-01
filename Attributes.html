@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper"> <!-- centers page and limits width -->
-		<!-- header start -->
+		<!-- Header start **************************************************** -->
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-2 col-sm-offset-1"> <!--offset required for 5 column row -->
@@ -44,8 +44,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- header end -->
+		<!-- header end ******************************************************** -->
+
+
 			<h1>Attributes</h1>
+
+<!-- STRENGTH **************************************************** -->
 <div class="container-fluid">
 	<div class ="row">
 		<h2>Strength</h2>
@@ -74,7 +78,7 @@
 				<option value="19">19</option>
 				<option value="20">20</option>
 			</select>
-			<div class="container-fluid collapse" id="StrengthLowHankImg"> <!-- divs with the collapse tag are initially hidded -->
+			<div class="container-fluid collapse" id="StrengthLowHankImg"> <!-- divs with the collapse tag are initially hidden -->
 				<img src="HankStr1.png" alt="Weak Hank"></img>
 			</div>
 			<div class="container-fluid" id="StrengthMediumHankImg">
@@ -112,6 +116,7 @@
 		</div>
 	</div>
 </div>
+<!-- Hank is blank section -->
 <div class="row">
 			<div class="container-fluid collapse" id="StrengthLowHank">
 				<h2>Hank is Weak</h2>
@@ -122,7 +127,10 @@
 			<div class="container-fluid collapse" id="StrengthHighHank">
 				<h2>Hank is Strong</h2>
 			</div>
-		</div>
+</div>
+<!-- End of STRENGTH **************************************************** -->
+
+<!-- DEXTERITY ********************************************************** -->
 <div class="container-fluid">
 	<div class ="row">
 		<h2>Dexterity</h2>
@@ -213,6 +221,7 @@
 					</div>
 				</div>
 			</div>
+<!-- Hank is blank section -->
 						<div class="container-fluid collapse" id="DexterityLowHank">
 							<h2>Hank is Weak</h2>
 						</div>
@@ -222,6 +231,10 @@
 						<div class="container-fluid collapse" id="DexterityHighHank">
 							<h2>Hank is Strong</h2>
 						</div>
+<!-- End of STRENGTH **************************************************** -->
+
+
+<!-- CONSTITUTION ********************************************************** -->
 <div class="container-fluid">
 	<div class ="row">
 		<h2>Constitution</h2>
@@ -288,6 +301,7 @@
 										</ul>
 								</div>
 							</div>
+<!-- Hank is blank section -->
 						<div class="row">
 									<div class="container-fluid collapse" id="ConstitutionLowHank">
 										<h2>Hank is Weak</h2>
@@ -300,6 +314,9 @@
 									</div>
 								</div>
 							</div>
+<!-- End of DEXTERITY **************************************************** -->
+
+<!-- INTELLIGENCE ********************************************************** -->
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-6">
@@ -371,6 +388,7 @@
 								</div>
 							</div>
 								<div class="container-fluid">
+<!-- Hank is blank section -->
 								<div="row">
 												<div class="container-fluid" id="IntelligenceLowHank">
 													<h2>Hank is dumb as a box of rocks!</h2>
@@ -382,6 +400,9 @@
 													<h2>Hank is the next Albert Einstein!</h2>
 												</div>
 									</div>
+<!-- End of CONSTITUTION**************************************************** -->
+
+<!-- WISDOM ********************************************************** -->
 									<div class="container-fluid">
 													<div class="col-md-6">
 															<select class="form-control" id="wisdom" onchange="WisdomChange()">
@@ -451,6 +472,7 @@
 													</li>
 													</ul>
 												</div>
+<!-- Hank is blank section -->
 												<div class="container-fluid" id="WisdomLowHank">
 													<h2>Hank is naive and foolhardy!</h2>
 												</div>
@@ -460,42 +482,45 @@
 												<div class="container-fluid collapse" id="WisdomHighHank">
 													<h2>Hank is a wise old sage!</h2>
 												</div>
-															<div class="container-fluid">
-																<div class="col-md-6">
-																		<select class="form-control" id="charisma" onchange="CharismaChange()">
-																		  <option value="1">1</option>
-																		  <option value="2">2</option>
-																		  <option value="3">3</option>
-																		  <option value="4">4</option>
-																		  <option value="5">5</option>
-																			<option value="6">6</option>
-																			<option value="7">7</option>
-																			<option value="8">8</option>
-																		  <option value="9">9</option>
-																		  <option value="10">10</option>
-																		  <option value="11">11</option>
-																		  <option value="12">12</option>
-																			<option value="13">13</option>
-																			<option value="14">14</option>
-																			<option value="15">15</option>
-																			<option value="16">16</option>
-																			<option value="17">17</option>
-																			<option value="18">18</option>
-																			<option value="19">19</option>
-																			<option value="20">20</option>
-																		</select>
-																		<div class="container-fluid" id="StrengthLowHankImg">
-																			<img src="HankStr1.png" alt="Weak Hank"></img>
-																		</div>
-																		<div class="container-fluid collapse" id="StrengthMediumHankImg">
-																			<img src="HankStr3.png" alt="Medium Hank"></img>
-																		</div>
-																		<div class="container-fluid collapse" id="StrengthHighHankImg">
-																			<img src="HankStr5.png" alt="Strong Hank"></img>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-md-6">
+<!-- End of WISDOM **************************************************** -->
+
+<!-- CHARISMA ********************************************************** -->
+<div class="container-fluid">
+	<div class="col-md-6">
+		<select class="form-control" id="charisma" onchange="CharismaChange()">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">2</option>
+			<option value="13">3</option>
+			<option value="14">4</option>
+			<option value="15">5</option>
+			<option value="16">6</option>
+			<option value="17">7</option>
+			<option value="18">8</option>
+			<option value="19">9</option>
+			<option value="20">9</option>
+		</select>
+			<div class="container-fluid" id="StrengthLowHankImg">
+				 <img src="HankStr1.png" alt="Weak Hank"></img>
+			</div>
+			<div class="container-fluid collapse" id="StrengthMediumHankImg">
+					<img src="HankStr3.png" alt="Medium Hank"></img>
+			</div>
+			<div class="container-fluid collapse" id="StrengthHighHankImg">
+					<img src="HankStr5.png" alt="Strong Hank"></img>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
 																<h2>Charisma</h2>
 																	<h3>A measure of how effectively you can interact with others, including things like flirting, persuading, and lying.</h3>
 																	<p>
@@ -528,48 +553,52 @@
 																</li>
 																</ul>
 															</div>
-																		<div class="container-fluid" id="CharismaLowHank">
-																			<h2>Hank is tongue-tied!</h2>
-																		</div>
-																		<div class="container-fluid collapse" id="CharismaMediumHank">
-																			<h2>Hank is fairly convincing!</h2>
-																		</div>
-																		<div class="container-fluid collapse" id="CharismaHighHank">
-																			<h2>Hank is smooth and silver-tongued!</h2>
-																		</div>
-																		<div class="container-fluid">
-																			<div class="row">
-																				<div class="col-md-2 col-sm-offset-1">
-																					<a href="./index.html">
-																						<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
-																					</a>
-																				</div>
-																				<div class="col-md-2">
-																					<a href="./Statistics.html">
-																						<button type="button" class="btn btn-lg btn-block"> Statistics </button>
-																					</a>
-																				</div>
-																				<div class="col-md-2">
-																					<a href="./Equipment.html">
-																						<button type="button" class="btn btn-lg btn-block"> Equipment </button>
-																					</a>
-																				</div>
-																				<div class="col-md-2">
-																					<a href="./Roleplay.html">
-																						<button type="button" class="btn btn-lg btn-block"> Roleplay </button>
-																					</a>
-																				</div>
-																				<div class="col-md-2">
-																					<a href="./Spells.html">
-																						<button type="button" class="btn btn-lg btn-block"> Spells </button>
-																					</a>
-																				</div>
-																			</div>
-																		</div>
+<!-- Hank is blank section -->
+<div class="container-fluid" id="CharismaLowHank">
+	<h2>Hank is tongue-tied!</h2>
+</div>
+<div class="container-fluid collapse" id="CharismaMediumHank">
+	<h2>Hank is fairly convincing!</h2>
+</div>
+<div class="container-fluid collapse" id="CharismaHighHank">
+	<h2>Hank is smooth and silver-tongued!</h2>
+</div>
+<!-- End of CHARISMA **************************************************** -->
+
+	<!-- Footer start **************************************************** -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-sm-offset-1"> <!--offset required for 5 column row -->
+				<a href="./index.html">
+					<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Statistics.html">
+					<button type="button" class="btn btn-lg btn-block"> Statistics </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Equipment.html">
+					<button type="button" class="btn btn-lg btn-block"> Equipment </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Roleplay.html">
+					<button type="button" class="btn btn-lg btn-block"> Roleplay </button>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="./Spells.html">
+					<button type="button" class="btn btn-lg btn-block"> Spells </button>
+				</a>
+			</div>
+		</div>
 	</div>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+	<!-- header end ******************************************************** -->
+
+	</div>
+
 
 
   <!-- include JavaScript near the end of the HTML file -->
