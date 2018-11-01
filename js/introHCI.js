@@ -86,53 +86,53 @@ function DexterityChange() {
 
 		if(selected < 5 && selected > 0){
 				$('#Dexterity1Hank').show();
-				$('#Strength1HankImg').show();
+				$('#Dexterity1HankImg').show();
 				$('#Dexterity2Hank').hide();
 				$('#Dexterity3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Dexterity3HankImg').hide();
 				$('#Dexterity4Hank').hide();
 				$('#Dexterity5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Dexterity5HankImg').hide();
 		}
 		else if(selected < 9 && selected > 4){
 				$('#Dexterity1Hank').hide();
-				$('#Strength1HankImg').show();
+				$('#Dexterity1HankImg').show();
 				$('#Dexterity2Hank').show();
 				$('#Dexterity3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Dexterity3HankImg').hide();
 				$('#Dexterity4Hank').hide();
 				$('#Dexterity5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Dexterity5HankImg').hide();
 		}
 		else if(selected < 13 && selected > 8){
 				$('#Dexterity1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Dexterity1HankImg').hide();
 				$('#Dexterity2Hank').hide();
 				$('#Dexterity3Hank').show();
-				$('#Strength3HankImg').show();
+				$('#Dexterity3HankImg').show();
 				$('#Dexterity4Hank').hide();
 				$('#Dexterity5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Dexterity5HankImg').hide();
 		}
 		else if(selected < 17 && selected > 12){
 				$('#Dexterity1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Dexterity1HankImg').hide();
 				$('#Dexterity2Hank').hide();
 				$('#Dexterity3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Dexterity3HankImg').hide();
 				$('#Dexterity4Hank').show();
 				$('#Dexterity5Hank').hide();
-				$('#Strength5HankImg').show();
+				$('#Dexterity5HankImg').show();
 		}
 		else if(selected < 21 && selected > 16){
 				$('#Dexterity1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Dexterity1HankImg').hide();
 				$('#Dexterity2Hank').hide();
 				$('#Dexterity3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Dexterity3HankImg').hide();
 				$('#Dexterity4Hank').hide();
 				$('#Dexterity5Hank').show();
-				$('#Strength5HankImg').show();
+				$('#Dexterity5HankImg').show();
 		}
 }
 
