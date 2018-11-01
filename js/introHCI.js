@@ -142,53 +142,53 @@ function ConstitutionChange() {
 
 		if(selected < 5 && selected > 0){
 				$('#Constitution1Hank').show();
-				$('#Strength1HankImg').show();
+				$('#Constitution1HankImg').show();
 				$('#Constitution2Hank').hide();
 				$('#Constitution3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Constitution3HankImg').hide();
 				$('#Constitution4Hank').hide();
 				$('#Constitution5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Constitution5HankImg').hide();
 		}
 		else if(selected < 9 && selected > 4){
 				$('#Constitution1Hank').hide();
-				$('#Strength1HankImg').show();
+				$('#Constitution1HankImg').show();
 				$('#Constitution2Hank').show();
 				$('#Constitution3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Constitution3HankImg').hide();
 				$('#Constitution4Hank').hide();
 				$('#Constitution5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Constitution5HankImg').hide();
 		}
 		else if(selected < 13 && selected > 8){
 				$('#Constitution1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Constitution1HankImg').hide();
 				$('#Constitution2Hank').hide();
 				$('#Constitution3Hank').show();
-				$('#Strength3HankImg').show();
+				$('#Constitution3HankImg').show();
 				$('#Constitution4Hank').hide();
 				$('#Constitution5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Constitution5HankImg').hide();
 		}
 		else if(selected < 17 && selected > 12){
 				$('#Constitution1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Constitution1Hank').hide();
 				$('#Constitution2Hank').hide();
 				$('#Constitution3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Constitution3HankImg').hide();
 				$('#Constitution4Hank').show();
 				$('#Constitution5Hank').hide();
-				$('#Strength5HankImg').show();
+				$('#Constitution5HankImg').show();
 		}
 		else if(selected < 21 && selected > 16){
 				$('#Constitution1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Constitution1HankImg').hide();
 				$('#Constitution2Hank').hide();
 				$('#Constitution3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Constitution3HankImg').hide();
 				$('#Constitution4Hank').hide();
 				$('#Constitution5Hank').show();
-				$('#Strength5HankImg').show();
+				$('#Constitution5HankImg').show();
 		}
 }
 

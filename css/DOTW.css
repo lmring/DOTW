@@ -13,6 +13,8 @@
 body {
      padding: 20px;
 		 background-color: lemonchiffon;
+		 font-family: 'Montserrat', sans-serif;
+ 		color: black;
 }
 
 .jumbotron {
@@ -79,5 +81,22 @@ select {
 
 h1 {
 	font-family: 'Kaushan Script', cursive;
+	color: black;
+	font-size: 60px;
+}
+
+h2 {
+	font-family: 'Caveat', cursive;
+	color: black;
+	font-size: 48px;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
 	color: black;
 }
