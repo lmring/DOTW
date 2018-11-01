@@ -48,7 +48,7 @@
 			<h1>Attributes</h1>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-md-6">
 			<select class="form-control" id="strength" onchange="StrengthChange()">
 			  <option value="1">1</option>
 			  <option value="2">2</option>
@@ -71,10 +71,20 @@
 				<option value="19">19</option>
 				<option value="20">20</option>
 			</select>
+			<div class="container-fluid" id="StrengthLowHankImg">
+				<img src="HankStr1.png" alt="Weak Hank"></img>
+			</div>
+			<div class="container-fluid collapse" id="StrengthMediumHankImg">
+				<img src="HankStr3.png" alt="Medium Hank"></img>
+			</div>
+			<div class="container-fluid collapse" id="StrengthHighHankImg">
+				<img src="HankStr5.png" alt="Strong Hank"></img>
+			</div>
 		</div>
 	</div>
 </div>
-			<div class="container-fluid collapse" id="StrengthLowHank">
+<div class="row">
+			<div class="container-fluid" id="StrengthLowHank">
 				<h2>Hank is Weak</h2>
 			</div>
 			<div class="container-fluid collapse" id="StrengthMediumHank">
@@ -83,9 +93,10 @@
 			<div class="container-fluid collapse" id="StrengthHighHank">
 				<h2>Hank is Strong</h2>
 			</div>
+		</div>
 			<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-6">
 						<select class="form-control" id="dexterity" onchange="DexterityChange()">
 						  <option value="1">1</option>
 						  <option value="2">2</option>
@@ -108,10 +119,19 @@
 							<option value="19">19</option>
 							<option value="20">20</option>
 						</select>
+						<div class="container-fluid" id="StrengthLowHankImg">
+							<img src="HankStr1.png" alt="Weak Hank"></img>
+						</div>
+						<div class="container-fluid collapse" id="StrengthMediumHankImg">
+							<img src="HankStr3.png" alt="Medium Hank"></img>
+						</div>
+						<div class="container-fluid collapse" id="StrengthHighHankImg">
+							<img src="HankStr5.png" alt="Strong Hank"></img>
+						</div>
 					</div>
 				</div>
 			</div>
-						<div class="container-fluid collapse" id="DexterityLowHank">
+						<div class="container-fluid" id="DexterityLowHank">
 							<h2>Hank is Weak</h2>
 						</div>
 						<div class="container-fluid collapse" id="DexterityMediumHank">
@@ -122,7 +142,7 @@
 						</div>
 						<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-3">
+							<div class="col-md-6">
 									<select class="form-control" id="constitution" onchange="ConstitutionChange()">
 									  <option value="1">1</option>
 									  <option value="2">2</option>
@@ -145,10 +165,20 @@
 										<option value="19">19</option>
 										<option value="20">20</option>
 									</select>
+									<div class="container-fluid" id="StrengthLowHankImg">
+										<img src="HankStr1.png" alt="Weak Hank"></img>
+									</div>
+									<div class="container-fluid collapse" id="StrengthMediumHankImg">
+										<img src="HankStr3.png" alt="Medium Hank"></img>
+									</div>
+									<div class="container-fluid collapse" id="StrengthHighHankImg">
+										<img src="HankStr5.png" alt="Strong Hank"></img>
+									</div>
 								</div>
 							</div>
 						</div>
-									<div class="container-fluid collapse" id="ConstitutionLowHank">
+						<div class="row">
+									<div class="container-fluid" id="ConstitutionLowHank">
 										<h2>Hank is Weak</h2>
 									</div>
 									<div class="container-fluid collapse" id="ConstitutionMediumHank">
@@ -157,6 +187,7 @@
 									<div class="container-fluid collapse" id="ConstitutionHighHank">
 										<h2>Hank is Strong</h2>
 									</div>
+								</div>
 							<div class="container-fluid">
 								<div class="col-md-6">
 										<select class="form-control" id="intelligence" onchange="IntelligenceChange()">
@@ -181,6 +212,15 @@
 											<option value="19">19</option>
 											<option value="20">20</option>
 										</select>
+										<div class="container-fluid" id="StrengthLowHankImg">
+											<img src="HankStr1.png" alt="Weak Hank"></img>
+										</div>
+										<div class="container-fluid collapse" id="StrengthMediumHankImg">
+											<img src="HankStr3.png" alt="Medium Hank"></img>
+										</div>
+										<div class="container-fluid collapse" id="StrengthHighHankImg">
+											<img src="HankStr5.png" alt="Strong Hank"></img>
+										</div>
 									</div>
 										<div class="col-md-6">
 										<h2>Intelligence</h2>
@@ -216,7 +256,9 @@
 										</ul>
 									</div>
 								</div>
-												<div class="container-fluid collapse" id="IntelligenceLowHank">
+								<div class="container-fluid">
+								<div="row">
+												<div class="container-fluid" id="IntelligenceLowHank">
 													<h2>Hank is dumb as a box of rocks!</h2>
 												</div>
 												<div class="container-fluid collapse" id="IntelligenceMediumHank">
@@ -225,6 +267,7 @@
 												<div class="container-fluid collapse" id="IntelligenceHighHank">
 													<h2>Hank is the next Albert Einstein!</h2>
 												</div>
+									</div>
 									<div class="container-fluid">
 													<div class="col-md-6">
 															<select class="form-control" id="wisdom" onchange="WisdomChange()">
@@ -249,8 +292,16 @@
 																<option value="19">19</option>
 																<option value="20">20</option>
 															</select>
+															<div class="container-fluid" id="StrengthLowHankImg">
+																<img src="HankStr1.png" alt="Weak Hank"></img>
+															</div>
+															<div class="container-fluid collapse" id="StrengthMediumHankImg">
+																<img src="HankStr3.png" alt="Medium Hank"></img>
+															</div>
+															<div class="container-fluid collapse" id="StrengthHighHankImg">
+																<img src="HankStr5.png" alt="Strong Hank"></img>
+															</div>
 														</div>
-													</div>
 													<div class="col-md-6">
 													<h2>Wisdom</h2>
 														<h3>A measure of perceptiveness, intuition, common sense, and your general knowledge of the world around you.</h3>
@@ -286,7 +337,7 @@
 													</li>
 													</ul>
 												</div>
-												<div class="container-fluid collapse" id="WisdomLowHank">
+												<div class="container-fluid" id="WisdomLowHank">
 													<h2>Hank is naive and foolhardy!</h2>
 												</div>
 												<div class="container-fluid collapse" id="WisdomMediumHank">
@@ -319,6 +370,15 @@
 																			<option value="19">19</option>
 																			<option value="20">20</option>
 																		</select>
+																		<div class="container-fluid" id="StrengthLowHankImg">
+																			<img src="HankStr1.png" alt="Weak Hank"></img>
+																		</div>
+																		<div class="container-fluid collapse" id="StrengthMediumHankImg">
+																			<img src="HankStr3.png" alt="Medium Hank"></img>
+																		</div>
+																		<div class="container-fluid collapse" id="StrengthHighHankImg">
+																			<img src="HankStr5.png" alt="Strong Hank"></img>
+																		</div>
 																	</div>
 																</div>
 																<div class="col-md-6">
@@ -354,7 +414,7 @@
 																</li>
 																</ul>
 															</div>
-																		<div class="container-fluid collapse" id="CharismaLowHank">
+																		<div class="container-fluid" id="CharismaLowHank">
 																			<h2>Hank is tongue-tied!</h2>
 																		</div>
 																		<div class="container-fluid collapse" id="CharismaMediumHank">
