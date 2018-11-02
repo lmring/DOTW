@@ -198,53 +198,53 @@ function IntelligenceChange() {
 
 		if(selected < 5 && selected > 0){
 				$('#Intelligence1Hank').show();
-				$('#Strength1HankImg').show();
+				$('#Intelligence1HankImg').show();
 				$('#Intelligence2Hank').hide();
 				$('#Intelligence3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Intelligence3HankImg').hide();
 				$('#Intelligence4Hank').hide();
 				$('#Intelligence5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Intelligence5HankImg').hide();
 		}
 		else if(selected < 9 && selected > 4){
 				$('#Intelligence1Hank').hide();
-				$('#Strength1HankImg').show();
+				$('#Intelligence1HankImg').show();
 				$('#Intelligence2Hank').show();
 				$('#Intelligence3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Intelligence3HankImg').hide();
 				$('#Intelligence4Hank').hide();
 				$('#Intelligence5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Intelligence5HankImg').hide();
 		}
 		else if(selected < 13 && selected > 8){
 				$('#Intelligence1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Intelligence1HankImg').hide();
 				$('#Intelligence2Hank').hide();
 				$('#Intelligence3Hank').show();
-				$('#Strength3HankImg').show();
+				$('#Intelligence3HankImg').show();
 				$('#Intelligence4Hank').hide();
 				$('#Intelligence5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Intelligence5HankImg').hide();
 		}
 		else if(selected < 17 && selected > 12){
 				$('#Intelligence1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Intelligence1HankImg').hide();
 				$('#Intelligence2Hank').hide();
 				$('#Intelligence3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Intelligence3HankImg').hide();
 				$('#Intelligence4Hank').show();
 				$('#Intelligence5Hank').hide();
-				$('#Strength5HankImg').show();
+				$('#Intelligence5HankImg').show();
 		}
 		else if(selected < 21 && selected > 16){
 				$('#Intelligence1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Intelligence1HankImg').hide();
 				$('#Intelligence2Hank').hide();
 				$('#Intelligence3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Intelligence3HankImg').hide();
 				$('#Intelligence4Hank').hide();
 				$('#Intelligence5Hank').show();
-				$('#Strength5HankImg').show();
+				$('#Intelligence5HankImg').show();
 		}
 }
 
@@ -254,53 +254,53 @@ function WisdomChange() {
 
 		if(selected < 5 && selected > 0){
 				$('#Wisdom1Hank').show();
-				$('#Strength1HankImg').show();
+				$('#Wisdom1HankImg').show();
 				$('#Wisdom2Hank').hide();
 				$('#Wisdom3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Wisdom3HankImg').hide();
 				$('#Wisdom4Hank').hide();
 				$('#Wisdom5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Wisdom5HankImg').hide();
 		}
 		else if(selected < 9 && selected > 4){
 				$('#Wisdom1Hank').hide();
-				$('#Strength1HankImg').show();
+				$('#Wisdom1HankImg').show();
 				$('#Wisdom2Hank').show();
 				$('#Wisdom3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Wisdom3HankImg').hide();
 				$('#Wisdom4Hank').hide();
 				$('#Wisdom5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Wisdom5HankImg').hide();
 		}
 		else if(selected < 13 && selected > 8){
 				$('#Wisdom1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Wisdom1HankImg').hide();
 				$('#Wisdom2Hank').hide();
 				$('#Wisdom3Hank').show();
-				$('#Strength3HankImg').show();
+				$('#Wisdom3HankImg').show();
 				$('#Wisdom4Hank').hide();
 				$('#Wisdom5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Wisdom5HankImg').hide();
 		}
 		else if(selected < 17 && selected > 12){
 				$('#Wisdom1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Wisdom1HankImg').hide();
 				$('#Wisdom2Hank').hide();
 				$('#Wisdom3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Wisdom3HankImg').hide();
 				$('#Wisdom4Hank').show();
 				$('#Wisdom5Hank').hide();
-				$('#Strength5HankImg').show();
+				$('#Wisdom5HankImg').show();
 		}
 		else if(selected < 21 && selected > 16){
 				$('#Wisdom1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Wisdom1HankImg').hide();
 				$('#Wisdom2Hank').hide();
 				$('#Wisdom3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Wisdom3HankImg').hide();
 				$('#Wisdom4Hank').hide();
 				$('#Wisdom5Hank').show();
-				$('#Strength5HankImg').show();
+				$('#Wisdom5HankImg').show();
 		}
 }
 
@@ -310,52 +310,52 @@ function CharismaChange() {
 
 		if(selected < 5 && selected > 0){
 				$('#Charisma1Hank').show();
-				$('#Strength1HankImg').show();
+				$('#Charisma1HankImg').show();
 				$('#Charisma2Hank').hide();
 				$('#Charisma3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Charisma3HankImg').hide();
 				$('#Charisma4Hank').hide();
 				$('#Charisma5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Charisma5HankImg').hide();
 		}
 		else if(selected < 9 && selected > 4){
 				$('#Charisma1Hank').hide();
-				$('#Strength1HankImg').show();
+				$('#Charisma1HankImg').show();
 				$('#Charisma2Hank').show();
 				$('#Charisma3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Charisma3HankImg').hide();
 				$('#Charisma4Hank').hide();
 				$('#Charisma5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Charisma5HankImg').hide();
 		}
 		else if(selected < 13 && selected > 8){
 				$('#Charisma1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Charisma1HankImg').hide();
 				$('#Charisma2Hank').hide();
 				$('#Charisma3Hank').show();
-				$('#Strength3HankImg').show();
+				$('#Charisma3HankImg').show();
 				$('#Charisma4Hank').hide();
 				$('#Charisma5Hank').hide();
-				$('#Strength5HankImg').hide();
+				$('#Charisma5HankImg').hide();
 		}
 		else if(selected < 17 && selected > 12){
 				$('#Charisma1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Charisma1HankImg').hide();
 				$('#Charisma2Hank').hide();
 				$('#Charisma3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Charisma3HankImg').hide();
 				$('#Charisma4Hank').show();
 				$('#Charisma5Hank').hide();
-				$('#Strength5HankImg').show();
+				$('#Charisma5HankImg').show();
 		}
 		else if(selected < 21 && selected > 16){
 				$('#Charisma1Hank').hide();
-				$('#Strength1HankImg').hide();
+				$('#Charisma1HankImg').hide();
 				$('#Charisma2Hank').hide();
 				$('#Charisma3Hank').hide();
-				$('#Strength3HankImg').hide();
+				$('#Charisma3HankImg').hide();
 				$('#Charisma4Hank').hide();
 				$('#Charisma5Hank').show();
-				$('#Strength5HankImg').show();
+				$('#Charisma5HankImg').show();
 		}
 }
