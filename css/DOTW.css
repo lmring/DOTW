@@ -22,10 +22,12 @@ body {
 	background: none;
 	text-align: center;
 	color: white;
-	background-image: url("http://www.superhero-therapy.com/wp-content/uploads/2017/07/red_dragon_by_sandara-d6hpycs-1.jpg");
+	background-image: url("../images/skybg.png");
 }
 
-
+.container-dragon{
+	font-size: 0;
+}
 
 .wrapper {
 	outline: 10px double white;
