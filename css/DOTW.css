@@ -27,7 +27,7 @@ body {
 
 
 .nav-bar {
-	background-color: #1560bd;
+	background-color: white;
 }
 
 .container-dragon {
@@ -57,39 +57,22 @@ select {
 	margin-bottom: 10px;
 }
 
-.btn-red {
-	background-color: #de3c30;
-	color: white;
-}
-
-.btn-red:hover {
-	color:white;
-}
-
-.btn-blue {
-	background-color: #2071b9;
-	color: white;
-}
-
-.btn-blue:hover {
-	color:white;
-}
-
-.btn-green {
-	background-color: #58cb56;
-	color: white;
-}
-
-.btn-green:hover {
-	color:white;
-}
 
 .btn-home {
-	background-color: #83de32;
+	background-color: #383838;
 	color: white;
 }
 
 .btn-home:hover {
+	color:white;
+}
+
+.btn-gray {
+	background-color: #383838;
+	color: white;
+}
+
+.btn-gray:hover {
 	color:white;
 }
 
@@ -98,21 +81,68 @@ select {
 	color: white;
 }
 
+.btn-hank:hover {
+	color:white;
+}
+
+.btn-lily {
+	background-color: #ded931;
+	color: white;
+}
+
+.btn-lily:hover {
+	color:white;
+}
+
+.btn-margot {
+	background-color: #83de32;
+	color: white;
+}
+
+.btn-margot:hover {
+	color:white;
+}
+
+.btn-tutter {
+	background-color: #31a7de;
+	color:white;
+}
+
+.btn-tutter:hover {
+	color:white;
+}
 
  img {
 	width: 400px
 }
 
+.hank-text{
+	color: #de3c30;
+}
+
+.lily-text {
+	color: #ded931;
+}
+
+.margot-text {
+	color: #83de32;
+}
+
+.tutter-text {
+	color: #31a7de;
+}
+
+.purple-text {
+	color: #383838;
+}
 
 h1 {
 	font-family: 'Kaushan Script', cursive;
-	color: black;
 	font-size: 60px;
 }
 
 h2 {
 	font-family: 'Caveat', cursive;
-	color: black;
 	font-size: 48px;
 }
 

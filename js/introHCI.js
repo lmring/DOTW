@@ -172,7 +172,7 @@ function ConstitutionChange() {
 		}
 		else if(selected < 17 && selected > 12){
 				$('#Constitution1Hank').hide();
-				$('#Constitution1Hank').hide();
+				$('#Constitution1HankImg').hide();
 				$('#Constitution2Hank').hide();
 				$('#Constitution3Hank').hide();
 				$('#Constitution3HankImg').hide();
