@@ -208,23 +208,6 @@ li:before {
 	display:none;
 }
 
-.hank-bodytext{
-	text-align: left;
-}
-
-.form-control{
-	max-width: 100px;
-	text-align: center;
-	margin: 0 auto;
-}
-
-.form-hank{
-	background-color: #de3c30;
-	color: white;
-	font-size: 40px;
-	font-weight:bold;
-	height: 100px;
-}
 
 .panel-spell{
 	border-color: #31a7de;
