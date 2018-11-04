@@ -57,9 +57,19 @@
 		</div>
 
 		<input id="armor-catalog-input" placeholder="Armor Name"></input>
+		<select class="form-inline" id="armorType">
+			<option value="type" selected="selected">All Types</option>
+			<option value="Light Armor">Light Armor</option>
+			<option value="Medium Armor">Medium Armor</option>
+			<option value="Heavy Armor">Heavy Armor</option>
+		</select>
 		<button type="button" class="btn btn-lg btn-lily" id="armor-catalog-button" onclick="armorSearch()">Search</button>
 
 		<div id="armor-catalog-results"></div>
+
+		<div id="no-armor" class="collapse">
+			<h4>No Armor Found!</h4>
+		</div>
 
 		<!-- footer start ******************************************************** -->
 		<div class="container-fluid">

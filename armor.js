@@ -4,28 +4,28 @@ var jsonArmorData = [
     "ac":"11 + Dex modifier",
     "stealth":"Disadvantage",
     "type":"Light Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Leather Armor",
     "ac":"11 + Dex modifier",
     "stealth":"No Disadvantage",
     "type":"Light Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Studded Leather Armor",
     "ac":"12 + Dex modifier",
     "stealth":"No Disadvantage",
     "type":"Light Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Hide Armor",
     "ac":"12 + Dex modifier (max 2)",
     "stealth":"No Disadvantage",
     "type":"Medium Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Chain Shirt",
@@ -38,28 +38,28 @@ var jsonArmorData = [
     "ac":"14 + Dex modifier (max 2)",
     "stealth":"Disadvantage",
     "type":"Medium Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Breastplate",
     "ac":"14 + Dex modifier (max 2)",
     "stealth":"No Disadvantage",
     "type":"Medium Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Half Plate Armor",
     "ac":"15 + Dex modifier (max 2)",
     "stealth":"Disadvantage",
     "type":"Medium Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Ring Mail Armor",
     "ac":"14",
     "stealth":"Disadvantage",
     "type":"Heavy Armor",
-    "str":"No Strength Requirement"
+    "str":"None"
   },
   {
     "name":"Chain Mail Armor",

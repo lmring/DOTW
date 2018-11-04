@@ -57,9 +57,20 @@
 		</div>
 
 		<input id="weapon-catalog-input" placeholder="Weapon Name"></input>
+		<select class="form-inline" id="weaponType">
+			<option value="type" selected="selected">All Types</option>
+			<option value="Simple Melee">Simple Melee</option>
+			<option value="Simple Ranged">Simple Ranged</option>
+			<option value="Martial Melee">Martial Melee</option>
+			<option value="Martial Ranged">Martial Ranged</option>
+		</select>
 		<button type="button" class="btn btn-lg btn-lily" id="weapon-catalog-button" onclick="weaponSearch()">Search</button>
 
 		<div id="weapon-catalog-results"></div>
+
+		<div id="no-weapons" class="collapse">
+			<h4>No Weapons Found!</h4>
+		</div>
 
 		<!-- footer start ******************************************************** -->
 		<div class="container-fluid">

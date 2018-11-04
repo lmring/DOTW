@@ -393,7 +393,10 @@ function spellSearch() {
 	var levelResults = schoolResults.filter(checkSpellLevel);
 		for (var i = 0, len = levelResults.length; i < len; i++) {
 			var spell = levelResults[i];
-			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>' + '<p><b>Range: </b>' + spell.range + '</p><p><b>Components: </b>' + spell.components + '</p><p><b>Materials: </b>' + spell.material + '</p>';
+			if(spell.material === undefined){
+				spell.material = 'None';
+			}
+			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>' + '<p><b>Range: </b>' + spell.range + '</p><p><b>Components: </b>' + spell.components + '</p><p><b>Materials: </b>' + spell.material + '</p>' + '</p><p><b>Duration: </b>' + spell.duration + '</p><p><b>Concentration: </b>' + spell.concentration + '</p><p><b>Level: </b>' + spell.level + '</p><p><b>School: </b>' + spell.school + '</p><p><b>Class: </b>' + spell.class + '</p>';
 			content += '<br/>';
 			$(content).appendTo("#spell-catalog-results");
     }
@@ -441,17 +444,23 @@ function checkSpellSchool(spell) {
 }
 //spells end ***************************************************************
 
+//weapons start ************************************************************
 $.getScript('weapons.js');
 
 function weaponSearch() {
+	$('#no-weapons').hide();
 	$("#weapon-catalog-results").empty();
 	var results = jsonWeaponData.filter(checkWeaponName);
-		for (var i = 0, len = results.length; i < len; i++) {
-			var weapon = results[i];
-			content = '<h2>' + weapon.name + '</h2>' + '<p>' + weapon.damage + '</p>';
+	var typeResults = results.filter(checkWeaponType);
+		for (var i = 0, len = typeResults.length; i < len; i++) {
+			var weapon = typeResults[i];
+			content = '<h2>' + weapon.name + '</h2>' + '<p><b>Damage: </b>' + weapon.damage + '</p><p><b>Properties: </b>' + weapon.properties + '<p><b>Type: </b>' + weapon.type + '</p>';
 			content += '<br/>';
 			$(content).appendTo("#weapon-catalog-results");
     }
+		if(typeResults === undefined || typeResults.length == 0){
+			$('#no-weapons').show();
+		}
 }
 
 function checkWeaponName(weapon) {
@@ -461,17 +470,33 @@ function checkWeaponName(weapon) {
 	return weaponName.includes(search);
 }
 
+function checkWeaponType(weapon) {
+	var selectBox = document.getElementById("weaponType");
+	var type = selectBox.options[selectBox.selectedIndex].value;
+	if(type=="type"){
+		return true;
+	}
+	return weapon.type.includes(type);
+}
+//weapons end ************************************************************
+
+//armor start ************************************************************
 $.getScript('armor.js');
 
 function armorSearch() {
+	$('#no-armor').hide();
 	$("#armor-catalog-results").empty();
 	var results = jsonArmorData.filter(checkArmorName);
-		for (var i = 0, len = results.length; i < len; i++) {
-			var armor = results[i];
+	var typeResults = results.filter(checkArmorType);
+		for (var i = 0, len = typeResults.length; i < len; i++) {
+			var armor = typeResults[i];
 			content = '<h2>' + armor.name + '</h2>' + '<p>' + armor.ac + '</p>';
 			content += '<br/>';
 			$(content).appendTo("#armor-catalog-results");
     }
+		if(typeResults === undefined || typeResults.length == 0){
+			$('#no-armor').show();
+		}
 }
 
 function checkArmorName(armor) {
@@ -480,3 +505,13 @@ function checkArmorName(armor) {
 	var armorName = armor.name.toLowerCase();
 	return armorName.includes(search);
 }
+
+function checkArmorType(armor) {
+	var selectBox = document.getElementById("armorType");
+	var type = selectBox.options[selectBox.selectedIndex].value;
+	if(type=="type"){
+		return true;
+	}
+	return armor.type.includes(type);
+}
+//armor end ************************************************************
