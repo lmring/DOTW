@@ -480,3 +480,13 @@ function checkArmorName(armor) {
 	var armorName = armor.name.toLowerCase();
 	return armorName.includes(search);
 }
+
+
+function toggleContent() {
+    var x = document.getElementById("toggleThis");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
