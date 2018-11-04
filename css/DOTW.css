@@ -185,3 +185,7 @@ h4 {
 ul {
 	list-style: none;
 }
+
+#more{
+	display:none;
+}
