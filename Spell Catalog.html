@@ -58,9 +58,48 @@
 		</div>
 
 		<input id="spell-catalog-input" placeholder="Spell Name"></input>
+		<select class="form-inline" id="spellClass">
+			<option value="classes" selected="selected">All Classes</option>
+			<option value="Bard">Bard</option>
+			<option value="Cleric">Cleric</option>
+			<option value="Druid">Druid</option>
+			<option value="Paladin">Paladin</option>
+			<option value="Ranger">Ranger</option>
+			<option value="Sorcerer">Sorcerer</option>
+			<option value="Paladin">Warlock</option>
+			<option value="Wizard">Wizard</option>
+		</select>
+		<select class="form-inline" id="spellLevel">
+			<option value="level" selected="selected">All Levels</option>
+			<option value="Cantrip">Cantrip</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+		</select>
+		<select class="form-inline" id="spellSchool">
+			<option value="school" selected="selected">All Schools</option>
+			<option value="Abjuration">Abjuration</option>
+			<option value="Conjuration">Conjuration</option>
+			<option value="Divination">Divination</option>
+			<option value="Enchantment">Enchantment</option>
+			<option value="Evocation">Evocation</option>
+			<option value="Illusion">Illusion</option>
+			<option value="Necromancy">Necromancy</option>
+			<option value="Transmutation">Transmutation</option>
+		</select>
 		<button type="button" class="btn btn-lg btn-tutter" id="spell-catalog-button" onclick="spellSearch()">Search</button>
 
 		<div id="spell-catalog-results"></div>
+
+		<div id="no-spells" class="collapse">
+			<h4>No Spells Found!</h4>
+		</div>
 
 		<!-- footer start ******************************************************** -->
 		<div class="container-fluid">

@@ -381,25 +381,65 @@ function CharismaChange() {
 //});
 //}
 
+//spells start ***************************************************************
 $.getScript('spells.js');
 
 function spellSearch() {
+	$('#no-spells').hide();
 	$("#spell-catalog-results").empty();
-	var results = jsonSpellData.filter(checkSpellName);
-		for (var i = 0, len = results.length; i < len; i++) {
-			var spell = results[i];
+	var nameResults = jsonSpellData.filter(checkSpellName);
+	var classResults = nameResults.filter(checkSpellClass);
+	var schoolResults = classResults.filter(checkSpellSchool);
+	var levelResults = schoolResults.filter(checkSpellLevel);
+		for (var i = 0, len = levelResults.length; i < len; i++) {
+			var spell = levelResults[i];
 			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>';
 			content += '<br/>';
 			$(content).appendTo("#spell-catalog-results");
     }
+		if(levelResults === undefined || levelResults.length == 0){
+			$('#no-spells').show();
+		}
 }
 
 function checkSpellName(spell) {
 	var search = $('#spell-catalog-input').val();
+	if(search==""){
+		return true;
+	}
 	search = search.toLowerCase();
 	var spellName = spell.name.toLowerCase();
 	return spellName.includes(search);
 }
+
+function checkSpellLevel(spell) {
+	var selectBox = document.getElementById("spellLevel");
+	var level = selectBox.options[selectBox.selectedIndex].value;
+	if(level=="level"){
+		return true;
+	}
+	return spell.level.includes(level);
+}
+
+function checkSpellClass(spell) {
+	var selectBox = document.getElementById("spellClass");
+	var classes = selectBox.options[selectBox.selectedIndex].value;
+	if(classes=="classes"){
+		return true;
+	}
+	return spell.class.includes(classes);
+}
+
+function checkSpellSchool(spell) {
+	var selectBox = document.getElementById("spellSchool");
+	var school = selectBox.options[selectBox.selectedIndex].value;
+	if(school=="school"){
+		return true;
+	}
+	return spell.school.includes(school);
+
+}
+//spells end ***************************************************************
 
 $.getScript('weapons.js');
 
