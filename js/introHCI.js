@@ -385,7 +385,7 @@ $.getScript('spells.js');
 
 function spellSearch() {
 	$("#spell-catalog-results").empty();
-	var results = jsonSpellData.filter(checkName);
+	var results = jsonSpellData.filter(checkSpellName);
 		for (var i = 0, len = results.length; i < len; i++) {
 			var spell = results[i];
 			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>';
@@ -394,9 +394,29 @@ function spellSearch() {
     }
 }
 
-function checkName(spell) {
+function checkSpellName(spell) {
 	var search = $('#spell-catalog-input').val();
 	search = search.toLowerCase();
 	var spellName = spell.name.toLowerCase();
 	return spellName.includes(search);
+}
+
+$.getScript('weapons.js');
+
+function weaponSearch() {
+	$("#weapon-catalog-results").empty();
+	var results = jsonWeaponData.filter(checkWeaponName);
+		for (var i = 0, len = results.length; i < len; i++) {
+			var weapon = results[i];
+			content = '<h2>' + weapon.name + '</h2>' + '<p>' + weapon.damage + '</p>';
+			content += '<br/>';
+			$(content).appendTo("#weapon-catalog-results");
+    }
+}
+
+function checkWeaponName(weapon) {
+	var search = $('#weapon-catalog-input').val();
+	search = search.toLowerCase();
+	var weaponName = weapon.name.toLowerCase();
+	return weaponName.includes(search);
 }
