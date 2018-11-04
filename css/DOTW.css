@@ -17,11 +17,6 @@ body {
  		color: black;
 }
 
-.divider {
-	margin-top:20px;
-	margin-bottom:20px;
-}
-
 .jumbotron {
 	position: relative;
 	background: none;
@@ -30,16 +25,21 @@ body {
 	background-image: url("../images/skybg.png");
 }
 
-
-.nav-bar {
-	background-color: white;
+.container-dragon{
+	display: flex;
+  flex-direction: column;
+  text-align: center;
+	max-width: 800px;
 }
 
-.container-dragon {
-	font-size: 0;
-	border-radius: 24px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.img-dragonbutton{
+	max-width: 22%;
+  display: inline-block;
+}
+
+.img-banner{
+	max-width: 100%;
+  display: inline-block;
 }
 
 .wrapper {
@@ -55,10 +55,6 @@ select {
 	margin-bottom: 10px;
 }
 
-a {
-	text-decoration: none !important;
-}
-
 .btn {
 	background-color: khaki;
 	border-radius: 24px;
@@ -66,64 +62,39 @@ a {
 	margin-bottom: 10px;
 }
 
-
-.btn-home {
-	background-color: #383838;
-	color: white;
-}
-
-.btn-home:hover {
-	background-color: black;
-	color:white;
-}
-
-.btn-gray {
-	background-color: #383838;
-	color: white;
-}
-
-.btn-gray:hover {
-	background-color: black;
-	color:white;
-}
-
-.btn-hank {
+.btn-red {
 	background-color: #de3c30;
 	color: white;
 }
 
-.btn-hank:hover {
-	background-color: darkred;
+.btn-red:hover {
 	color:white;
 }
 
-.btn-lily {
-	background-color: #ded931;
+.btn-blue {
+	background-color: #2071b9;
 	color: white;
 }
 
-.btn-lily:hover {
-	background-color: #999900;
+.btn-blue:hover {
 	color:white;
 }
 
-.btn-margot {
+.btn-green {
+	background-color: #58cb56;
+	color: white;
+}
+
+.btn-green:hover {
+	color:white;
+}
+
+.btn-home {
 	background-color: #83de32;
 	color: white;
 }
 
-.btn-margot:hover {
-	background-color: darkgreen;
-	color:white;
-}
-
-.btn-tutter {
-	background-color: #31a7de;
-	color:white;
-}
-
-.btn-tutter:hover {
-	background-color: royalblue;
+.btn-home:hover {
 	color:white;
 }
 
@@ -131,33 +102,16 @@ a {
 	width: 400px
 }
 
-.hank-text{
-	color: #de3c30;
-}
-
-.lily-text {
-	color: #ded931;
-}
-
-.margot-text {
-	color: #83de32;
-}
-
-.tutter-text {
-	color: #31a7de;
-}
-
-.purple-text {
-	color: #383838;
-}
 
 h1 {
 	font-family: 'Kaushan Script', cursive;
+	color: black;
 	font-size: 60px;
 }
 
 h2 {
 	font-family: 'Caveat', cursive;
+	color: black;
 	font-size: 48px;
 }
 
