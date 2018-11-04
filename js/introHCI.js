@@ -490,7 +490,7 @@ function armorSearch() {
 	var typeResults = results.filter(checkArmorType);
 		for (var i = 0, len = typeResults.length; i < len; i++) {
 			var armor = typeResults[i];
-			content = '<h2>' + armor.name + '</h2>' + '<p>' + armor.ac + '</p>';
+			content = '<h2>' + armor.name + '</h2>' + '<p><b>Armor Class: </b>' + armor.ac + '</p><p><b>Stealth: </b>' + armor.stealth + '</p><p><b>Strength Requirement: </b>' + armor.str + '</p><p><b>Type: </b>' + armor.type + '</p>';
 			content += '<br/>';
 			$(content).appendTo("#armor-catalog-results");
     }
