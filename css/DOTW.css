@@ -225,3 +225,16 @@ li:before {
 	font-weight:bold;
 	height: 100px;
 }
+
+.panel-spell{
+	border-color: #31a7de;
+	border-width: 10px;
+	max-width: 750px;
+}
+
+.panel-heading{
+	background-color: #31a7de;
+	color:white;
+	font-family: 'Caveat', cursive;
+	font-size: 36px;
+}

@@ -396,7 +396,7 @@ function spellSearch() {
 			if(spell.material === undefined){
 				spell.material = 'None';
 			}
-			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>' + '<p><b>Range: </b>' + spell.range + '</p><p><b>Components: </b>' + spell.components + '</p><p><b>Materials: </b>' + spell.material + '</p>' + '</p><p><b>Duration: </b>' + spell.duration + '</p><p><b>Concentration: </b>' + spell.concentration + '</p><p><b>Level: </b>' + spell.level + '</p><p><b>School: </b>' + spell.school + '</p><p><b>Class: </b>' + spell.class + '</p>';
+			content = "<div class='row'><div class='col-sm-6 col-sm-offset-3'><div class = 'panel panel-spell'><div class = 'panel-heading'>"+ spell.name + "</div><div class='panel-body'>" + "<p><b>Range: </b>" + spell.range + "</p><p><b>Components: </b>" + spell.components + "</p><p><b>Materials: </b>" + spell.material + "</p><p><b>Duration: </b>" + spell.duration + "</p><p><b>Concentration: </b>" + spell.concentration + "</p><p><b>Level: </b>" + spell.level + "</p><p><b>School: </b>" + spell.school + "</p><p><b>Class: </b>" + spell.class + '<p>' + spell.desc + "</p></div></div></div></div>";
 			content += '<br/>';
 			$(content).appendTo("#spell-catalog-results");
     }
