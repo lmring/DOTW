@@ -393,7 +393,7 @@ function spellSearch() {
 	var levelResults = schoolResults.filter(checkSpellLevel);
 		for (var i = 0, len = levelResults.length; i < len; i++) {
 			var spell = levelResults[i];
-			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>';
+			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>' + '<p><b>Range: </b>' + spell.range + '</p><p><b>Components: </b>' + spell.components + '</p><p><b>Materials: </b>' + spell.material + '</p>';
 			content += '<br/>';
 			$(content).appendTo("#spell-catalog-results");
     }
