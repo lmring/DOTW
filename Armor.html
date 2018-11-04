@@ -21,27 +21,27 @@
 			<div class="row">
 				<div class="col-md-2 col-sm-offset-1">
 					<a href="./home.html">
-						<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
+						<button type="button" class="btn btn-lg btn-home btn-block btn-banner"> Home </button>
 					</a>
 				</div>
 				<div class="col-md-2">
 					<a href="./Statistics.html">
-						<button type="button" class="btn btn-lg btn-block btn-hank"> Statistics </button>
+						<button type="button" class="btn btn-lg btn-block btn-hank btn-banner"> Statistics </button>
 					</a>
 				</div>
 				<div class="col-md-2">
 					<a href="./Equipment.html">
-						<button type="button" class="btn btn-lg btn-block btn-lily"> Equipment </button>
+						<button type="button" class="btn btn-lg btn-block btn-lily btn-banner"> Equipment </button>
 					</a>
 				</div>
 				<div class="col-md-2">
 					<a href="./Roleplay.html">
-						<button type="button" class="btn btn-lg btn-block btn-margot"> Roleplay </button>
+						<button type="button" class="btn btn-lg btn-block btn-margot btn-banner"> Roleplay </button>
 					</a>
 				</div>
 				<div class="col-md-2">
 					<a href="./Spells.html">
-						<button type="button" class="btn btn-lg btn-block btn-tutter"> Spells </button>
+						<button type="button" class="btn btn-lg btn-block btn-tutter btn-banner"> Spells </button>
 					</a>
 				</div>
 			</div>
@@ -63,7 +63,10 @@
 <div id = "armor-AC" class="lily-bodytext">
 	    <h2>Armor Class: How To Protect Your Boy Body</h2>
 			<h4> In DND, you resist physical attacks using your <strong> ARMOR CLASS (AC) </strong>. </h4>
-			<h4> The value of your armor class depends on the armor you're wearing and a few other factors.</h4><span id="dots"><br></span><span id="more">
+			<h4> The value of your armor class depends on the armor you're wearing and a few other factors.</h4>
+
+			<!--Read More Starts Here-->
+			<span id="dots"><p> </p></span><span id="more">
 			<p>Think of AC as how easy or hard it is to land a hit on you.
 				Having thick armor can help you with that, but so can a nimble body or arcane force.</p>
 			<br>
@@ -80,15 +83,44 @@
 			<p><strong>Sorcerers and Wizards</strong> can learn <strong>Mage Armor</strong>, which makes the target's AC = 13 + DEX for the spell's duration.</p>
 			<p><strong>Paladins and Clerics</strong> can learn <strong>Shield of Faith</strong> which adds +2 to the target's AC for the spell's duration.</p>
 </span>
-<button onclick="toggleContent()" id="myBtn">Try it</button>
+<button onclick="toggleContent()" class="btn btn-lg btn-block btn-read" id="myBtn">Read more</button>
 </div>
 
-<div id = "armor-types" class="lily-bodytext">
-			<h2> Armor Attributes</h2>
+<div id = "armor-attributes" class="lily-bodytext">
+			<h2> Armor Attributes: Strong 'n' Stealthy</h2>
+			<h4>Some heavy armor may have strength requirements. Some armor puts you at a DISADVANTAGE (you must roll twice and take the lower number) on stealth checks.</h4>
+			<!--Read More Starts Here-->
+			<span id="dots2"><p> </p></span><span id="more2">
+
 			<h4>Strength Requirement: Are You A Strong Boy?</h4>
+			<p> Some heavy armor may have strength requirements.
+				<br><strong>Chain Mail</strong> requires STR 13
+				<br><strong>Splint Mail</strong> requires STR 15
+				<br><strong>Plate Mail</strong> requires STR 15
+			</p>
+
 
 			<h4>Stealth Disadvantage: Are You A Noisy Boy?</h4>
+			<p>Some armor puts you at a DISADVANTAGE (you must roll twice and take the lower number) on stealth checks.</p>
+				<br>The following armor inflicts stealth disadvantage.</p>
+				<strong>LIGHT</strong>
+					<ul><li> Padded </li> </ul>
 
+				<strong>MEDIUM</strong>
+					<ul><li> Scale </li>
+					    <li> Half </li> </ul>
+
+				<strong>HEAVY</strong>
+					<ul><li> Ring Mail </li>
+						   <li> Chain Mail </li>
+							 <li> Splint Mail </li>
+							 <li> Plate Mail </li></ul>
+				</span>
+				<button onclick="toggleContent2()" class="btn btn-lg btn-block btn-read" id="myBtn2">Read more</button>
+</div>
+
+<div id = "armor-wardrobe" class="lily-bodytext">
+	<h2>Armor with Lily!</h2>
 </div>
 
 
@@ -98,27 +130,27 @@
 	<div class="row">
 		<div class="col-md-2 col-sm-offset-1">
 			<a href="./home.html">
-				<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
+				<button type="button" class="btn btn-lg btn-home btn-block btn-banner"> Home </button>
 			</a>
 		</div>
 		<div class="col-md-2">
 			<a href="./Statistics.html">
-				<button type="button" class="btn btn-lg btn-block btn-hank"> Statistics </button>
+				<button type="button" class="btn btn-lg btn-block btn-hank btn-banner"> Statistics </button>
 			</a>
 		</div>
 		<div class="col-md-2">
 			<a href="./Equipment.html">
-				<button type="button" class="btn btn-lg btn-block btn-lily"> Equipment </button>
+				<button type="button" class="btn btn-lg btn-block btn-lily btn-banner"> Equipment </button>
 			</a>
 		</div>
 		<div class="col-md-2">
 			<a href="./Roleplay.html">
-				<button type="button" class="btn btn-lg btn-block btn-margot"> Roleplay </button>
+				<button type="button" class="btn btn-lg btn-block btn-margot btn-banner"> Roleplay </button>
 			</a>
 		</div>
 		<div class="col-md-2">
 			<a href="./Spells.html">
-				<button type="button" class="btn btn-lg btn-block btn-tutter"> Spells </button>
+				<button type="button" class="btn btn-lg btn-block btn-tutter btn-banner"> Spells </button>
 			</a>
 		</div>
 	</div>
@@ -129,6 +161,7 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/introHCI.js"></script>
+	<script src="js/Armor.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>

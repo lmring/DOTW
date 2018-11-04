@@ -71,8 +71,12 @@ a {
 	border-radius: 24px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+  max-width: 500px;
 }
 
+.btn-read{
+	width: 150px;
+}
 
 .btn-home {
 	background-color: #383838;
@@ -186,6 +190,12 @@ ul {
 	list-style: none;
 }
 
-#more{
+li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+}
+
+#more,
+#more2{
 	display:none;
 }
