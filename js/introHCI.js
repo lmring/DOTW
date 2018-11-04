@@ -3,6 +3,14 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$.ajaxSetup({beforeSend: function(xhr){
+  if (xhr.overrideMimeType)
+  {
+    xhr.overrideMimeType("application/json");
+  }
+}
+});
+
 /*
  * Function that is called when the document is ready.
  */
@@ -358,4 +366,37 @@ function CharismaChange() {
 				$('#Charisma5Hank').show();
 				$('#Charisma5HankImg').show();
 		}
+}
+
+
+
+//function spellSearch() {
+//	$.getJSON("spells.json", function(data){
+//		$.each(data.spells, function(i,spell){
+//            content = '<p>' + spell.name + '</p>';
+//            content += '<br/>';
+//            $(content).appendTo("#spell-catalog-results");
+//          });
+//    }
+//});
+//}
+
+$.getScript('spells.js');
+
+function spellSearch() {
+	$("#spell-catalog-results").empty();
+	var results = jsonSpellData.filter(checkName);
+		for (var i = 0, len = results.length; i < len; i++) {
+			var spell = results[i];
+			content = '<h2>' + spell.name + '</h2>' + '<p>' + spell.desc + '</p>';
+			content += '<br/>';
+			$(content).appendTo("#spell-catalog-results");
+    }
+}
+
+function checkName(spell) {
+	var search = $('#spell-catalog-input').val();
+	search = search.toLowerCase();
+	var spellName = spell.name.toLowerCase();
+	return spellName.includes(search);
 }

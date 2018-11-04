@@ -9,87 +9,93 @@
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/DOTW.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 <body>
 	<div class="wrapper">
 
-<!-- header start ******************************************************** -->
-<div class="container-fluid">
-	<div class="nav-bar">
-	<div class="row">
-		<div class="col-md-2 col-sm-offset-1">
-			<a href="./home.html">
-				<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
-			</a>
-		</div>
-		<div class="col-md-2">
-			<a href="./Statistics.html">
-				<button type="button" class="btn btn-lg btn-block btn-hank"> Statistics </button>
-			</a>
-		</div>
-		<div class="col-md-2">
-			<a href="./Equipment.html">
-				<button type="button" class="btn btn-lg btn-block btn-lily"> Equipment </button>
-			</a>
-		</div>
-		<div class="col-md-2">
-			<a href="./Roleplay.html">
-				<button type="button" class="btn btn-lg btn-block btn-margot"> Roleplay </button>
-			</a>
-		</div>
-		<div class="col-md-2">
-			<a href="./Spells.html">
-				<button type="button" class="btn btn-lg btn-block btn-tutter"> Spells </button>
-			</a>
-		</div>
-	</div>
-</div>
-</div>
-<!-- header end ******************************************************** -->
-
-<div class="tutter-text">
-			<h1>Spell Catalog</h1>
-</div>
-			<div class="divider">
-				<img src="divider.png"></img>
+		<!-- header start ******************************************************** -->
+		<div class="container-fluid">
+			<div class="nav-bar">
+				<div class="row">
+					<div class="col-md-2 col-sm-offset-1">
+						<a href="./home.html">
+							<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Statistics.html">
+							<button type="button" class="btn btn-lg btn-block btn-hank"> Statistics </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Equipment.html">
+							<button type="button" class="btn btn-lg btn-block btn-lily"> Equipment </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Roleplay.html">
+							<button type="button" class="btn btn-lg btn-block btn-margot"> Roleplay </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Spells.html">
+							<button type="button" class="btn btn-lg btn-block btn-tutter"> Spells </button>
+						</a>
+					</div>
+				</div>
 			</div>
+		</div>
+		<!-- header end ******************************************************** -->
 
-<!-- footer start ******************************************************** -->
-<div class="container-fluid">
-	<div class="nav-bar">
-	<div class="row">
-		<div class="col-md-2 col-sm-offset-1">
-			<a href="./home.html">
-				<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
-			</a>
+		<div class="tutter-text">
+			<h1>Spell Catalog</h1>
 		</div>
-		<div class="col-md-2">
-			<a href="./Statistics.html">
-				<button type="button" class="btn btn-lg btn-block btn-hank"> Statistics </button>
-			</a>
+		<div class="divider">
+			<img src="divider.png"></img>
 		</div>
-		<div class="col-md-2">
-			<a href="./Equipment.html">
-				<button type="button" class="btn btn-lg btn-block btn-lily"> Equipment </button>
-			</a>
+
+		<input id="spell-catalog-input" placeholder="Spell Name"></input>
+		<button type="button" class="btn btn-lg btn-tutter" id="spell-catalog-button" onclick="spellSearch()">Search</button>
+
+		<div id="spell-catalog-results"></div>
+
+		<!-- footer start ******************************************************** -->
+		<div class="container-fluid">
+			<div class="nav-bar">
+				<div class="row">
+					<div class="col-md-2 col-sm-offset-1">
+						<a href="./home.html">
+							<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Statistics.html">
+							<button type="button" class="btn btn-lg btn-block btn-hank"> Statistics </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Equipment.html">
+							<button type="button" class="btn btn-lg btn-block btn-lily"> Equipment </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Roleplay.html">
+							<button type="button" class="btn btn-lg btn-block btn-margot"> Roleplay </button>
+						</a>
+					</div>
+					<div class="col-md-2">
+						<a href="./Spells.html">
+							<button type="button" class="btn btn-lg btn-block btn-tutter"> Spells </button>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-2">
-			<a href="./Roleplay.html">
-				<button type="button" class="btn btn-lg btn-block btn-margot"> Roleplay </button>
-			</a>
-		</div>
-		<div class="col-md-2">
-			<a href="./Spells.html">
-				<button type="button" class="btn btn-lg btn-block btn-tutter"> Spells </button>
-			</a>
-		</div>
+		<!-- footer end ******************************************************** -->
 	</div>
-</div>
-</div>
-<!-- footer end ******************************************************** -->
-		</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/introHCI.js"></script>
