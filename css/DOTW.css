@@ -132,6 +132,7 @@ a {
 .btn-tutter {
 	background-color: #31a7de;
 	color:white;
+	max-width:1000px;
 }
 
 .btn-tutter:hover {
@@ -234,3 +235,12 @@ li:before {
 		font-family: 'Caveat', cursive;
 		font-size: 36px;
 	}
+
+.panel-traits{
+	text-align: left;
+}
+
+
+.spell-desc{
+	text-align: left;
+}
