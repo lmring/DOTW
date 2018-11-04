@@ -420,3 +420,23 @@ function checkWeaponName(weapon) {
 	var weaponName = weapon.name.toLowerCase();
 	return weaponName.includes(search);
 }
+
+$.getScript('armor.js');
+
+function armorSearch() {
+	$("#armor-catalog-results").empty();
+	var results = jsonArmorData.filter(checkArmorName);
+		for (var i = 0, len = results.length; i < len; i++) {
+			var armor = results[i];
+			content = '<h2>' + armor.name + '</h2>' + '<p>' + armor.ac + '</p>';
+			content += '<br/>';
+			$(content).appendTo("#armor-catalog-results");
+    }
+}
+
+function checkArmorName(armor) {
+	var search = $('#armor-catalog-input').val();
+	search = search.toLowerCase();
+	var armorName = armor.name.toLowerCase();
+	return armorName.includes(search);
+}
