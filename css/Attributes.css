@@ -1,0 +1,45 @@
+.hank-bodytext{
+	text-align: left;
+}
+
+.form-control{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.form-hank{
+	background-color: #de3c30;
+	color: white;
+	font-size: 40px;
+	font-weight:bold;
+	height: 100px;
+}
+
+.hank{
+  	max-width: 50%;
+
+}
+
+.hank-box{
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+em{
+  	font-family: 'Caveat', sans-serif;
+  	color: #de3c30;
+    font-size: 50px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+	font-weight:bold;
+	color: black;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+}
