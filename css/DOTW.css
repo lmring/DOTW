@@ -76,6 +76,7 @@ a {
 
 .btn-read{
 	width: 150px;
+  margin: 0 auto;
 }
 
 .btn-home {
@@ -183,8 +184,15 @@ h3 {
 
 h4 {
 	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
 	color: black;
 }
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+}
+
 
 ul {
 	list-style: none;
@@ -198,4 +206,22 @@ li:before {
 #more,
 #more2{
 	display:none;
+}
+
+.hank-bodytext{
+	text-align: left;
+}
+
+.form-control{
+	max-width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.form-hank{
+	background-color: #de3c30;
+	color: white;
+	font-size: 40px;
+	font-weight:bold;
+	height: 100px;
 }

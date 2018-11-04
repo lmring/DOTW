@@ -100,7 +100,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<select class="form-control" id="strength" onchange="StrengthChange()">
+					<select class="form-control form-hank" id="strength" onchange="StrengthChange()">
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -148,7 +148,7 @@
 						<img src="./images/HankStr5.png" alt="Strong Hank"></img>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 hank-bodytext">
 					<h3>A measure of bodily power, athletic training, and the extent you can exert raw physical force.</h3>
 					<h4>Strength is useful for:</h4>
 					<ul>
@@ -173,12 +173,12 @@
 							</ul>
 						</li>
 					</ul>
+					<a href="#wrapper">
+						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
+					</a>
 				</div>
 			</div>
 		</div>
-		<a href="#wrapper">
-			<button type="button" class="btn btn-lg btn-block btn-hank">↑ Back to Top </button>
-		</a>
 		<!-- End of STRENGTH **************************************************** -->
 
 		<!-- DEXTERITY ********************************************************** -->
@@ -190,7 +190,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<select class="form-control" id="dexterity" onchange="DexterityChange()">
+					<select class="form-control form-hank" id="dexterity" onchange="DexterityChange()">
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -238,18 +238,17 @@
 						<img src="./images/HankDex5.png" alt="Agile Hank"></img>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 hank-bodytext">
 					<h3>A measure of agility, reflexes, and balance. One of the most important attributes in the game, as it determines many different things.</h3>
 					<h4>Dexterity is useful for:</h4>
-					<ul>
-						<li><strong>Ranged weapons users such as:</strong>
+					<strong>Ranged weapons users such as:</strong>
 							<ul>
 								<li>Fighters</li>
 								<li>Rangers</li>
 							</ul>
-						</li>
-						<li><strong>Spellcasters who have ranged weapons as their alternate way of doing damage</strong></li>
-						<li><strong>Finesse weapons user such as:</strong>
+
+						<strong>Spellcasters who have ranged weapons as their alternate way of doing damage</strong>
+						<strong>Finesse weapons user such as:</strong>
 							<ul>
 								<li>Bards</li>
 								<li>Monks
@@ -259,41 +258,39 @@
 								</li>
 								<li>Rogues</li>
 							</ul>
-						</li>
-						<li><strong>Armor Class</strong>
+						<strong>Armor Class</strong>
 							<ul>
 								<li>Depending on the armor you wear, your dexterity modifier may or may not come into play.</li>
 								<li>Barbarians have their unarmored defense decided by their dexterity and consitution.</li>
 								<li>Monks have their unarmored defense decided by their dexterity and wisdom.</li>
 							</ul>
-						</li>
-						<li><strong>Having high initiative</strong>
+
+						<strong>Having high initiative</strong>
 							<ul>
 								<li>Everytime you go into battle, you roll initiative, which uses your dex modifier.</li>
 								<li>The higher the initiative, the earlier your turn to attack is.</li>
 							</ul>
-						</li>
-						<li><strong>The following checks:</strong>
+
+						<strong>The following checks:</strong>
 							<ul>
 								<li>Enduring certain magical spells</li>
 								<li>Having quick reflexes or a good reaction time</li>
 								<li>Disabling a trap</li>
 							</ul>
-						</li>
+
 						<strong>The following skills:</strong>
 						<ul>
 							<li>Acrobatics</li>
 							<li>Stealth</li>
 							<li>Sleight of Hand</li>
 						</ul>
-					</li>
-				</ul>
+
+						<a href="#wrapper">
+							<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
+						</a>
 			</div>
 		</div>
 	</div>
-	<a href="#wrapper">
-		<button type="button" class="btn btn-lg btn-block btn-hank">↑ Back to Top </button>
-	</a>
 	<!-- End of DEXTERITY **************************************************** -->
 
 
@@ -306,7 +303,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<select class="form-control" id="constitution" onchange="ConstitutionChange()">
+				<select class="form-control form-hank" id="constitution" onchange="ConstitutionChange()">
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -354,37 +351,39 @@
 					<img src="./images/HankCon5.png" alt="Tough Hank"></img>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 hank-bodytext">
 				<h3>A measure of health, stamina, and vital force.</h3>
 				<h4>Constitution is useful for</h4>
-				<ul>
-					<li><strong>Anyone who is going to be in the front lines, especially tanks, such as:</strong>
+					<strong>Anyone who is going to be in the front lines, especially tanks, such as:</strong>
 						<ul>
 							<li>Barbarians</li>
 							<li>Monks</li>
 							<li>Fighters</li>
 							<li>Paladins</li>
 						</ul>
-					</li>
-					<li><strong>Determining your hit points</strong>
+
+				  <strong>Determining your hit points</strong>
 						<ul>
 							<li>Your constitution modifier will be added to all hit points you get.</li>
 						</ul>
-					</li>
-					<li><strong>The following checks:</strong>
+
+					<strong>The following checks:</strong>
 						<ul>
 							<li>Holding your breath</li>
 							<li>Going without rest or sleep</li>
 							<li>Drinking alcohol...hic!</li>
 							<li>Resisting poison attacks</li>
 						</ul>
-					</li>
-				</ul>
+
+				<a href="#wrapper">
+					<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
+				</a>
+
 			</div>
 		</div>
 	</div>
 	<a href="#wrapper">
-		<button type="button" class="btn btn-lg btn-block btn-hank">↑ Back to Top </button>
+		<button type="button" class="btn btn-lg btn-block btn-hank btn-read">↑ Back to Top </button>
 	</a>
 	<!-- End of CONSTITUTION **************************************************** -->
 
@@ -397,7 +396,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<select class="form-control" id="intelligence" onchange="IntelligenceChange()">
+				<select class="form-control form-hank" id="intelligence" onchange="IntelligenceChange()">
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -445,44 +444,47 @@
 					<img src="./images/HankInt5.png" alt="Smart Hank"></img>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 hank-bodytext">
 				<h3>A measure of memory, logic, and ability to reason.</h3>
 				<h4>Intelligence is useful for:</h4>
-				<ul>
-					<li><strong>Spellcasters who use intelligence to cast spells</strong>
+
+					<strong>Spellcasters who use intelligence to cast spells</strong>
 						<ul>
 							<li>Wizards</li>
 						</ul>
-					</li>
-					<li><strong>Classes that have specializations that can cast spells</strong>
+
+					<strong>Classes that have specializations that can cast spells</strong>
 						<ul>
 							<li>Fighters</li>
 							<li>Rogues</li>
 						</ul>
-					</li>
-					<li><strong>The following checks:</strong>
+
+					<strong>The following checks:</strong>
 						<ul>
 							<li>Resisting certain magical spells</li>
 							<li>Communicating without using words</li>
 							<li>Estimating the value of a precious item</li>
 							<li>Crafting or creating something new</li>
 						</ul>
-					</li>
+
 					<strong>The following skills:</strong>
-					<ul>
+					<ul
 						<li>Arcana</li>
 						<li>History</li>
 						<li>Investigation</li>
 						<li>Nature</li>
 						<li>Religion</li>
 					</ul>
-				</li>
-			</ul>
+
+					<a href="#wrapper">
+						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
+					</a>
+
 		</div>
 	</div>
 </div>
 <a href="#wrapper">
-	<button type="button" class="btn btn-lg btn-block btn-hank">↑ Back to Top </button>
+	<button type="button" class="btn btn-lg btn-block btn-hank btn-read">↑ Back to Top </button>
 </a>
 <!-- End of INTELLIGENCE **************************************************** -->
 
@@ -495,7 +497,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6">
-			<select class="form-control" id="wisdom" onchange="WisdomChange()">
+			<select class="form-control form-hank" id="wisdom" onchange="WisdomChange()">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -543,29 +545,29 @@
 				<img src="./images/HankWis5.png" alt="Wise Hank"></img>
 			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 hank-bodytext">
 			<h3>A measure of perceptiveness, intuition, common sense, and your general awareness of the world around you.</h3>
 			<h4>Wisdom is useful for:</h4>
-			<ul>
-				<li><strong>Spellcasters who use intelligence to cast spells</strong>
+
+				<strong>Spellcasters who use intelligence to cast spells</strong>
 					<ul>
 						<li>Clerics</li>
 						<li>Druids</li>
 						<li>Rangers</li>
 					</ul>
-				</li>
-			</li><strong>Your passive perception</strong>
+
+			<strong>Your passive perception</strong>
 			<ul>
 				<li>Passive perception allows the DM to secretly determine if you have noticed something, without asking you to roll the dice! <br>Your passive perception is 10 + your wisdom modifier + proficiency in perception (if you have it)</li>
 			</ul>
-		</li>
-		<li><strong>Armor class, if you are a monk, is determined by dexterity and wisdom.</strong></li>
-		<li><strong>The following checks:</strong>
+
+		<strong>Armor class, if you are a monk, is determined by dexterity and wisdom.</strong></li>
+		<strong>The following checks:</strong>
 			<ul>
 				<li>Resisting certain magical spells, such as being charmed</li>
 			</ul>
-		</li>
-		<li><strong>The following skills:</strong>
+
+		<strong>The following skills:</strong>
 			<ul>
 				<li>Animal Handling</li>
 				<li>Insight</li>
@@ -573,14 +575,14 @@
 				<li>Perception</li>
 				<li>Survival</li>
 			</ul>
-		</li>
-	</ul>
+
+			<a href="#wrapper">
+				<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
+			</a>
 </div>
 </div>
 </div>
-<a href="#wrapper">
-	<button type="button" class="btn btn-lg btn-block btn-hank">↑ Back to Top </button>
-</a>
+
 <!-- End of WISDOM**************************************************** -->
 
 <!-- CHARISMA ********************************************************** -->
@@ -592,7 +594,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6">
-			<select class="form-control" id="charisma" onchange="CharismaChange()">
+			<select class="form-control form-hank" id="charisma" onchange="CharismaChange()">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -640,38 +642,34 @@
 				<img src="./images/HankCha5.png" alt="Cool Hank"></img>
 			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 hank-bodytext">
 			<h3>A measure of how effectively you can interact with others, including things like flirting, persuading, and lying.</h3>
 			<h4>Charisma is useful for</h4>
-			<ul>
-				<li><strong>Spellcasters who use intelligence to cast spells</strong>
+				<strong>Spellcasters who use intelligence to cast spells</strong>
 					<ul>
 						<li>Bards</li>
 						<li>Paladins</li>
 						<li>Sorcerers</li>
 						<li>Warlocks</li>
 					</ul>
-				</li>
-				<li><strong>The following checks:</strong>
+				<strong>The following checks:</strong>
 					<ul>
 						<li>Resisting certain magical spells, like possession from ghosts</li>
 					</ul>
-				</li>
-				<li><strong>The following skills</strong>
+				<strong>The following skills</strong>
 					<ul>
 						<li>Deception</li>
 						<li>Intimidation</li>
 						<li>Performance</li>
 						<li>Persuasion</li>
 					</ul>
-				</li>
-			</ul>
+					<a href="#wrapper">
+						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
+					</a>
+
 		</div>
 	</div>
 </div>
-<a href="#wrapper">
-	<button type="button" class="btn btn-lg btn-block btn-hank">↑ Back to Top </button>
-</a>
 <!-- End of CHARISMA**************************************************** -->
 
 <!-- Footer start **************************************************** -->
