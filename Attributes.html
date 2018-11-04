@@ -8,6 +8,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/DOTW.css" rel="stylesheet">
+	<link href="css/Attributes.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Montserrat" rel="stylesheet">
 
 </head>
@@ -93,13 +94,9 @@
 
 		<!-- STRENGTH **************************************************** -->
 		<div class="container-fluid">
-			<div class ="row">
-				<div class="hank-text">
-					<h2 id="section-str">Strength</h2>
-				</div>
-			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 hank-box">
+					<h2 id="section-str">Strength</h2>
 					<select class="form-control form-hank" id="strength" onchange="StrengthChange()">
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -123,6 +120,16 @@
 						<option value="20">20</option>
 					</select>
 					<!-- Hank is blank section -->
+					<div class="container-fluid collapse hank" id="Strength1HankImg"> <!-- divs with the collapse tag are initially hidden -->
+						<img src="./images/HankStr1.png" alt="Weak Hank"></img>
+					</div>
+					<div class="container-fluid hank" id="Strength3HankImg">
+						<img src="./images/HankStr3.png" alt="Medium Hank"></img>
+					</div>
+					<div class="container-fluid collapse hank" id="Strength5HankImg">
+						<img src="./images/HankStr5.png" alt="Strong Hank"></img>
+					</div>
+
 					<div class="container-fluid collapse" id="Strength1Hank">
 						<h4>Hank has no muscle mass!</h4>
 					</div>
@@ -138,18 +145,11 @@
 					<div class="container-fluid collapse" id="Strength5Hank">
 						<h4>Hank is THE BUFFEST BOY!</h4>
 					</div>
-					<div class="container-fluid collapse" id="Strength1HankImg"> <!-- divs with the collapse tag are initially hidden -->
-						<img src="./images/HankStr1.png" alt="Weak Hank"></img>
-					</div>
-					<div class="container-fluid" id="Strength3HankImg">
-						<img src="./images/HankStr3.png" alt="Medium Hank"></img>
-					</div>
-					<div class="container-fluid collapse" id="Strength5HankImg">
-						<img src="./images/HankStr5.png" alt="Strong Hank"></img>
-					</div>
+
 				</div>
 				<div class="col-md-6 hank-bodytext">
-					<h3>A measure of bodily power, athletic training, and the extent you can exert raw physical force.</h3>
+					<h3><em>Strength </em> is a measure of bodily power, athletic training, and the extent you can exert raw physical force.</h3>
+					<br>
 					<h4>Strength is useful for:</h4>
 					<ul>
 						<li><strong>Melee fighters who rely on weapons</strong>
@@ -384,9 +384,7 @@
 			</div>
 		</div>
 	</div>
-	<a href="#wrapper">
-		<button type="button" class="btn btn-lg btn-block btn-hank btn-read">↑ Back to Top </button>
-	</a>
+
 	<!-- End of CONSTITUTION **************************************************** -->
 
 	<!-- INTELLIGENCE ********************************************************** -->
@@ -485,9 +483,7 @@
 		</div>
 	</div>
 </div>
-<a href="#wrapper">
-	<button type="button" class="btn btn-lg btn-block btn-hank btn-read">↑ Back to Top </button>
-</a>
+
 <!-- End of INTELLIGENCE **************************************************** -->
 
 <!-- WISDOM ********************************************************** -->
