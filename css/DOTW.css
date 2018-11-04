@@ -232,9 +232,22 @@ li:before {
 	max-width: 750px;
 }
 
-.panel-heading{
+.panel-equipment{
+	border-color: #ded931;
+	border-width: 10px;
+	max-width: 750px;
+}
+
+.panel-heading-spell{
 	background-color: #31a7de;
 	color:white;
 	font-family: 'Caveat', cursive;
 	font-size: 36px;
 }
+
+	.panel-heading-equipment{
+		background-color: #ded931;
+		color:white;
+		font-family: 'Caveat', cursive;
+		font-size: 36px;
+	}

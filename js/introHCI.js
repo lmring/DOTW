@@ -396,7 +396,7 @@ function spellSearch() {
 			if(spell.material === undefined){
 				spell.material = 'None';
 			}
-			content = "<div class='row'><div class='col-sm-6 col-sm-offset-3'><div class = 'panel panel-spell'><div class = 'panel-heading'>"+ spell.name + "</div><div class='panel-body'>" + "<p><b>Range: </b>" + spell.range + "</p><p><b>Components: </b>" + spell.components + "</p><p><b>Materials: </b>" + spell.material + "</p><p><b>Duration: </b>" + spell.duration + "</p><p><b>Concentration: </b>" + spell.concentration + "</p><p><b>Level: </b>" + spell.level + "</p><p><b>School: </b>" + spell.school + "</p><p><b>Class: </b>" + spell.class + '<p>' + spell.desc + "</p></div></div></div></div>";
+			content = "<div class='row'><div class='col-sm-6 col-sm-offset-3'><div class = 'panel panel-spell'><div class = 'panel-heading panel-heading-spell'>"+ spell.name + "</div><div class='panel-body'>" + "<p><b>Range: </b>" + spell.range + "</p><p><b>Components: </b>" + spell.components + "</p><p><b>Materials: </b>" + spell.material + "</p><p><b>Duration: </b>" + spell.duration + "</p><p><b>Concentration: </b>" + spell.concentration + "</p><p><b>Level: </b>" + spell.level + "</p><p><b>School: </b>" + spell.school + "</p><p><b>Class: </b>" + spell.class + '<p>' + spell.desc + "</p></div></div></div></div>";
 			content += '<br/>';
 			$(content).appendTo("#spell-catalog-results");
     }
@@ -454,7 +454,7 @@ function weaponSearch() {
 	var typeResults = results.filter(checkWeaponType);
 		for (var i = 0, len = typeResults.length; i < len; i++) {
 			var weapon = typeResults[i];
-			content = '<h2>' + weapon.name + '</h2>' + '<p><b>Damage: </b>' + weapon.damage + '</p><p><b>Properties: </b>' + weapon.properties + '<p><b>Type: </b>' + weapon.type + '</p>';
+			content = "<div class='row'><div class='col-sm-6 col-sm-offset-3'><div class = 'panel panel-equipment'><div class = 'panel-heading panel-heading-equipment'>" + weapon.name + "</div><div class='panel-body'>" + '<p><b>Damage: </b>' + weapon.damage + '</p><p><b>Properties: </b>' + weapon.properties + '<p><b>Type: </b>' + weapon.type + "</p></div></div></div></div>";
 			content += '<br/>';
 			$(content).appendTo("#weapon-catalog-results");
     }
@@ -490,7 +490,7 @@ function armorSearch() {
 	var typeResults = results.filter(checkArmorType);
 		for (var i = 0, len = typeResults.length; i < len; i++) {
 			var armor = typeResults[i];
-			content = '<h2>' + armor.name + '</h2>' + '<p><b>Armor Class: </b>' + armor.ac + '</p><p><b>Stealth: </b>' + armor.stealth + '</p><p><b>Strength Requirement: </b>' + armor.str + '</p><p><b>Type: </b>' + armor.type + '</p>';
+			content = "<div class='row'><div class='col-sm-6 col-sm-offset-3'><div class = 'panel panel-equipment'><div class = 'panel-heading panel-heading-equipment'>" + armor.name + "</div><div class = 'panel-body'>" + '<p><b>Armor Class: </b>' + armor.ac + '</p><p><b>Stealth: </b>' + armor.stealth + '</p><p><b>Strength Requirement: </b>' + armor.str + '</p><p><b>Type: </b>' + armor.type + "</p></div></div></div></div>";
 			content += '<br/>';
 			$(content).appendTo("#armor-catalog-results");
     }
