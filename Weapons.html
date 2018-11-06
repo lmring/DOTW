@@ -60,67 +60,86 @@
 		</div>
 		<p>There is a lot of combat in Dungeons & Dragons, and in order to fight, you’re going to need weapons. Weapons have two basic classifications: whether they are melee or ranged weapons, and whether they are simple or martial weapons. For example, a weapon could be a simple melee weapon or a martial ranged weapon. Once you understand weapons, Lily will explain how to attack with them!</p>
 
-		<div class="lily-text">
-			<h2>Melee Weapons</h2>
-		</div>
-		<p>Melee weapons are used to attack a target that is within five feet of you. The ability modifier applied to attacks made with ranged weapons is Strength. Melee weapons are mostly used by sturdy characters who have enough HP to dash into battle. These weapons include things like swords and daggers.</p>
+<!-- Weapon Range-->
+		<div id = "weapon-attributes" class="lily-bodytext">
+					<h2> Weapon Range: Melee or Smash-- I mean, Ranged</h2>
+					<div class="smallbox">
+						<h5>There are two weapon ranges, melee and ranged.</h5>
+					</div>
 
-		<div class="lily-text">
-			<h2>Ranged Weapons</h2>
-		</div>
-		<p>Ranged weapons are used to attack a target that is more than five feet from you. The ability modifier applied to attacks made with ranged weapons is Dexterity. Ranged weapons are mostly used by weaker characters who want to stay out of direct combat. These weapons include things like bows and slings.</p>
+					<!--Read More Starts Here-->
+					<span id="dots"><p> </p></span><span id="more">
 
-		<div class="lily-text">
-			<h2>Simple Weapons</h2>
-		</div>
-		<p>Most characters are proficient in simple weapons, which do not require specialized training. Simple weapons are mostly used by spellcasters (wizards, warlocks, druids, etc.) and include weapons such as clubs and maces.</p>
+					<h4><img src="./images/weaponsicon_melee.png" alt="Armor Determinants" style="width: 100px"></img> Melee Weapons</h4>
+					<div class="smallbox">
+					<ul><li> Attack a target that is within five feet of you</li>
+						<li>Use the user's Strength modifier unless a finesse weapon</li>
+						<li>Favored by sturdy characters who have enough bulk to be in the frontlines</li>
+					</ul>
+				  </div>
 
-		<div class="lily-text">
-			<h2>Martial Weapons</h2>
-		</div>
-		<p>Martial weapons require specialized training for a character to gain proficiency. Martial weapons are mostly used by warriors (fighters, rangers, rogues, etc.) and include weapons such as swords and longbows.</p>
+					<br>
+					<h4><img src="./images/weaponsicon_ranged.png" alt="Armor Determinants" style="width: 100px"></img> Ranged Weapons</h4>
+					<div class="smallbox">
+					<ul><li> Attack a target that is further than five feet of you</li>
+						<li>Use the user's Dexterity modifier unless a thrown weapon</li>
+						<li>Favored by squishier characters who want to stay out of harm's way</li>
+						<li>Often have some sort of ammunition system (arrows, darts, etc)</li>
+					</ul>
+						</div>
 
-		<div class="lily-text">
-			<h2>Special Properties</h2>
+						</span>
+						<button onclick="toggleContent()" class="btn btn-lg btn-block btn-read" id="myBtn">Read more</button>
 		</div>
-		Some weapons have special properties related to their use. Listed below are some of the most common properties you will encounter--see external resources for the full list!
-		<ul>
-			<li><strong>Ammunition</strong>
-				<ul>
-					<li>You need ammunition for this weapon in order to use it, like arrows for a shortbow</li>
-				</ul>
-			</li>
-			<li><strong>Finesse</strong>
-				<ul>
-					<li>You can choose to use your dexterity modifier instead of your strength modifier when using this weapon</li>
-				</ul>
-			</li>
-			<li><strong>Heavy</strong>
-				<ul>
-					<li>Small creatures have disadvantage when using heavy weapons. They’re just too heavy!</li>
-				</ul>
-			</li>
-			<li><strong>Thrown</strong>
-				<ul>
-					<li>Exactly what it sounds like--you can throw this weapon to make a ranged attack. Roll the same as you would if you were making a melee attack</li>
-				</ul>
-			</li>
-			<li><strong>Two-Handed</strong>
-				<ul>
-					<li>You need two hands to use this weapon</li>
-				</ul>
-			</li>
-			<li><strong>Versatile</strong>
-				<ul>
-					<li>You can use this weapon with one hand or with two hands. It will do more damage if you use two hands!</li>
-				</ul>
-			</li>
-			<li><strong>Improvised Weapons</strong>
-				<ul>
-					<li>Anything. Really, anything! You could even use a dead goblin as an improvised weapon. These weapons always do 1d4 damage, unless the DM decides otherwise.</li>
-				</ul>
-			</li>
-		</ul>
+
+		<!-- Weapon Types-->
+				<div id = "weapon-types" class="lily-bodytext">
+							<h2> Weapon Range: Melee or Smash-- I mean, Ranged</h2>
+							<div class="smallbox">
+								<h5>Beyond a weapon’s range, there’s the weapon’s style. Simple weapons do not require any kind of training to use. Martial weapons are more powerful, and require specialized training.</h5>
+							</div>
+
+							<!--Read More Starts Here-->
+							<span id="dots2"><p> </p></span><span id="more2">
+
+							<h4><img src="./images/weaponsicon_simple.png" alt="Armor Determinants" style="width: 100px"></img> Simple Weapons</h4>
+							<div class="smallbox">
+							<p> Most classes are proficient in simple weapons. They often used by spellcasters (wizards, warlocks, druids, etc.) who have some other way of inflicting damage. Some spellcaster specializations allow proficiency in martial weapons, so be sure to check! </p>
+						  </div>
+
+							<br>
+							<h4><img src="./images/weaponsicon_martial.png" alt="Armor Determinants" style="width: 100px"></img> Martial Weapons</h4>
+							<div class="smallbox">
+							<p>Martial weapons are mostly used by warriors (fighters, rangers, rogues, etc). They are more powerful because they tend to be a primary way of inflicting damage.</p>
+							</div>
+
+								</span>
+								<button onclick="toggleContent2()" class="btn btn-lg btn-block btn-read" id="myBtn2">Read more</button>
+				</div>
+
+				<!-- Weapon Properties-->
+						<div id = "weapon-properties" class="lily-bodytext">
+									<h2> Weapon Properties: Make the Most of Your Weapons!</h2>
+									<div class="smallbox">
+										<h5>Some weapons have special properties related to their use. Listed below are some of the most common properties you will encounter--see external resources for the full list!</h5>
+									</div>
+
+									<!--Read More Starts Here-->
+									<span id="dots3"><p> </p></span><span id="more3">
+
+									<div class="smallbox">
+										<p><strong>Ammunition:</strong> You need ammunition for this weapon in order to use it, like arrows for a shortbow.</p>
+										<p><strong>Finesse:</strong> You can choose to use your dexterity modifier instead of your strength modifier when using this weapon</p>
+										<p><strong>Heavy:</strong> Small creatures, like halflings and gnomes, have disadvantage when using heavy weapons. They’re just too heavy!</p>
+										<p><strong>Thrown:</strong> You can choose to use your strength modifier instead of your dexterity modifier when using this weapon. Favored by strength based characters who need a way of attacking ranged!</p>
+										<p><strong>Two-Handed:</strong> You need two hands to use this weapon. This often means the weapon cannot be used at the same time as a shield.</p>
+										<p><strong>Versatile:</strong> You can use this weapon with one hand or with two hands. It will do more damage if you use two hands!</p>
+										<p><strong>Improvised Weapons</strong> Anything. Really, anything! You could even use a dead goblin as an improvised weapon. These weapons always do 1d4 damage, unless the DM decides otherwise.</p>
+								  </div>
+
+										</span>
+										<button onclick="toggleContent3()" class="btn btn-lg btn-block btn-read" id="myBtn3">Read more</button>
+						</div>
 
 		<div class="lily-text">
 			<h2>How to Attack</h2>
