@@ -2,6 +2,7 @@ function lillyChange(){
   var selectBox = document.getElementById("weapons");
   var selected = selectBox.options[selectBox.selectedIndex].value;
 
+/*simple melee*/
   if(selected=="club"){
     $('.weapon').hide();
     $('#LilllyClub').show();
@@ -9,5 +10,151 @@ function lillyChange(){
   if(selected=="dagger"){
     $('.weapon').hide();
     $('#LilllyDagger').show();
+  }
+  if(selected=="greatclub"){
+    $('.weapon').hide();
+    $('#LilllyGreatclub').show();
+  }
+  if(selected=="handaxe"){
+    $('.weapon').hide();
+    $('#LilllyHandaxe').show();
+  }
+  if(selected=="javelin"){
+    $('.weapon').hide();
+    $('#LilllyJavelin').show();
+  }
+  if(selected=="light-hammer"){
+    $('.weapon').hide();
+    $('#LilllyLightHammer').show();
+  }
+  if(selected=="mace"){
+    $('.weapon').hide();
+    $('#LilllyMace').show();
+  }
+  if(selected=="quarterstaff"){
+    $('.weapon').hide();
+    $('#LilllyQuarterstaff').show();
+  }
+  if(selected=="sickle"){
+    $('.weapon').hide();
+    $('#LilllySickle').show();
+  }
+  if(selected=="spear"){
+    $('.weapon').hide();
+    $('#LilllySpear').show();
+  }
+
+  /*simple ranged*/
+  if(selected=="light-crossbow"){
+    $('.weapon').hide();
+    $('#LilllyLightCrossbow').show();
+  }
+  if(selected=="dart"){
+    $('.weapon').hide();
+    $('#LilllyDart').show();
+  }
+  if(selected=="shortbow"){
+    $('.weapon').hide();
+    $('#LilllyShortbow').show();
+  }
+  if(selected=="sling"){
+    $('.weapon').hide();
+    $('#LilllySling').show();
+  }
+
+  /*martial melee*/
+  if(selected=="battleaxe"){
+    $('.weapon').hide();
+    $('#LilllyBattleAxe').show();
+  }
+  if(selected=="flail"){
+    $('.weapon').hide();
+    $('#LilllyFlail').show();
+  }
+  if(selected=="glaive"){
+    $('.weapon').hide();
+    $('#LilllyGlaive').show();
+  }
+  if(selected=="greataxe"){
+    $('.weapon').hide();
+    $('#LilllyGreataxe').show();
+  }
+  if(selected=="greatsword"){
+    $('.weapon').hide();
+    $('#LilllyGreatsword').show();
+  }
+  if(selected=="halberd"){
+    $('.weapon').hide();
+    $('#LilllyHalberd').show();
+  }
+  if(selected=="lance"){
+    $('.weapon').hide();
+    $('#LilllyLance').show();
+  }
+  if(selected=="longsword"){
+    $('.weapon').hide();
+    $('#LilllyLongsword').show();
+  }
+  if(selected=="maul"){
+    $('.weapon').hide();
+    $('#LilllyMaul').show();
+  }
+  if(selected=="morningstar"){
+    $('.weapon').hide();
+    $('#LilllyMorningstar').show();
+  }
+  if(selected=="pike"){
+    $('.weapon').hide();
+    $('#LilllyPike').show();
+  }
+  if(selected=="rapier"){
+    $('.weapon').hide();
+    $('#LilllyRapier').show();
+  }
+  if(selected=="scimitar"){
+    $('.weapon').hide();
+    $('#LilllyScimitar').show();
+  }
+  if(selected=="shortsword"){
+    $('.weapon').hide();
+    $('#LilllyShortsword').show();
+  }
+  if(selected=="trident"){
+    $('.weapon').hide();
+    $('#LilllyTrident').show();
+  }
+  if(selected=="war-pick"){
+    $('.weapon').hide();
+    $('#LilllyWarPick').show();
+  }
+  if(selected=="warhammer"){
+    $('.weapon').hide();
+    $('#LilllyWarhammer').show();
+  }
+  if(selected=="whip"){
+    $('.weapon').hide();
+    $('#LilllyWhip').show();
+  }
+
+  /*martial ranged*/
+  if(selected=="blowgun"){
+    $('.weapon').hide();
+    $('#LilllyBlowgun').show();
+  }
+  if(selected=="hand-crossbow"){
+    $('.weapon').hide();
+    $('#LilllyHandCrossbow').show();
+  }
+  if(selected=="heavy-crossbow"){
+    $('.weapon').hide();
+    $('#LilllyHeavyCrossbow').show();
+  }
+  if(selected=="longbow"){
+    $('.weapon').hide();
+    $('#LilllyLongbow').show();
+  }
+  if(selected=="net"){
+    $('.weapon').hide();
+    $('#LilllyNet').show();
   }
 }
