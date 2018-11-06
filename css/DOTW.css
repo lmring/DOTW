@@ -33,6 +33,7 @@ body {
 
 .nav-bar {
 	background-color: white;
+	padding: 20px
 }
 
 .container-dragon {
@@ -92,6 +93,7 @@ a {
 .btn-gray {
 	background-color: #383838;
 	color: white;
+	max-width:1000px;
 }
 
 .btn-gray:hover {
@@ -243,4 +245,11 @@ li:before {
 
 .spell-desc{
 	text-align: left;
+}
+
+.navBarIcon
+{
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
 }
