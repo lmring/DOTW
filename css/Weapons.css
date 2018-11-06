@@ -1,0 +1,12 @@
+.weapons-header{
+	background-color: #ded931;
+	color:white;
+	font-family: 'Caveat', cursive;
+	font-size: 48px;
+	max-width: 500px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 24px;
+}
