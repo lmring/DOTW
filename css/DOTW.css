@@ -263,3 +263,7 @@ li:before {
 	max-width: 100%;
 	height: auto;
 }
+
+.smallbox{
+	margin-left:75px;
+}
