@@ -21,7 +21,7 @@ function lillyChange(){
   if(selected=="handaxe"){
     $('.weapon').hide();
     $('#LilllyHandaxe').show();
-    $('#LilllyHandaxeText').show();
+    $('#LilllyHandAxeText').show();
   }
   if(selected=="javelin"){
     $('.weapon').hide();
