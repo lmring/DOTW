@@ -135,9 +135,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<select id="weapons" onchange="lillyChange()">
+					<select class="form-control form-hank" id="weapons" onchange="lillyChange()">
 						<optgroup label="Simple Melee">
-							<option value="club">Club</option>
+							<option value="club" selected="selected">Club</option>
 							<option value="dagger">Dagger</option>
 							<option value="greatclub">Greatclub</option>
 							<option value="handaxe">Handaxe</option>
@@ -300,7 +300,235 @@
 				</div>
 			</div>
 				<div class="col-md-6">
-					Weapon Traits
+					<!--simple melee-->
+					<div class="container-fluid weapon" id="LilllyClubText">
+						<h4>Club</h4>
+						<p><strong>Damage:</strong> 1d4 bludgeoning</p>
+						<p><strong>Properties:</strong> Light</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyDaggerText">
+						<h4>Dagger</h4>
+						<p><strong>Damage:</strong> 1d4 piercing</p>
+						<p><strong>Properties:</strong> Finesse, light, thrown (range 20/60)</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyGreatclubText">
+						<h4>Greatclub</h4>
+						<p><strong>Damage:</strong> 1d8 bludgeoning</p>
+						<p><strong>Properties:</strong> Two-handed</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyHandAxeText">
+						<h4>Handaxe</h4>
+						<p><strong>Damage:</strong> 1d6 slashing</p>
+						<p><strong>Properties:</strong> Light, thrown (range 20/60)</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyJavelinText">
+						<h4>Javelin</h4>
+						<p><strong>Damage:</strong> 1d6 piercing</p>
+						<p><strong>Properties:</strong> Thrown (range 30/120)</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyLightHammerText">
+						<h4>Light Hammer</h4>
+						<p><strong>Damage:</strong> 1d4 bludgeoning</p>
+						<p><strong>Properties:</strong> Light, thrown (range 20/60)</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyMaceText">
+						<h4>Mace</h4>
+						<p><strong>Damage:</strong> 1d6 bludgeoning</p>
+						<p><strong>Properties:</strong> None</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyQuarterstaffText">
+						<h4>Quarterstaff</h4>
+						<p><strong>Damage:</strong> 1d6 bludgeoning</p>
+						<p><strong>Properties:</strong> Versatile (1d8)</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllySickleText">
+						<h4>Sickle</h4>
+						<p><strong>Damage:</strong> 1d4 slashing</p>
+						<p><strong>Properties:</strong> Light</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllySpearText">
+						<h4>Spear</h4>
+						<p><strong>Damage:</strong> 1d6 piercing</p>
+						<p><strong>Properties:</strong> Thrown (range 20/60), versatile (1d8)</p>
+						<p><strong>Type:</strong> Simple Melee Weapon</p>
+					</div>
+
+					<!--simple ranged-->
+					<div class="container-fluid weapon collapse" id="LilllyLightCrossbowText">
+						<h4>Light Crossbow</h4>
+						<p><strong>Damage:</strong> 1d8 piercing</p>
+						<p><strong>Properties:</strong> Ammunition (range 80/320), loading, two-handed</p>
+						<p><strong>Type:</strong> Simple Ranged Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyDartText">
+						<h4>Dart</h4>
+						<p><strong>Damage:</strong> 1d4 piercing</p>
+						<p><strong>Properties:</strong> Finesse, thrown (range 20/60)</p>
+						<p><strong>Type:</strong> Simple Ranged Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyShortbowText">
+						<h4>Shortbow</h4>
+						<p><strong>Damage:</strong> 1d6 piercing</p>
+						<p><strong>Properties:</strong> Ammunition (range 80/320), two-handed</p>
+						<p><strong>Type:</strong> Simple Ranged Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllySlingText">
+						<h4>Sling</h4>
+						<p><strong>Damage:</strong> 1d4 bludgeoning</p>
+						<p><strong>Properties:</strong> Ammunition (range 30/120)</p>
+						<p><strong>Type:</strong> Simple Ranged Weapon</p>
+					</div>
+
+					<!--martial melee-->
+					<div class="container-fluid weapon collapse" id="LilllyBattleAxeText">
+						<h4>Battleaxe</h4>
+						<p><strong>Damage:</strong> 1d8 slashing</p>
+						<p><strong>Properties:</strong> Versatile (1d10)</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyFlailText">
+						<h4>Flail</h4>
+						<p><strong>Damage:</strong> 1d8 bludgeoning</p>
+						<p><strong>Properties:</strong> None</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyGlaiveText">
+						<h4>Glaive</h4>
+						<p><strong>Damage:</strong> 1d10 slashing</p>
+						<p><strong>Properties:</strong> Heavy, reach, two-handed</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyGreatAxeText">
+						<h4>Greataxe</h4>
+						<p><strong>Damage:</strong> 1d12 slashing</p>
+						<p><strong>Properties:</strong> Heavy, two-handed</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyGreatswordText">
+						<h4>Greatsword</h4>
+						<p><strong>Damage:</strong> 2d6 slashing</p>
+						<p><strong>Properties:</strong> Heavy, two-handed</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyHalberdText">
+						<h4>Halberd</h4>
+						<p><strong>Damage:</strong> 1d10 slashing</p>
+						<p><strong>Properties:</strong> Heavy, reach, two-handed</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyLanceText">
+						<h4>Lance</h4>
+						<p><strong>Damage:</strong> 1d12 piercing</p>
+						<p><strong>Properties:</strong> Reach, special</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyLongswordText">
+						<h4>Longsword</h4>
+						<p><strong>Damage:</strong> 1d8 slashing</p>
+						<p><strong>Properties:</strong> Versatile (1d10)</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyMaulText">
+						<h4>Maul</h4>
+						<p><strong>Damage:</strong> 2d6 bludgeoning</p>
+						<p><strong>Properties:</strong> Heavy, two-handed</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyMorningstarText">
+						<h4>Morningstar</h4>
+						<p><strong>Damage:</strong> 1d8 piercing</p>
+						<p><strong>Properties:</strong> None</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyPikeText">
+						<h4>Pike</h4>
+						<p><strong>Damage:</strong> 1d10 piercing</p>
+						<p><strong>Properties:</strong> Heavy, reach, two-handed</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyRapierText">
+						<h4>Rapier</h4>
+						<p><strong>Damage:</strong> 1d8 piercing</p>
+						<p><strong>Properties:</strong> Finesse</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyScimitarText">
+						<h4>Scimitar</h4>
+						<p><strong>Damage:</strong> 1d6 slashing</p>
+						<p><strong>Properties:</strong> Finesse, light</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyShortswordText">
+						<h4>Shortsword</h4>
+						<p><strong>Damage:</strong> 1d6 piercing</p>
+						<p><strong>Properties:</strong> Finesse, light</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyTridentText">
+						<h4>Trident</h4>
+						<p><strong>Damage:</strong> 1d6 piercing</p>
+						<p><strong>Properties:</strong> Thrown (range 20/60), versatile (1d8)</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyWarPickText">
+						<h4>War Pick</h4>
+						<p><strong>Damage:</strong> 1d8 piercing</p>
+						<p><strong>Properties:</strong> None</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyWarhammerText">
+						<h4>Warhammer</h4>
+						<p><strong>Damage:</strong> 1d8 bludgeoning</p>
+						<p><strong>Properties:</strong> Versatile (1d10)</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyWhipText">
+						<h4>Whip</h4>
+						<p><strong>Damage:</strong> 1d4 slashing</p>
+						<p><strong>Properties:</strong> Finesse, reach</p>
+						<p><strong>Type:</strong> Martial Melee Weapon</p>
+					</div>
+
+					<!--martial ranged-->
+					<div class="container-fluid weapon collapse" id="LilllyBlowgunText">
+						<h4>Blowgun</h4>
+						<p><strong>Damage:</strong> 1 piercing</p>
+						<p><strong>Properties:</strong> Ammunition (range 25/100), loading</p>
+						<p><strong>Type:</strong> Martial Ranged Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyHandCrossbowText">
+						<h4>Hand Crossbow</h4>
+						<p><strong>Damage:</strong> 1d6 piercing</p>
+						<p><strong>Properties:</strong> Ammunition (range 30/120), light, loading</p>
+						<p><strong>Type:</strong> Martial Ranged Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyHeavyCrossbowText">
+						<h4>Heavy Crossbow</h4>
+						<p><strong>Damage:</strong> 1d10 piercing</p>
+						<p><strong>Properties:</strong> Ammunition (range 100/400), heavy, loading, two-handed</p>
+						<p><strong>Type:</strong> Martial Ranged Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyLongbowText">
+						<h4>Longbow</h4>
+						<p><strong>Damage:</strong> 1d8 piercing</p>
+						<p><strong>Properties:</strong> Ammunition (range 150/600), heavy, two-handed</p>
+						<p><strong>Type:</strong> Martial Ranged Weapon</p>
+					</div>
+					<div class="container-fluid weapon collapse" id="LilllyNetText">
+						<h4>Net</h4>
+						<p><strong>Damage:</strong> N/A</p>
+						<p><strong>Properties:</strong> Special, thrown (range 5/15)</p>
+						<p><strong>Type:</strong> Martial Ranged Weapon</p>
+					</div>
 				</div>
 			</div>
 		</div>
