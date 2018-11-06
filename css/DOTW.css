@@ -33,7 +33,6 @@ body {
 
 .nav-bar {
 	background-color: white;
-	padding: 20px
 }
 
 .container-dragon {
@@ -143,7 +142,8 @@ a {
 }
 
  img {
-	width: 400px
+	max-width: 400px;
+	height: auto;
 }
 
 .hank-text{
@@ -252,4 +252,10 @@ li:before {
 	width: 40px;
 	height: 40px;
 	margin-right: 10px;
+}
+
+
+.container-fluid {
+	max-width: 100%;
+	height: auto;
 }

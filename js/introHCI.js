@@ -32,6 +32,56 @@ function initializePage() {
 }
 }
 
+
+function changeToStr(){
+	$('#section-str').show();
+	$('#section-dex').hide();
+	$('#section-con').hide();
+	$('#section-int').hide();
+	$('#section-wis').hide();
+	$('#section-cha').hide();
+}
+function changeToDex(){
+	$('#section-str').hide();
+	$('#section-dex').show();
+	$('#section-con').hide();
+	$('#section-int').hide();
+	$('#section-wis').hide();
+	$('#section-cha').hide();
+}
+function changeToCon(){
+	$('#section-str').hide();
+	$('#section-dex').hide();
+	$('#section-con').show();
+	$('#section-int').hide();
+	$('#section-wis').hide();
+	$('#section-cha').hide();
+}
+function changeToInt(){
+	$('#section-str').hide();
+	$('#section-dex').hide();
+	$('#section-con').hide();
+	$('#section-int').show();
+	$('#section-wis').hide();
+	$('#section-cha').hide();
+}
+function changeToWis(){
+	$('#section-str').hide();
+	$('#section-dex').hide();
+	$('#section-con').hide();
+	$('#section-int').hide();
+	$('#section-wis').show();
+	$('#section-cha').hide();
+}
+function changeToCha(){
+	$('#section-str').hide();
+	$('#section-dex').hide();
+	$('#section-con').hide();
+	$('#section-int').hide();
+	$('#section-wis').hide();
+	$('#section-cha').show();
+}
+
 function StrengthChange() {
     var selectBox = document.getElementById("strength");
     var selected = selectBox.options[selectBox.selectedIndex].value;

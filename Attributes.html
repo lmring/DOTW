@@ -62,43 +62,34 @@
 
 		<!-- Quickjumps -->
 		<div class="container-fluid">
+			<div class="row">
 			<div class="col-md-2">
-				<a href="#section-str">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> STR </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToStr()"> STR </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-dex">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> DEX </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToDex()"> DEX </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-con">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> CON </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToCon()"> CON </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-int">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> INT </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToInt()"> INT </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-wis">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> WIS </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToWis()"> WIS </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-cha">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> CHA </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToCha()"> CHA </button>
 			</div>
+		</div>
 		</div>
 
 		<!-- STRENGTH **************************************************** -->
-		<div class="container-fluid">
+		<div class="container-fluid" id="section-str">
 			<div class="row">
-				<div class="col-md-6 hank-box">
-					<h2 id="section-str">Strength</h2>
+				<div class="col-md-6">
+					<div class="panel panel-attribute">
+					<div class="panel-heading-attribute">Strength</div>
 					<select class="form-control form-hank" id="strength" onchange="StrengthChange()">
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -147,8 +138,8 @@
 					<div class="container-fluid collapse" id="Strength5Hank">
 						<h4>Hank is THE BUFFEST BOY!</h4>
 					</div>
-
 				</div>
+			</div>
 				<div class="col-md-6 hank-bodytext">
 					<h3><em>Strength </em> is a measure of bodily power, athletic training, and the extent you can exert raw physical force.</h3>
 					<br>
@@ -175,19 +166,16 @@
 							</ul>
 						</li>
 					</ul>
-					<a href="#wrapper">
-						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-					</a>
 				</div>
 			</div>
 		</div>
 		<!-- End of STRENGTH **************************************************** -->
 
 		<!-- DEXTERITY ********************************************************** -->
-		<div class="container-fluid">
+		<div class="container-fluid collapse" id="section-dex">
 			<div class ="row">
-				<div class="hank-text">
-					<h2 id="section-dex">Dexterity</h2>
+				<div class="attribute-header">
+					<p>Dexterity</p>
 				</div>
 			</div>
 			<div class="row">
@@ -286,10 +274,6 @@
 							<li>Stealth</li>
 							<li>Sleight of Hand</li>
 						</ul>
-
-						<a href="#wrapper">
-							<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-						</a>
 			</div>
 		</div>
 	</div>
@@ -297,10 +281,10 @@
 
 
 	<!-- CONSTITUTION ********************************************************** -->
-	<div class="container-fluid">
+	<div class="container-fluid collapse" id="section-con">
 		<div class ="row">
 			<div class="hank-text">
-				<h2 id="section-con">Constitution</h2>
+				<h2>Constitution</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -378,11 +362,6 @@
 							<li>Drinking alcohol...hic!</li>
 							<li>Resisting poison attacks</li>
 						</ul>
-
-				<a href="#wrapper">
-					<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-				</a>
-
 			</div>
 		</div>
 	</div>
@@ -390,10 +369,10 @@
 	<!-- End of CONSTITUTION **************************************************** -->
 
 	<!-- INTELLIGENCE ********************************************************** -->
-	<div class="container-fluid">
+	<div class="container-fluid collapse" id="section-int">
 		<div class ="row">
 			<div class="hank-text">
-				<h2 id="section-int">Intelligence</h2>
+				<h2>Intelligence</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -477,11 +456,6 @@
 						<li>Nature</li>
 						<li>Religion</li>
 					</ul>
-
-					<a href="#wrapper">
-						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-					</a>
-
 		</div>
 	</div>
 </div>
@@ -489,10 +463,10 @@
 <!-- End of INTELLIGENCE **************************************************** -->
 
 <!-- WISDOM ********************************************************** -->
-<div class="container-fluid">
+<div class="container-fluid collapse" id="section-wis">
 	<div class ="row">
 		<div class="hank-text">
-			<h2 id="section-wis">Wisdom</h2>
+			<h2>Wisdom</h2>
 		</div>
 	</div>
 	<div class="row">
@@ -576,10 +550,6 @@
 				<li>Perception</li>
 				<li>Survival</li>
 			</ul>
-
-			<a href="#wrapper">
-				<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-			</a>
 </div>
 </div>
 </div>
@@ -587,10 +557,10 @@
 <!-- End of WISDOM**************************************************** -->
 
 <!-- CHARISMA ********************************************************** -->
-<div class="container-fluid">
+<div class="container-fluid collapse" id="section-cha">
 	<div class ="row">
 		<div class="hank-text">
-			<h2 id="section-cha">Charisma</h2>
+			<h2>Charisma</h2>
 		</div>
 	</div>
 	<div class="row">
@@ -664,10 +634,6 @@
 						<li>Performance</li>
 						<li>Persuasion</li>
 					</ul>
-					<a href="#wrapper">
-						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-					</a>
-
 		</div>
 	</div>
 </div>
