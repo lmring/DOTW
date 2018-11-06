@@ -92,6 +92,7 @@ a {
 .btn-gray {
 	background-color: #383838;
 	color: white;
+	max-width:1000px;
 }
 
 .btn-gray:hover {
@@ -141,7 +142,8 @@ a {
 }
 
  img {
-	width: 400px
+	max-width: 400px;
+	height: auto;
 }
 
 .hank-text{
@@ -243,4 +245,17 @@ li:before {
 
 .spell-desc{
 	text-align: left;
+}
+
+.navBarIcon
+{
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+
+.container-fluid {
+	max-width: 100%;
+	height: auto;
 }

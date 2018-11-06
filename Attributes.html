@@ -10,6 +10,8 @@
 	<link href="css/DOTW.css" rel="stylesheet">
 	<link href="css/Attributes.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Montserrat" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -21,7 +23,7 @@
 				<div class="row">
 					<div class="col-md-2 col-sm-offset-1">
 						<a href="./home.html">
-							<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
+							<button type="button" class="btn btn-lg btn-home btn-block"> <img src="icon.png" class="navBarIcon" alt="Home Button"></img>Home </button>
 						</a>
 					</div>
 					<div class="col-md-2">
@@ -60,43 +62,37 @@
 
 		<!-- Quickjumps -->
 		<div class="container-fluid">
+			<div class="row">
 			<div class="col-md-2">
-				<a href="#section-str">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> STR </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToStr()"> STR </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-dex">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> DEX </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToDex()"> DEX </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-con">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> CON </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToCon()"> CON </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-int">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> INT </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToInt()"> INT </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-wis">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> WIS </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToWis()"> WIS </button>
 			</div>
 			<div class="col-md-2">
-				<a href="#section-cha">
-					<button type="button" class="btn btn-lg btn-block btn-hank"> CHA </button>
-				</a>
+					<button type="button" class="btn btn-lg btn-block btn-gray" onclick="changeToCha()"> CHA </button>
 			</div>
+		</div>
 		</div>
 
 		<!-- STRENGTH **************************************************** -->
-		<div class="container-fluid">
+		<div class="container-fluid" id="section-str">
 			<div class="row">
-				<div class="col-md-6 hank-box">
-					<h2 id="section-str">Strength</h2>
+				<div class="attribute-header">
+					<p>Strength</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
 					<select class="form-control form-hank" id="strength" onchange="StrengthChange()">
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -120,13 +116,13 @@
 						<option value="20">20</option>
 					</select>
 					<!-- Hank is blank section -->
-					<div class="container-fluid collapse hank" id="Strength1HankImg"> <!-- divs with the collapse tag are initially hidden -->
+					<div class="container-fluid collapse" id="Strength1HankImg"> <!-- divs with the collapse tag are initially hidden -->
 						<img src="./images/HankStr1.png" alt="Weak Hank"></img>
 					</div>
-					<div class="container-fluid hank" id="Strength3HankImg">
+					<div class="container-fluid" id="Strength3HankImg">
 						<img src="./images/HankStr3.png" alt="Medium Hank"></img>
 					</div>
-					<div class="container-fluid collapse hank" id="Strength5HankImg">
+					<div class="container-fluid collapse" id="Strength5HankImg">
 						<img src="./images/HankStr5.png" alt="Strong Hank"></img>
 					</div>
 
@@ -145,47 +141,36 @@
 					<div class="container-fluid collapse" id="Strength5Hank">
 						<h4>Hank is THE BUFFEST BOY!</h4>
 					</div>
-
-				</div>
+			</div>
 				<div class="col-md-6 hank-bodytext">
-					<h3><em>Strength </em> is a measure of bodily power, athletic training, and the extent you can exert raw physical force.</h3>
-					<br>
 					<h4>Strength is useful for:</h4>
-					<ul>
-						<li><strong>Melee fighters who rely on weapons</strong>
+					<strong>Melee fighters who rely on weapons</strong>
 							<ul>
 								<li>Barbarians</li>
 								<li>Fighters</li>
 								<li>Paladins</li>
 							</ul>
-						</li>
-						<li><strong>Spellcasters who have melee weapons as their alternate way of doing damage</strong></li>
-						<li><strong>The following checks</strong>
+						<strong>Spellcasters who have melee weapons as their alternate way of doing damage</strong>
+						<strong>The following checks</strong>
 							<ul>
 								<li>Wrestling</li>
 								<li>Lifting heavy objects</li>
 								<li>Breaking free from your bonds</li>
 							</ul>
-						</li>
-						<li><strong>The following skills:</strong>
+						<strong>The following skills:</strong>
 							<ul>
 								<li>Athletics</li>
 							</ul>
-						</li>
-					</ul>
-					<a href="#wrapper">
-						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-					</a>
 				</div>
 			</div>
 		</div>
 		<!-- End of STRENGTH **************************************************** -->
 
 		<!-- DEXTERITY ********************************************************** -->
-		<div class="container-fluid">
+		<div class="container-fluid collapse" id="section-dex">
 			<div class ="row">
-				<div class="hank-text">
-					<h2 id="section-dex">Dexterity</h2>
+				<div class="attribute-header">
+					<p>Dexterity</p>
 				</div>
 			</div>
 			<div class="row">
@@ -213,6 +198,15 @@
 						<option value="20">20</option>
 					</select>
 					<!-- Hank is blank section -->
+					<div class="container-fluid collapse" id="Dexterity1HankImg">
+						<img src="./images/HankDex1.png" alt="Clumsy Hank"></img>
+					</div>
+					<div class="container-fluid" id="Dexterity3HankImg">
+						<img src="./images/HankDex3.png" alt="Medium Hank"></img>
+					</div>
+					<div class="container-fluid collapse" id="Dexterity5HankImg">
+						<img src="./images/HankDex5.png" alt="Agile Hank"></img>
+					</div>
 					<div class="container-fluid collapse" id="Dexterity1Hank">
 						<h4>Hank is the CLUMSIEST MAN ALIVE!</h4>
 					</div>
@@ -228,18 +222,8 @@
 					<div class="container-fluid collapse" id="Dexterity5Hank">
 						<h4>Hank is SPIDERHANK!</h4>
 					</div>
-					<div class="container-fluid collapse" id="Dexterity1HankImg">
-						<img src="./images/HankDex1.png" alt="Clumsy Hank"></img>
-					</div>
-					<div class="container-fluid" id="Dexterity3HankImg">
-						<img src="./images/HankDex3.png" alt="Medium Hank"></img>
-					</div>
-					<div class="container-fluid collapse" id="Dexterity5HankImg">
-						<img src="./images/HankDex5.png" alt="Agile Hank"></img>
-					</div>
 				</div>
 				<div class="col-md-6 hank-bodytext">
-					<h3>A measure of agility, reflexes, and balance. One of the most important attributes in the game, as it determines many different things.</h3>
 					<h4>Dexterity is useful for:</h4>
 					<strong>Ranged weapons users such as:</strong>
 							<ul>
@@ -284,10 +268,6 @@
 							<li>Stealth</li>
 							<li>Sleight of Hand</li>
 						</ul>
-
-						<a href="#wrapper">
-							<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-						</a>
 			</div>
 		</div>
 	</div>
@@ -295,10 +275,10 @@
 
 
 	<!-- CONSTITUTION ********************************************************** -->
-	<div class="container-fluid">
-		<div class ="row">
-			<div class="hank-text">
-				<h2 id="section-con">Constitution</h2>
+	<div class="container-fluid collapse" id="section-con">
+		<div class="row">
+			<div class="attribute-header">
+				<p>Constitution</p>
 			</div>
 		</div>
 		<div class="row">
@@ -326,6 +306,15 @@
 					<option value="20">20</option>
 				</select>
 				<!-- Hank is blank section -->
+				<div class="container-fluid collapse" id="Constitution1HankImg">
+					<img src="./images/HankCon1.png" alt="Frail Hank"></img>
+				</div>
+				<div class="container-fluid" id="Constitution3HankImg">
+					<img src="./images/HankCon3.png" alt="Medium Hank"></img>
+				</div>
+				<div class="container-fluid collapse" id="Constitution5HankImg">
+					<img src="./images/HankCon5.png" alt="Tough Hank"></img>
+				</div>
 				<div class="container-fluid collapse" id="Constitution1Hank">
 					<h4>Hank could be knocked over by a gust of wind!</h4>
 				</div>
@@ -341,19 +330,9 @@
 				<div class="container-fluid collapse" id="Constitution5Hank">
 					<h4>Hank is MADE OUT OF STEEL!</h4>
 				</div>
-				<div class="container-fluid collapse" id="Constitution1HankImg">
-					<img src="./images/HankCon1.png" alt="Frail Hank"></img>
-				</div>
-				<div class="container-fluid" id="Constitution3HankImg">
-					<img src="./images/HankCon3.png" alt="Medium Hank"></img>
-				</div>
-				<div class="container-fluid collapse" id="Constitution5HankImg">
-					<img src="./images/HankCon5.png" alt="Tough Hank"></img>
-				</div>
 			</div>
 			<div class="col-md-6 hank-bodytext">
-				<h3>A measure of health, stamina, and vital force.</h3>
-				<h4>Constitution is useful for</h4>
+				<h4>Constitution is useful for:</h4>
 					<strong>Anyone who is going to be in the front lines, especially tanks, such as:</strong>
 						<ul>
 							<li>Barbarians</li>
@@ -376,11 +355,6 @@
 							<li>Drinking alcohol...hic!</li>
 							<li>Resisting poison attacks</li>
 						</ul>
-
-				<a href="#wrapper">
-					<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-				</a>
-
 			</div>
 		</div>
 	</div>
@@ -388,10 +362,10 @@
 	<!-- End of CONSTITUTION **************************************************** -->
 
 	<!-- INTELLIGENCE ********************************************************** -->
-	<div class="container-fluid">
+	<div class="container-fluid collapse" id="section-int">
 		<div class ="row">
-			<div class="hank-text">
-				<h2 id="section-int">Intelligence</h2>
+			<div class="attribute-header">
+				<p>Intelligence</p>
 			</div>
 		</div>
 		<div class="row">
@@ -419,6 +393,15 @@
 					<option value="20">20</option>
 				</select>
 				<!-- Hank is blank section -->
+				<div class="container-fluid collapse" id="Intelligence1HankImg">
+					<img src="./images/HankInt1.png" alt="Dumb Hank"></img>
+				</div>
+				<div class="container-fluid" id="Intelligence3HankImg">
+					<img src="./images/HankInt3.png" alt="Medium Hank"></img>
+				</div>
+				<div class="container-fluid collapse" id="Intelligence5HankImg">
+					<img src="./images/HankInt5.png" alt="Smart Hank"></img>
+				</div>
 				<div class="container-fluid collapse" id="Intelligence1Hank">
 					<h4>Hank flunked out of class a LONG time ago!</h4>
 				</div>
@@ -434,18 +417,8 @@
 				<div class="container-fluid collapse" id="Intelligence5Hank">
 					<h4>Hank is the next Fantasy Albert Einstein!</h4>
 				</div>
-				<div class="container-fluid collapse" id="Intelligence1HankImg">
-					<img src="./images/HankInt1.png" alt="Dumb Hank"></img>
-				</div>
-				<div class="container-fluid" id="Intelligence3HankImg">
-					<img src="./images/HankInt3.png" alt="Medium Hank"></img>
-				</div>
-				<div class="container-fluid collapse" id="Intelligence5HankImg">
-					<img src="./images/HankInt5.png" alt="Smart Hank"></img>
-				</div>
 			</div>
 			<div class="col-md-6 hank-bodytext">
-				<h3>A measure of memory, logic, and ability to reason.</h3>
 				<h4>Intelligence is useful for:</h4>
 
 					<strong>Spellcasters who use intelligence to cast spells</strong>
@@ -475,11 +448,6 @@
 						<li>Nature</li>
 						<li>Religion</li>
 					</ul>
-
-					<a href="#wrapper">
-						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-					</a>
-
 		</div>
 	</div>
 </div>
@@ -487,10 +455,10 @@
 <!-- End of INTELLIGENCE **************************************************** -->
 
 <!-- WISDOM ********************************************************** -->
-<div class="container-fluid">
+<div class="container-fluid collapse" id="section-wis">
 	<div class ="row">
-		<div class="hank-text">
-			<h2 id="section-wis">Wisdom</h2>
+		<div class="attribute-header">
+			<p>Wisdom</p>
 		</div>
 	</div>
 	<div class="row">
@@ -518,6 +486,15 @@
 				<option value="20">20</option>
 			</select>
 			<!-- Hank is blank section -->
+			<div class="container-fluid collapse" id="Wisdom1HankImg">
+				<img src="./images/HankWis1.png" alt="Foolish Hank"></img>
+			</div>
+			<div class="container-fluid" id="Wisdom3HankImg">
+				<img src="./images/HankWis3.png" alt="Medium Hank"></img>
+			</div>
+			<div class="container-fluid collapse" id="Wisdom5HankImg">
+				<img src="./images/HankWis5.png" alt="Wise Hank"></img>
+			</div>
 			<div class="container-fluid collapse" id="Wisdom1Hank">
 				<h4>Hank would buy that bridge in Fantasy Brooklyn!</h4>
 			</div>
@@ -533,18 +510,8 @@
 			<div class="container-fluid collapse" id="Wisdom5Hank">
 				<h4>Hank is a wise old sage!</h4>
 			</div>
-			<div class="container-fluid collapse" id="Wisdom1HankImg">
-				<img src="./images/HankWis1.png" alt="Foolish Hank"></img>
-			</div>
-			<div class="container-fluid" id="Wisdom3HankImg">
-				<img src="./images/HankWis3.png" alt="Medium Hank"></img>
-			</div>
-			<div class="container-fluid collapse" id="Wisdom5HankImg">
-				<img src="./images/HankWis5.png" alt="Wise Hank"></img>
-			</div>
 		</div>
 		<div class="col-md-6 hank-bodytext">
-			<h3>A measure of perceptiveness, intuition, common sense, and your general awareness of the world around you.</h3>
 			<h4>Wisdom is useful for:</h4>
 
 				<strong>Spellcasters who use intelligence to cast spells</strong>
@@ -574,10 +541,6 @@
 				<li>Perception</li>
 				<li>Survival</li>
 			</ul>
-
-			<a href="#wrapper">
-				<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-			</a>
 </div>
 </div>
 </div>
@@ -585,10 +548,10 @@
 <!-- End of WISDOM**************************************************** -->
 
 <!-- CHARISMA ********************************************************** -->
-<div class="container-fluid">
+<div class="container-fluid collapse" id="section-cha">
 	<div class ="row">
-		<div class="hank-text">
-			<h2 id="section-cha">Charisma</h2>
+		<div class="attribute-header">
+			<p>Charisma</p>
 		</div>
 	</div>
 	<div class="row">
@@ -616,6 +579,15 @@
 				<option value="20">20</option>
 			</select>
 			<!-- Hank is blank section -->
+			<div class="container-fluid collapse" id="Charisma1HankImg">
+				<img src="./images/HankCha1.png" alt="Tongue-tied Hank"></img>
+			</div>
+			<div class="container-fluid" id="Charisma3HankImg">
+				<img src="./images/HankCha3.png" alt="Medium Hank"></img>
+			</div>
+			<div class="container-fluid collapse" id="Charisma5HankImg">
+				<img src="./images/HankCha5.png" alt="Cool Hank"></img>
+			</div>
 			<div class="container-fluid collapse" id="Charisma1Hank">
 				<h4>Hank is out here with his foot deep in his mouth!</h4>
 			</div>
@@ -631,19 +603,9 @@
 			<div class="container-fluid collapse" id="Charisma5Hank">
 				<h4>Hank could sell you a bridge in Fantasy Brooklyn!</h4>
 			</div>
-			<div class="container-fluid collapse" id="Charisma1HankImg">
-				<img src="./images/HankCha1.png" alt="Tongue-tied Hank"></img>
-			</div>
-			<div class="container-fluid" id="Charisma3HankImg">
-				<img src="./images/HankCha3.png" alt="Medium Hank"></img>
-			</div>
-			<div class="container-fluid collapse" id="Charisma5HankImg">
-				<img src="./images/HankCha5.png" alt="Cool Hank"></img>
-			</div>
 		</div>
 		<div class="col-md-6 hank-bodytext">
-			<h3>A measure of how effectively you can interact with others, including things like flirting, persuading, and lying.</h3>
-			<h4>Charisma is useful for</h4>
+			<h4>Charisma is useful for:</h4>
 				<strong>Spellcasters who use intelligence to cast spells</strong>
 					<ul>
 						<li>Bards</li>
@@ -662,10 +624,6 @@
 						<li>Performance</li>
 						<li>Persuasion</li>
 					</ul>
-					<a href="#wrapper">
-						<button type="button" class="btn btn-lg btn-block btn-read">↑ Back to Top </button>
-					</a>
-
 		</div>
 	</div>
 </div>
@@ -677,7 +635,7 @@
 		<div class="row">
 			<div class="col-md-2 col-sm-offset-1">
 				<a href="./home.html">
-					<button type="button" class="btn btn-lg btn-home btn-block"> Home </button>
+					<button type="button" class="btn btn-lg btn-home btn-block"> <img src="icon.png" class="navBarIcon" alt="Home Button"></img>Home </button>
 				</a>
 			</div>
 			<div class="col-md-2">
