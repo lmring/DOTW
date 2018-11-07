@@ -562,8 +562,63 @@
 		<div class="lily-text">
 			<h2>Mad Libs Character Sheet</h2>
 		</div>
-		<p>My main weapon is ___. That means to attack, I will need to roll a D20, and then add my ___ modifier (which is ___) and my proficiency bonus (which is ___).</p>
+		<p>My main weapon is a <select id="weaponsMadLibs" onchange="weaponsMadLibs()">
+			<optgroup label="Simple Melee">
+				<option value="club" selected="selected">Club</option>
+				<option value="dagger">Dagger</option>
+				<option value="greatclub">Greatclub</option>
+				<option value="handaxe">Handaxe</option>
+				<option value="javelin">Javelin</option>
+				<option value="light-hammer">Light Hammer</option>
+				<option value="mace">Mace</option>
+				<option value="quarterstaff">Quarterstaff</option>
+				<option value="sickle">Sickle</option>
+				<option value="spear">Spear</option>
+			</optgroup>
+			<optgroup label="Simple Ranged">
+				<option value="light-crossbow">Light Crossbow</option>
+				<option value="dart">Dart</option>
+				<option value="shortbow">Shortbow</option>
+				<option value="sling">Sling</option>
+			</optgroup>
+			<optgroup label="Martial Melee">
+				<option value="battleaxe">Battleaxe</option>
+				<option value="flail">Flail</option>
+				<option value="glaive">Glaive</option>
+				<option value="greataxe">Greataxe</option>
+				<option value="greatsword">Greatsword</option>
+				<option value="halberd">Halberd</option>
+				<option value="lance">Lance</option>
+				<option value="longsword">Longsword</option>
+				<option value="maul">Maul</option>
+				<option value="morningstar">Morningstar</option>
+				<option value="pike">Pike</option>
+				<option value="rapier">Rapier</option>
+				<option value="scimitar">Scimitar</option>
+				<option value="shortsword">Shortsword</option>
+				<option value="trident">Trident</option>
+				<option value="war-pick">War Pick</option>
+				<option value="warhammer">Warhammer</option>
+				<option value="whip">Whip</option>
+			</optgroup>
+			<optgroup label="Martial Ranged">
+				<option value="blowgun">Blowgun</option>
+				<option value="hand-crossbow">Hand Crossbow</option>
+				<option value="heavy-crossbow">Heavy Crossbow</option>
+				<option value="longbow">Longbow</option>
+			</optgroup>
+		</select>, which means to attack, I will need to <strong>roll a D20,</strong> and then add my <strong><span id="weaponModifier">strength</span></strong> modifier and my <strong>proficiency bonus</strong> (which is +2 at first level).</p>
 
+		<div class="container-fluid">
+			<div class="row">
+				<btn class="btn btn-lg btn-lily" id="weaponsSave" onclick="weaponsSave()">Save</button>
+				</div>
+				<div class="row">
+				<div class="container-fluid collapse" id="weaponsSaveText">
+					<p>Saved to Character Sheet!</p>
+				</div>
+			</div>
+			</div>
 
 		<!-- footer start ******************************************************** -->
 		<div class="container-fluid">
@@ -604,6 +659,7 @@
 	<script src="js/introHCI.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/Weapons.js"></script>
+	<script src="js/MadLibs.js"></script>
 
 </body>
 </html>

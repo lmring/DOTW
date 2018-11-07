@@ -59,3 +59,15 @@ if(charismamod){
   $("#charismamod").html(charismamod);
 }
 /*attributes end*********************************************************/
+
+/*weapons start********************************************************/
+var weapon = localStorage.getItem('weapon');
+if(weapon){
+  $("#weapon").html(weapon);
+}
+
+var weaponmod = localStorage.getItem('weaponmod');
+if(weaponmod){
+  $("#weaponmod").html(weaponmod);
+}
+/*weapons end*********************************************************/

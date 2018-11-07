@@ -101,3 +101,152 @@ function attributesSave(){
   $("#attributesSaveText").show();
 }
 /*attributes end*********************************************************/
+
+/*weapons start********************************************************/
+function weaponsMadLibs(){
+  var selectBox = document.getElementById("weaponsMadLibs");
+  var selected = selectBox.options[selectBox.selectedIndex].value;
+  var span = document.getElementById("weaponModifier");
+  if(selected=="club"){
+    span.textContent = "strength";
+  }
+  if(selected=="dagger"){
+    span.textContent = "strength or dexterity";
+  }
+  if(selected=="greatclub"){
+    span.textContent = "strength";
+  }
+  if(selected=="handaxe"){
+    span.textContent = "strength";
+  }
+  if(selected=="javelin"){
+    span.textContent = "strength";
+  }
+  if(selected=="light-hammer"){
+    span.textContent = "strength";
+  }
+  if(selected=="mace"){
+    span.textContent = "strength";
+  }
+  if(selected=="quarterstaff"){
+    span.textContent = "strength";
+  }
+  if(selected=="sickle"){
+    span.textContent = "strength";
+  }
+  if(selected=="spear"){
+    span.textContent = "strength";
+  }
+  if(selected=="light-crossbow"){
+    span.textContent = "dexterity";
+  }
+  if(selected=="dart"){
+    span.textContent = "strength or dexterity";
+  }
+  if(selected=="shortbow"){
+    span.textContent = "dexterity";
+  }
+  if(selected=="sling"){
+    span.textContent = "dexterity";
+  }
+  if(selected=="battleaxe"){
+    span.textContent = "strength";
+  }
+  if(selected=="flail"){
+    span.textContent = "strength";
+  }
+  if(selected=="glaive"){
+    span.textContent = "strength";
+  }
+  if(selected=="greataxe"){
+    span.textContent = "strength";
+  }
+  if(selected=="greatsword"){
+    span.textContent = "strength";
+  }
+  if(selected=="halberd"){
+    span.textContent = "strength";
+  }
+  if(selected=="lance"){
+    span.textContent = "strength";
+  }
+  if(selected=="longsword"){
+    span.textContent = "strength";
+  }
+  if(selected=="maul"){
+    span.textContent = "strength";
+  }
+  if(selected=="morningstar"){
+    span.textContent = "strength";
+  }
+  if(selected=="pike"){
+    span.textContent = "strength";
+  }
+  if(selected=="rapier"){
+    span.textContent = "strength or dexterity";
+  }
+  if(selected=="scimitar"){
+    span.textContent = "strength or dexterity";
+  }
+  if(selected=="shortsword"){
+    span.textContent = "strength or dexterity";
+  }
+  if(selected=="trident"){
+    span.textContent = "strength";
+  }
+  if(selected=="war-pick"){
+    span.textContent = "strength";
+  }
+  if(selected=="warhammer"){
+    span.textContent = "strength";
+  }
+  if(selected=="whip"){
+    span.textContent = "strength or dexterity";
+  }
+  if(selected=="blowgun"){
+    span.textContent = "dexterity";
+  }
+  if(selected=="hand-crossbow"){
+    span.textContent = "dexterity";
+  }
+  if(selected=="heavy-crossbow"){
+    span.textContent = "dexterity";
+  }
+  if(selected=="longbow"){
+    span.textContent = "dexterity";
+  }
+}
+
+function weaponsSave(){
+  $("#weaponsSaveText").hide();
+  var weaponSelectBox = document.getElementById("weaponsMadLibs");
+  var weapon = weaponSelectBox.options[weaponSelectBox.selectedIndex].value;
+    if(weapon=="light-hammer"){
+      weapon = "light hammer";
+      localStorage.setItem('weapon', weapon);
+    }
+    else if(weapon=="light-crossbow"){
+      weapon = "light crossbow";
+      localStorage.setItem('weapon', weapon);
+    }
+    else if(weapon=="war-pick"){
+      weapon = "war pick";
+      localStorage.setItem('weapon', weapon);
+    }
+    else if(weapon=="hand-crossbow"){
+      weapon = "hand crossbow";
+      localStorage.setItem('weapon', weapon);
+    }
+    else if(weapon=="heavy-crossbow"){
+      weapon = "heavy crossbow";
+      localStorage.setItem('weapon', weapon);
+    }
+    else{
+      localStorage.setItem('weapon', weapon);
+    }
+  var newWeaponModRaw = document.getElementById("weaponModifier");
+  var newWeaponMod = newWeaponModRaw.innerHTML;
+  localStorage.setItem('weaponmod', newWeaponMod);
+  $("#weaponsSaveText").show();
+}
+/*weapons end********************************************************/
