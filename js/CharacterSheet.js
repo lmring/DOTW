@@ -88,3 +88,15 @@ if(ae){
   $("#ae").html(ae);
 }
 /*armor end*********************************************************/
+
+/*background start*********************************************************/
+var background = localStorage.getItem('background');
+if(background){
+  $("#background").html(background);
+}
+
+var backgroundResult = localStorage.getItem('backgroundResult');
+if(backgroundResult){
+  $("#background-features").html(backgroundResult);
+}
+/*background end********************************************************/

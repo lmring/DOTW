@@ -367,3 +367,70 @@ function armorSave(){
   $("#armorSaveText").show();
 }
 /*armor end*********************************************************/
+
+/*backgrounds start********************************************************/
+function backgroundsMadLibs(){
+  var selectBox = document.getElementById("backgroundsMadLibs");
+  var selected = selectBox.options[selectBox.selectedIndex].value;
+  var span = document.getElementById("backgroundResult");
+  if(selected=="acolyte"){
+    span.textContent = "the skills Insight and Religion. I also know two additional languages of my choice.";
+  }
+  if(selected=="charlatan"){
+    span.textContent = "the skills Deception and Sleight of Hand, disguise kits, and forgery kits.";
+  }
+  if(selected=="criminal"){
+    span.textContent = "the skills Deception and Stealth, thieves' tools, and one type of gaming set.";
+  }
+  if(selected=="entertainer"){
+    span.textContent = "the skills Acrobatics and Performance, disguise kits, and one type of musical instrument.";
+  }
+  if(selected=="folk-hero"){
+    span.textContent = "the skills Animal Handling and Survival, land vehicles, and one type of artisan tools.";
+  }
+  if(selected=="guild-artisan"){
+    span.textContent = "the skills Insight and Persuasion, and one type of artist's tools. I also know one additional language of my choice.";
+  }
+  if(selected=="hermit"){
+    span.textContent = "the skills Medicine and Religion, and herbalism kits. I also know one additional language of my choice.";
+  }
+  if(selected=="noble"){
+    span.textContent = "the skills History and Persuasion, and one type of gaming set. I also know one additional language of my choice.";
+  }
+  if(selected=="outlander"){
+    span.textContent = "the skills Athletics and Survival, and one type of musical instrument. I also know one additional language of my choice.";
+  }
+  if(selected=="sage"){
+    span.textContent = "the skills Arcana and History. I also know two additional languages of my choice.";
+  }
+  if(selected=="sailor"){
+    span.textContent = "the skills Athletics and Perception, water vehicles, and navigator's tools.";
+  }
+  if(selected=="soldier"){
+    span.textContent = "the skills Athletics and Intimidation, land vehicles, and one type of gaming set.";
+  }
+  if(selected=="urchin"){
+    span.textContent = "the skills Sleight of Hand and Stealth, disguise kits, and thieves' tools.";
+  }
+}
+
+function backgroundSave(){
+  $("#backgroundSaveText").hide();
+  var backgroundSelectBox = document.getElementById("backgroundsMadLibs");
+  var background = backgroundSelectBox.options[backgroundSelectBox.selectedIndex].value;
+    if(background=="folk-hero"){
+      background = "folk hero";
+      localStorage.setItem('background', background);
+    }
+    else if(background=="guild-artisan"){
+      background = "guild artisan";
+      localStorage.setItem('background', background);
+    }
+    else{
+      localStorage.setItem('background', background);
+    }
+  var resultRaw = document.getElementById("backgroundResult");
+  var result = resultRaw.innerHTML;
+  localStorage.setItem('backgroundResult', result);
+  $("#backgroundSaveText").show();
+}

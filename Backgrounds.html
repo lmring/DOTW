@@ -67,7 +67,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6">
-						<select class="form-control form-hank" id="backgrounds">
+						<select class="form-control form-hank" id="backgrounds" onchange="backgroundchange()">
 								<option value="acolyte" selected="selected">Acolyte</option>
 								<option value="charlatan">Charlatan</option>
 								<option value="criminal">Criminal</option>
@@ -89,7 +89,32 @@
 					<div class="margot-text">
 						<h2>Mad Libs Character Sheet</h2>
 					</div>
-					<p>My background is ___. That means I am proficient in ___. (and any languages)</p>
+					<p>My background is <select id="backgroundsMadLibs" onchange="backgroundsMadLibs()">
+							<option value="acolyte" selected="selected">Acolyte</option>
+							<option value="charlatan">Charlatan</option>
+							<option value="criminal">Criminal</option>
+							<option value="entertainer">Entertainer</option>
+							<option value="folk-hero">Folk Hero</option>
+							<option value="guild-artisan">Guild Artisan</option>
+							<option value="hermit">Hermit</option>
+							<option value="noble">Noble</option>
+							<option value="outlander">Outlander</option>
+							<option value="sage">Sage</option>
+							<option value="sailor">Sailor</option>
+							<option value="soldier">Soldier</option>
+							<option value="urchin">Urchin</option>
+						</select>, which means I am proficient in <span id="backgroundResult">Insight and Religion, and I know two additional languages of my choice.</span></p>
+
+						<div class="container-fluid">
+							<div class="row">
+								<btn class="btn btn-lg btn-margot" id="backgroundSave" onclick="backgroundSave()">Save</button>
+								</div>
+								<div class="row">
+								<div class="container-fluid collapse" id="backgroundSaveText">
+									<p>Saved to Character Sheet!</p>
+								</div>
+							</div>
+						</div>
 
 <!-- footer start ******************************************************** -->
 <div class="container-fluid">
@@ -128,6 +153,7 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/introHCI.js"></script>
+	<script src="js/MadLibs.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>
