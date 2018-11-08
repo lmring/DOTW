@@ -71,3 +71,20 @@ if(weaponmod){
   $("#weaponmod").html(weaponmod);
 }
 /*weapons end*********************************************************/
+
+/*armor start*********************************************************/
+var armor = localStorage.getItem('armor');
+if(armor){
+  $("#armor").html(armor);
+}
+
+var ac = localStorage.getItem('ac');
+if(ac){
+  $("#ac").html(ac);
+}
+
+var ae = localStorage.getItem('ae');
+if(ae){
+  $("#ae").html(ae);
+}
+/*armor end*********************************************************/

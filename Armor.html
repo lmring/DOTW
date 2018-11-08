@@ -8,6 +8,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/DOTW.css" rel="stylesheet">
+	<link href="css/Armor.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Montserrat" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -159,15 +160,158 @@
 				<button onclick="toggleContent2()" class="btn btn-lg btn-block btn-read" id="myBtn2">Read more</button>
 </div>
 
-<div id = "armor-wardrobe" class="lily-bodytext">
-	<h2>Armor with Lily!</h2>
-</div>
+<div class="container-fluid" id="armor-wardrobe">
+	<div class="row">
+		<div class="armor-header">
+			<p>Armor with Lily!</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<select class="form-control form-hank" id="armor" onchange="armorChange()">
+				<optgroup label="Light Armor">
+					<option value="padded-armor" selected="selected">Padded Armor</option>
+					<option value="leather-armor">Leather Armor</option>
+					<option value="studded-leather-armor">Studded Leather Armor</option>
+				</optgroup>
+				<optgroup label="Medium Armor">
+					<option value="hide-armor">Hide Armor</option>
+					<option value="chain-shirt">Chain Shirt</option>
+					<option value="scale-mail-armor">Scale Mail Armor</option>
+					<option value="breastplate">Breastplate</option>
+					<option value="half-plate-armor">Half Plate Armor</option>
+				</optgroup>
+				<optgroup label="Heavy Armor">
+					<option value="ring-mail-armor">Ring Mail Armor</option>
+					<option value="chain-mail-armor">Chain Mail Armor</option>
+					<option value="splint-armor">Splint Armor</option>
+					<option value="plate-armor">Plate Armor</option>
+				</optgroup>
+				</select>
+				</div>
+		<div class="col-md-6">
+			<!--light armor-->
+			<div class="container-fluid armor" id="PaddedArmorText">
+				<h4>Padded Armor</h4>
+				<p><strong>Armor Class:</strong> 11 + DEX modifier</p>
+				<p><strong>Stealth:</strong> Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Light Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="LeatherArmorText">
+				<h4>Leather Armor</h4>
+				<p><strong>Armor Class:</strong> 11 + DEX modifier</p>
+				<p><strong>Stealth:</strong> No Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Light Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="StuddedLeatherArmorText">
+				<h4>Studded Leather Armor</h4>
+				<p><strong>Armor Class:</strong> 12 + DEX modifier</p>
+				<p><strong>Stealth:</strong> No Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Light Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="HideArmorText">
+				<h4>Hide Armor</h4>
+				<p><strong>Armor Class:</strong> 12 + DEX modifier (max 2)</p>
+				<p><strong>Stealth:</strong> No Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Medium Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="ChainShirtText">
+				<h4>Chain Shirt</h4>
+				<p><strong>Armor Class:</strong> 13 + DEX modifier (max 2)</p>
+				<p><strong>Stealth:</strong> No Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Medium Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="ScaleMailArmorText">
+				<h4>Scale Mail Armor</h4>
+				<p><strong>Armor Class:</strong> 14 + DEX modifier (max 2)</p>
+				<p><strong>Stealth:</strong> Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Medium Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="BreastplateText">
+				<h4>Breastplate</h4>
+				<p><strong>Armor Class:</strong> 14 + DEX modifier (max 2)</p>
+				<p><strong>Stealth:</strong> No Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Medium Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="HalfPlateArmorText">
+				<h4>Half Plate Armor</h4>
+				<p><strong>Armor Class:</strong> 15 + DEX modifier (max 2)</p>
+				<p><strong>Stealth:</strong> Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Medium Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="RingMailArmorText">
+				<h4>Ring Mail Armor</h4>
+				<p><strong>Armor Class:</strong> 14</p>
+				<p><strong>Stealth:</strong> Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> None</p>
+				<p><strong>Type:</strong> Heavy Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="ChainMailArmorText">
+				<h4>Chain Mail Armor</h4>
+				<p><strong>Armor Class:</strong> 16</p>
+				<p><strong>Stealth:</strong> Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> STR 13</p>
+				<p><strong>Type:</strong> Heavy Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="SplintArmorText">
+				<h4>Splint Armor</h4>
+				<p><strong>Armor Class:</strong> 17</p>
+				<p><strong>Stealth:</strong> Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> STR 15</p>
+				<p><strong>Type:</strong> Heavy Armor</p>
+			</div>
+			<div class="container-fluid armor collapse" id="PlateArmorText">
+				<h4>Plate Armor</h4>
+				<p><strong>Armor Class:</strong> 18</p>
+				<p><strong>Stealth:</strong> Disadvantage</p>
+				<p><strong>Strength Requirement:</strong> STR 15</p>
+				<p><strong>Type:</strong> Heavy Armor</p>
+			</div>
+		</div>
+	</div>
 
 <div class="lily-text">
 	<h2>Mad Libs Character Sheet</h2>
 </div>
-My armor is ___. That means my armor class is ___. If someone attacks me and rolls less than that number, I’m safe. _____.
+<p>My armor is <select id="armorMadLibs" onchange="armorMadLibs()">
+	<optgroup label="Light Armor">
+		<option value="padded-armor" selected="selected">Padded Armor</option>
+		<option value="leather-armor">Leather Armor</option>
+		<option value="studded-leather-armor">Studded Leather Armor</option>
+	</optgroup>
+	<optgroup label="Medium Armor">
+		<option value="hide-armor">Hide Armor</option>
+		<option value="chain-shirt">Chain Shirt</option>
+		<option value="scale-mail-armor">Scale Mail Armor</option>
+		<option value="breastplate">Breastplate</option>
+		<option value="half-plate-armor">Half Plate Armor</option>
+	</optgroup>
+	<optgroup label="Heavy Armor">
+		<option value="ring-mail-armor">Ring Mail Armor</option>
+		<option value="chain-mail-armor">Chain Mail Armor</option>
+		<option value="splint-armor">Splint Armor</option>
+		<option value="plate-armor">Plate Armor</option>
+	</optgroup>
+</select>, which means my armor class is <span id="armorclass">11 + my dexterity modifier</span>. If someone attacks me and rolls less than that number, I’m safe. <span id="armorextras">I also have disadvantage to stealth rolls.</span></p>
 
+<div class="container-fluid">
+	<div class="row">
+		<btn class="btn btn-lg btn-lily" id="armorSave" onclick="armorSave()">Save</button>
+		</div>
+		<div class="row">
+		<div class="container-fluid collapse" id="armorSaveText">
+			<p>Saved to Character Sheet!</p>
+		</div>
+	</div>
+	</div>
 
 <!-- footer start ******************************************************** -->
 <div class="container-fluid">
@@ -207,6 +351,7 @@ My armor is ___. That means my armor class is ___. If someone attacks me and rol
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/introHCI.js"></script>
 	<script src="js/Armor.js"></script>
+	<script src="js/MadLibs.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>
