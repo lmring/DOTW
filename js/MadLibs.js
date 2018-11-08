@@ -434,3 +434,6 @@ function backgroundSave(){
   localStorage.setItem('backgroundResult', result);
   $("#backgroundSaveText").show();
 }
+/*backgrounds end********************************************************/
+
+/*classes start********************************************************/
