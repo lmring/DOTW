@@ -154,6 +154,10 @@ a {
 	color: #de3c30;
 }
 
+.hank-bodytext {
+	text-align: left;
+}
+
 .lily-text {
 	color: #ded931;
 }
@@ -164,6 +168,10 @@ a {
 
 .margot-text {
 	color: #83de32;
+}
+
+.margot-bodytext {
+	text-align: left;
 }
 
 .tutter-text {
@@ -266,4 +274,5 @@ li:before {
 
 .smallbox{
 	margin-left:75px;
+	margin-right: 25px;
 }
