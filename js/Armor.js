@@ -37,64 +37,64 @@ function armorChange(){
 	/*light armor*/
 	if(selected=="padded-armor"){
 		$('.armor').hide();
-		$('#LilllyPaddedArmor').show();
+		$('#LillyPadded').show();
 		$('#PaddedArmorText').show();
 	}
 	if(selected=="leather-armor"){
 		$('.armor').hide();
-		$('#LilllyLeatherArmor').show();
+		$('#LillyLeather').show();
 		$('#LeatherArmorText').show();
 	}
 	if(selected=="studded-leather-armor"){
 		$('.armor').hide();
-		$('#LilllyStuddedLeatherArmor').show();
+		$('#LillyStuddedLeather').show();
 		$('#StuddedLeatherArmorText').show();
 	}
 	/*medium armor*/
 	if(selected=="hide-armor"){
 		$('.armor').hide();
-		$('#LilllyHideArmor').show();
+		$('#LillyHide').show();
 		$('#HideArmorText').show();
 	}
 	if(selected=="chain-shirt"){
 		$('.armor').hide();
-		$('#LilllyChainShirt').show();
+		$('#LillyChainShirt').show();
 		$('#ChainShirtText').show();
 	}
 	if(selected=="scale-mail-armor"){
 		$('.armor').hide();
-		$('#LilllyScaleMailArmor').show();
+		$('#LillyScaleMailArmor').show();
 		$('#ScaleMailArmorText').show();
 	}
 	if(selected=="breastplate"){
 		$('.armor').hide();
-		$('#LilllyBreastplate').show();
+		$('#LillyBreastplate').show();
 		$('#BreastplateText').show();
 	}
 	if(selected=="half-plate-armor"){
 		$('.armor').hide();
-		$('#LilllyHalfPlateArmor').show();
+		$('#LillyHalfPlate').show();
 		$('#HalfPlateArmorText').show();
 	}
 	/*heavy armor*/
 	if(selected=="ring-mail-armor"){
 		$('.armor').hide();
-		$('#LilllyRingMailArmor').show();
+		$('#LillyRingMail').show();
 		$('#RingMailArmorText').show();
 	}
 	if(selected=="chain-mail-armor"){
 		$('.armor').hide();
-		$('#LilllyChainMailArmor').show();
+		$('#LillyChainMail').show();
 		$('#ChainMailArmorText').show();
 	}
 	if(selected=="splint-armor"){
 		$('.armor').hide();
-		$('#LilllySplintArmor').show();
+		$('#LillySplint').show();
 		$('#SplintArmorText').show();
 	}
 	if(selected=="plate-armor"){
 		$('.armor').hide();
-		$('#LilllyPlateArmor').show();
+		$('#LillyPlate').show();
 		$('#PlateArmorText').show();
 	}
 }
