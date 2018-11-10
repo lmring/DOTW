@@ -320,6 +320,7 @@ nav {
 	color: white;
 	padding-left: 100px;
 	padding-right: 100px;
+	z-index: 2;
 }
 
 nav a{

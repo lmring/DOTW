@@ -103,150 +103,200 @@ function attributesSave(){
 /*attributes end*********************************************************/
 
 /*weapons start********************************************************/
-function weaponsMadLibs(){
-  var selectBox = document.getElementById("weaponsMadLibs");
-  var selected = selectBox.options[selectBox.selectedIndex].value;
-  var span = document.getElementById("weaponModifier");
-  if(selected=="club"){
-    span.textContent = "strength";
-  }
-  if(selected=="dagger"){
-    span.textContent = "strength or dexterity";
-  }
-  if(selected=="greatclub"){
-    span.textContent = "strength";
-  }
-  if(selected=="handaxe"){
-    span.textContent = "strength";
-  }
-  if(selected=="javelin"){
-    span.textContent = "strength";
-  }
-  if(selected=="light-hammer"){
-    span.textContent = "strength";
-  }
-  if(selected=="mace"){
-    span.textContent = "strength";
-  }
-  if(selected=="quarterstaff"){
-    span.textContent = "strength";
-  }
-  if(selected=="sickle"){
-    span.textContent = "strength";
-  }
-  if(selected=="spear"){
-    span.textContent = "strength";
-  }
-  if(selected=="light-crossbow"){
-    span.textContent = "dexterity";
-  }
-  if(selected=="dart"){
-    span.textContent = "strength or dexterity";
-  }
-  if(selected=="shortbow"){
-    span.textContent = "dexterity";
-  }
-  if(selected=="sling"){
-    span.textContent = "dexterity";
-  }
-  if(selected=="battleaxe"){
-    span.textContent = "strength";
-  }
-  if(selected=="flail"){
-    span.textContent = "strength";
-  }
-  if(selected=="glaive"){
-    span.textContent = "strength";
-  }
-  if(selected=="greataxe"){
-    span.textContent = "strength";
-  }
-  if(selected=="greatsword"){
-    span.textContent = "strength";
-  }
-  if(selected=="halberd"){
-    span.textContent = "strength";
-  }
-  if(selected=="lance"){
-    span.textContent = "strength";
-  }
-  if(selected=="longsword"){
-    span.textContent = "strength";
-  }
-  if(selected=="maul"){
-    span.textContent = "strength";
-  }
-  if(selected=="morningstar"){
-    span.textContent = "strength";
-  }
-  if(selected=="pike"){
-    span.textContent = "strength";
-  }
-  if(selected=="rapier"){
-    span.textContent = "strength or dexterity";
-  }
-  if(selected=="scimitar"){
-    span.textContent = "strength or dexterity";
-  }
-  if(selected=="shortsword"){
-    span.textContent = "strength or dexterity";
-  }
-  if(selected=="trident"){
-    span.textContent = "strength";
-  }
-  if(selected=="war-pick"){
-    span.textContent = "strength";
-  }
-  if(selected=="warhammer"){
-    span.textContent = "strength";
-  }
-  if(selected=="whip"){
-    span.textContent = "strength or dexterity";
-  }
-  if(selected=="blowgun"){
-    span.textContent = "dexterity";
-  }
-  if(selected=="hand-crossbow"){
-    span.textContent = "dexterity";
-  }
-  if(selected=="heavy-crossbow"){
-    span.textContent = "dexterity";
-  }
-  if(selected=="longbow"){
-    span.textContent = "dexterity";
-  }
-}
-
 function weaponsSave(){
   $("#weaponsSaveText").hide();
-  var weaponSelectBox = document.getElementById("weaponsMadLibs");
+  var weaponSelectBox = document.getElementById("weapons");
   var weapon = weaponSelectBox.options[weaponSelectBox.selectedIndex].value;
+    if(weapon=="club"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="dagger"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength or dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="greatclub"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="handaxe"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="javelin"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
     if(weapon=="light-hammer"){
       weapon = "light hammer";
       localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="mace"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="quarterstaff"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="sickle"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    if(weapon=="spear"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
     }
     else if(weapon=="light-crossbow"){
       weapon = "light crossbow";
       localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="dart"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength or dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="shortbow"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="sling"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="battleaxe"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="flail"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="glaive"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="greataxe"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="greatsword"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="halberd"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="lance"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="longsword"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="maul"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="morningstar"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="pike"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="rapier"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength or dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="scimitar"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength or dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="shortsword"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength or dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="trident"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
     }
     else if(weapon=="war-pick"){
       weapon = "war pick";
       localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="warhammer"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="whip"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "strength or dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
+    else if(weapon=="blowgun"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
     }
     else if(weapon=="hand-crossbow"){
       weapon = "hand crossbow";
       localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
     }
     else if(weapon=="heavy-crossbow"){
       weapon = "heavy crossbow";
       localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
     }
-    else{
+    else if(weapon=="longbow"){
       localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
     }
-  var newWeaponModRaw = document.getElementById("weaponModifier");
-  var newWeaponMod = newWeaponModRaw.innerHTML;
-  localStorage.setItem('weaponmod', newWeaponMod);
+    else if(weapon=="net"){
+      localStorage.setItem('weapon', weapon);
+      var newWeaponMod = "dexterity";
+      localStorage.setItem('weaponmod', newWeaponMod);
+    }
   $("#weaponsSaveText").show();
 }
 /*weapons end********************************************************/
