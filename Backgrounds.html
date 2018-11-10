@@ -16,46 +16,39 @@
 </head>
 
 <body>
-	<div class="wrapper">
+
 
 <!-- header start ******************************************************** -->
-<div class="container-fluid">
-	<div class="nav-bar">
-		<div class="row">
-			<div class="col-md-2 col-sm-offset-1">
-				<a href="./home.html">
-					<button type="button" class="btn btn-lg btn-home btn-block btn-navbar"> <img src="icon.png" class="navBarIcon" alt="Home Button"></img>Home </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Statistics.html">
-					<button type="button" class="btn btn-lg btn-block btn-hank btn-navbar"> <img src="./images/hankicon.png" class="navBarIcon" alt="Statistics Button"></img>Statistics </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Items.html">
-					<button type="button" class="btn btn-lg btn-block btn-lily btn-navbar"> <img src="./images/lillyicon.png" class="navBarIcon" alt="Items Button"></img>Items </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Roleplay.html">
-					<button type="button" class="btn btn-lg btn-block btn-margot btn-navbar"> <img src="./images/margoticon.png" class="navBarIcon" alt="Roleplay Button"></img>Roleplay </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Spells.html">
-					<button type="button" class="btn btn-lg btn-block btn-tutter btn-navbar"> <img src="./images/tuttericon.png" class="navBarIcon" alt="Spells Button"></img>Spells </button>
-				</a>
-			</div>
-			<div class="longbuttonbox">
-				<a href="./Spells.html">
-					<button type="button" class="btn btn-lg btn-block btn-sheet btn-navbar"> Your Character Sheet </button>
-				</a>
-			</div>
+<img src="header.png" class="imgHeader"></img>
+<nav class="navbar" id="stickyNavBar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="home.html" id="home"><img src="icon.png" class="navBarIcon"></img>DOTW</a>
 		</div>
-	</div>
-</div>
+		<ul class="nav navbar-nav navText">
+			<li class="dropdown">
+				<a class="dropdown-toggle navBasics" data-toggle="dropdown" href="#" id="basics">BASICS
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="Statistics.html">Statistics</a></li>
+						<li><a href="Items.html">Items</a></li>
+						<li><a href="Roleplay.html">Roleplay</a></li>
+						<li><a href="Spells.html">Spells</a></li>
+					</ul>
+				</li>
+				<li class="navIntro" id="intro"><a href="Introduction.html">INTRO</a></li>
+				<li class="navResources" id="resources"><a href="Resources.html">RESOURCES</a></li>
+				<li class="navStorySheet" id="storysheet"><a href="Character Sheet.html">STORY SHEET</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Sign Up</a></li>
+				<li><a href="#">Log In</a></li>
+			</ul>
+		</div>
+	</nav>
 <!-- header end ******************************************************** -->
+
+	<div class="wrapper">
 
 	<div class="margot-text">
 			<h1>Backgrounds</h1>
@@ -121,39 +114,6 @@
 							</div>
 						</div>
 
-<!-- footer start ******************************************************** -->
-<div class="container-fluid">
-	<div class="nav-bar">
-		<div class="row">
-			<div class="col-md-2 col-sm-offset-1">
-				<a href="./home.html">
-					<button type="button" class="btn btn-lg btn-home btn-block btn-navbar"> <img src="icon.png" class="navBarIcon" alt="Home Button"></img>Home </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Statistics.html">
-					<button type="button" class="btn btn-lg btn-block btn-hank btn-navbar"> <img src="./images/hankicon.png" class="navBarIcon" alt="Statistics Button"></img>Statistics </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Items.html">
-					<button type="button" class="btn btn-lg btn-block btn-lily btn-navbar"> <img src="./images/lillyicon.png" class="navBarIcon" alt="Items Button"></img>Items </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Roleplay.html">
-					<button type="button" class="btn btn-lg btn-block btn-margot btn-navbar"> <img src="./images/margoticon.png" class="navBarIcon" alt="Roleplay Button"></img>Roleplay </button>
-				</a>
-			</div>
-			<div class="col-md-2">
-				<a href="./Spells.html">
-					<button type="button" class="btn btn-lg btn-block btn-tutter btn-navbar"> <img src="./images/tuttericon.png" class="navBarIcon" alt="Spells Button"></img>Spells </button>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- footer end ******************************************************** -->
 		</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>

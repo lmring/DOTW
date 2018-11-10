@@ -252,118 +252,106 @@ function weaponsSave(){
 /*weapons end********************************************************/
 
 /*armor start********************************************************/
-function armorMadLibs(){
-  var selectBox = document.getElementById("armorMadLibs");
-  var selected = selectBox.options[selectBox.selectedIndex].value;
-  var spanAC = document.getElementById("armorclass");
-  var spanExtras = document.getElementById("armorextras");
-  if(selected=="padded-armor"){
-    spanAC.textContent = "11 + my dexterity modifier";
-    spanExtras.textContent = "I also have disadvantage to stealth rolls.";
-  }
-  if(selected=="leather-armor"){
-    spanAC.textContent = "11 + my dexterity modifier";
-    spanExtras.textContent = "";
-  }
-  if(selected=="studded-leather-armor"){
-    spanAC.textContent = "12 + my dexterity modifier";
-    spanExtras.textContent = "";
-  }
-  if(selected=="hide-armor"){
-    spanAC.textContent = "12 + my dexterity modifier (with a maximum of +2)";
-    spanExtras.textContent = "";
-  }
-  if(selected=="chain-shirt"){
-    spanAC.textContent = "13 + my dexterity modifier (with a maximum of +2)";
-    spanExtras.textContent = "";
-  }
-  if(selected=="scale-mail-armor"){
-    spanAC.textContent = "14 + my dexterity modifier (with a maximum of +2)";
-    spanExtras.textContent = "I also have disadvantage to stealth rolls.";
-  }
-  if(selected=="breastplate"){
-    spanAC.textContent = "14 + my dexterity modifier (with a maximum of +2)";
-    spanExtras.textContent = "";
-  }
-  if(selected=="half-plate-armor"){
-    spanAC.textContent = "15 + my dexterity modifier (with a maximum of +2)";
-    spanExtras.textContent = "I also have disadvantage to stealth rolls.";
-  }
-  if(selected=="ring-mail-armor"){
-    spanAC.textContent = "14";
-    spanExtras.textContent = "I also have disadvantage to stealth rolls.";
-  }
-  if(selected=="chain-mail-armor"){
-    spanAC.textContent = "16";
-    spanExtras.textContent = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 13 to use this armor.";
-  }
-  if(selected=="splint-armor"){
-    spanAC.textContent = "17";
-    spanExtras.textContent = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
-  }
-  if(selected=="plate-armor"){
-    spanAC.textContent = "18";
-    spanExtras.textContent = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
-  }
-}
-
 function armorSave(){
   $("#armorSaveText").hide();
-  var armorSelectBox = document.getElementById("armorMadLibs");
+  var armorSelectBox = document.getElementById("armor");
   var armor = armorSelectBox.options[armorSelectBox.selectedIndex].value;
     if(armor=="padded-armor"){
       armor = "padded armor";
       localStorage.setItem('armor', armor);
+      var newAC = "11 + my dexterity modifier";
+      localStorage.setItem('ac', newAC);
+      var newAE = "I also have disadvantage to stealth rolls.";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="leather-armor"){
       armor = "leather armor";
       localStorage.setItem('armor', armor);
+      var newAC = "11 + my dexterity modifier";
+      localStorage.setItem('ac', newAC);
+      var newAE = "";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="studded-leather-armor"){
       armor = "studded leather armor";
       localStorage.setItem('armor', armor);
+      var newAC = "12 + my dexterity modifier";
+      localStorage.setItem('ac', newAC);
+      var newAE = "";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="hide-armor"){
       armor = "hide armor";
       localStorage.setItem('armor', armor);
+      var newAC = "12 + my dexterity modifier (with a maximum of +2)";
+      localStorage.setItem('ac', newAC);
+      var newAE = "";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="chain-shirt"){
       armor = "chain shirt";
       localStorage.setItem('armor', armor);
+      var newAC = "13 + my dexterity modifier (with a maximum of +2)";
+      localStorage.setItem('ac', newAC);
+      var newAE = "";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="scale-mail-armor"){
       armor = "scale mail armor";
       localStorage.setItem('armor', armor);
+      var newAC = "14 + my dexterity modifier (with a maximum of +2)";
+      localStorage.setItem('ac', newAC);
+      var newAE = "I also have disadvantage to stealth rolls.";
+      localStorage.setItem('ae', newAE);
+    }
+    else if(armor=="breastplate"){
+      armor = "breastplate";
+      localStorage.setItem('armor', armor);
+      var newAC = "14 + my dexterity modifier (with a maximum of +2)";
+      localStorage.setItem('ac', newAC);
+      var newAE = "";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="half-plate-armor"){
       armor = "half plate armor";
       localStorage.setItem('armor', armor);
+      var newAC = "15 + my dexterity modifier (with a maximum of +2)";
+      localStorage.setItem('ac', newAC);
+      var newAE = "I also have disadvantage to stealth rolls.";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="ring-mail-armor"){
       armor = "ring mail armor";
       localStorage.setItem('armor', armor);
+      var newAC = "14";
+      localStorage.setItem('ac', newAC);
+      var newAE = "I also have disadvantage to stealth rolls.";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="chain-mail-armor"){
       armor = "chain mail armor";
       localStorage.setItem('armor', armor);
+      var newAC = "16";
+      localStorage.setItem('ac', newAC);
+      var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 13 to use this armor.";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="splint-armor"){
       armor = "splint armor";
       localStorage.setItem('armor', armor);
+      var newAC = "17";
+      localStorage.setItem('ac', newAC);
+      var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
+      localStorage.setItem('ae', newAE);
     }
     else if(armor=="plate-armor"){
       armor = "plate armor";
       localStorage.setItem('armor', armor);
+      var newAC = "18";
+      localStorage.setItem('ac', newAC);
+      var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
+      localStorage.setItem('ae', newAE);
     }
-    else{
-      localStorage.setItem('armor', armor);
-    }
-  var newACRaw = document.getElementById("armorclass");
-  var newAC = newACRaw.innerHTML;
-  localStorage.setItem('ac', newAC);
-  var newAERaw = document.getElementById("armorextras");
-  var newAE = newAERaw.innerHTML;
-  localStorage.setItem('ae', newAE);
   $("#armorSaveText").show();
 }
 /*armor end*********************************************************/
