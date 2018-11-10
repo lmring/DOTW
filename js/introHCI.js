@@ -565,3 +565,17 @@ function checkArmorType(armor) {
 	return armor.type.includes(type);
 }
 //armor end ************************************************************
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("stickyNavBar");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

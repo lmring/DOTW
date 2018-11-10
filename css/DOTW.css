@@ -11,7 +11,6 @@
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
-     padding: 20px;
 		 background-color: lemonchiffon;
 		 font-family: 'Montserrat', sans-serif;
  		color: black;
@@ -224,10 +223,10 @@ ul {
 	list-style: none;
 }
 
-li:before {
-    content: "•"; /* Insert content that looks like bullets */
+/*li:before {
+    content: "•";
     padding-right: 8px;
-}
+}*/
 
 #more,
 #more2{
@@ -272,8 +271,9 @@ li:before {
 
 .navBarIcon
 {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
 	margin-right: 10px;
 }
 
@@ -286,4 +286,110 @@ li:before {
 .smallbox{
 	margin-left:75px;
 	margin-right: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.header {
+  background: #555;
+  color: #f1f1f1;
+	padding: 5px;
+}
+
+.wrapper {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 10px;
+}
+
+.imgHeader{
+max-width: 100% !important;
+height: auto;
+}
+
+
+nav {
+	border-radius: 0px !important;
+	background-color: #383838;
+	color: white;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+nav a{
+	color: white;
+}
+
+#home:hover{
+	color: white;
+}
+
+.navBasics{
+	background-color: #de3c30;
+}
+
+#basics:hover{
+	color: #de3c30;
+	background-color: white;
+}
+
+#basics:focus{
+	color: #de3c30;
+	background-color: white;
+}
+
+.dropdown-menu a:hover{
+	color: #de3c30;
+}
+
+.navIntro{
+	background-color: #ded931;
+}
+
+#intro a:hover{
+	color: #ded931;
+	background-color: white;
+}
+
+#intro:focus{
+	color: #de3c30;
+	background-color: white;
+}
+
+.navResources{
+	background-color: #83de32;
+}
+
+#resources a:hover{
+	color: #83de32;
+	background-color: white;
+}
+
+#resources:focus{
+	color: #de3c30;
+	background-color: white;
+}
+
+.navStorySheet{
+	background-color: #31a7de;
+}
+
+#storysheet a:hover{
+	color: #31a7de;
+	background-color: white;
+}
+
+#storysheet:focus{
+	color: #de3c30;
+	background-color: white;
+}
+
+.navbar-right a:hover{
+	color: #383838;
 }
