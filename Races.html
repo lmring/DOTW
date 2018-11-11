@@ -25,100 +25,250 @@
 				<a class="navbar-brand" href="home.html" id="home"><img src="icon.png" class="navBarIcon"></img>DOTW</a>
 			</div>
 			<ul class="nav navbar-nav navText">
-					<li class="navBasics" id="basics"><a href="Statistics.html">STATISTICS</a></li>
-					<li class="navIntro" id="intro"><a href="Items.html">ITEMS</a></li>
-					<li class="navResources" id="resources"><a href="Roleplay.html">ROLEPLAY</a></li>
-					<li class="navStorySheet" id="storysheet"><a href="Spells.html">SPELLS</a></li>
-					<li><a href="Introduction.html">INTRO</a></li>
-					<li><a href="Resources.html">RESOURCES</a></li>
-					<li><a href="Character Sheet.html">STORY SHEET</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Sign Up</a></li>
-					<li><a href="#">Log In</a></li>
-				</ul>
-			</div>
-		</nav>
+				<li class="navBasics" id="basics"><a href="Statistics.html">STATISTICS</a></li>
+				<li class="navIntro" id="intro"><a href="Items.html">ITEMS</a></li>
+				<li class="navResources" id="resources"><a href="Roleplay.html">ROLEPLAY</a></li>
+				<li class="navStorySheet" id="storysheet"><a href="Spells.html">SPELLS</a></li>
+				<li><a href="Introduction.html">INTRO</a></li>
+				<li><a href="Resources.html">RESOURCES</a></li>
+				<li><a href="Character Sheet.html">STORY SHEET</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Sign Up</a></li>
+				<li><a href="#">Log In</a></li>
+			</ul>
+		</div>
+	</nav>
 	<!-- header end ******************************************************** -->
 
 	<div class="wrapper">
 
-<div class="margot-text">
+		<div class="margot-text">
 			<h1>Races</h1>
-</div>
-			<div class="divider">
-				<img src="divider.png"></img>
-			</div>
+		</div>
+		<div class="divider">
+			<img src="divider.png"></img>
+		</div>
 
-			<div id = "race-intro" class="margot-bodytext smallbox">
-						<p>One of the most important parts of creating your character is choosing their race. Race determines a lot of things, from statistics to special traits. Choose a race and Margot will bring one of her friends over to explain it to you! </p>
-						<p>Be mindful that the history of these races may differ for some campaigns, so be sure to ask your DM what the culture of these races are in your campaign!</p>
-						<p>You might choose a race before or after you roll your dice to make a character. Choosing a race might be beneficial to maximizing some of your stats (i.e. you have a high roll and a bonus to dexterity, so you boost your rogue to 20 dexterity with a +5 modifier). You also might use it to mitigate some of your weaknesses. For example, you might decide intelligence is a “dump stat” for your character. You decide to use 9, your lowest number, which has a modifier of -1. However, you make your character a gnome, which means you add +2 to your Intelligence, giving your character 11 intelligence, which is actually a +0! This means you don’t have any negative modifiers.</p>
-						<p>Keep in mind that any race can be any class. There is a very feasible build with every combination! You don’t have to make something stereotypical like a dwarf barbarian, feel free to make a dwarf druid or a dwarf sorcerer! Choosing a nontraditional combination might make for fun roleplay, as it’s only important that your stats back up your class more than anything else.</p>
-			</div>
+		<div id = "race-intro" class="margot-bodytext smallbox">
+			<p>One of the most important parts of creating your character is choosing their race. Race determines a lot of things, from statistics to special traits. Choose a race and Margot will bring one of her friends over to explain it to you! </p>
+			<p>Be mindful that the history of these races may differ for some campaigns, so be sure to ask your DM what the culture of these races are in your campaign!</p>
+			<p>You might choose a race before or after you roll your dice to make a character. Choosing a race might be beneficial to maximizing some of your stats (i.e. you have a high roll and a bonus to dexterity, so you boost your rogue to 20 dexterity with a +5 modifier). You also might use it to mitigate some of your weaknesses. For example, you might decide intelligence is a “dump stat” for your character. You decide to use 9, your lowest number, which has a modifier of -1. However, you make your character a gnome, which means you add +2 to your Intelligence, giving your character 11 intelligence, which is actually a +0! This means you don’t have any negative modifiers.</p>
+			<p>Keep in mind that any race can be any class. There is a very feasible build with every combination! You don’t have to make something stereotypical like a dwarf barbarian, feel free to make a dwarf druid or a dwarf sorcerer! Choosing a nontraditional combination might make for fun roleplay, as it’s only important that your stats back up your class more than anything else.</p>
+		</div>
 
-			<div class="container-fluid">
-				<div class="row">
-					<div class="margot-header">
-						<p>See Margot's Friends!</p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="margot-header">
+					<p>See Margot's Friends!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<select class="form-control form-hank" id="races">
+						<optgroup label="Dwarf">
+						<option value="hill dwarf" selected="selected">Hill Dwarf</option>
+						<option value="mountain dwarf" selected="selected">Mountain Dwarf</option>
+						<optgroup label="Elf">
+						<option value="high elf">High Elf</option>
+						<option value="wood elf">Wood Elf</option>
+						<optgroup label="Halfling">
+						<option value="lightfoot halfling">Lightfoot Halfling</option>
+						<option value="stout halfling">Stout Halfling</option>
+						<optgroup label="Human">
+						<option value="human">Human</option>
+						<optgroup label="Dragonborn">
+						<option value="black dragonborn">Black Dragonborn</option>
+						<option value="blue dragonborn">Blue Dragonborn</option>
+						<option value="brass dragonborn">Brass Dragonborn</option>
+						<option value="bronze dragonborn">Bronze Dragonborn</option>
+						<option value="copper dragonborn">Copper Dragonborn</option>
+						<option value="gold dragonborn">Gold Dragonborn</option>
+						<option value="green dragonborn">Green Dragonborn</option>
+						<option value="red dragonborn">Red Dragonborn</option>
+						<option value="silver dragonborn">Silver Dragonborn</option>
+						<option value="white dragonborn">White Dragonborn</option>
+						<optgroup label="Gnome">
+						<option value="forest gnome">Forest Gnome</option>
+						<option value="rock gnome">Rock Gnome</option>
+						<optgroup label="Half-Elf">
+						<option value="half-elf">Half-Elf</option>
+						<optgroup label="Half-Orc">
+						<option value="half-orc">Half-Orc</option>
+						<optgroup label="Tiefling">
+						<option value="tiefling">Tiefling</option>
+					</select>
+
+					<div class="container-fluid race" id="dwarfImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="elfImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="halflingImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="humanImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="dragonbornImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="gnomeImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="halfelfImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="halforcImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
+					</div>
+					<div class="container-fluid race collapse" id="tieflingImage">
+						<img src="images/Margot_Barbarian.png" alt="Margot with Xena the Dwarf"></img>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<select class="form-control form-hank" id="races">
-								<option value="dwarf" selected="selected">Dwarf</option>
-								<option value="elf">Elf</option>
-								<option value="halfling">Halfling</option>
-								<option value="human">Human</option>
-								<option value="dragonborn">Dragonborn</option>
-								<option value="gnome">Gnome</option>
-								<option value="half-elf">Half-Elf</option>
-								<option value="half-orc">Half-Orc</option>
-								<option value="tiefling">Tiefling</option>
-							</select>
-							</div>
-						</div>
 
-					<div>
-
-					</div>
-
-					<!--Dwarf Race Text-->
+				<div class="col-md-6">
 					<div class="margot-bodytext">
-						<h4>Dwarf:</h4>
-						<h4>Meet Xena!</h4>
-						<p>Dwarves mature at the same rate as human, but they’re considered young until they reach the age of 50. On average, they live about 350 years. Xena is age 30, and still considered pretty young!</p>
-						<p>They’re about 4 to 5 feet tall and are considered “Medium” size. Xena is 4’6”, which is an average height for dwarves!</p>
-						<p>Their walking speed is 25 feet, but their speed isn’t reduced by wearing Heavy Armor.</p>
-						<p>Darkvision: Xena has darkvision, which means she can see in the dark! She can’t make out color in the darkness, only shades of grades.</p>
-						<p>Dwarven Resilience: Xena has resilience to poison damage, which means that whatever damage she would take is halved. She also has advantage on saving throws against poison.</p>
-						<p>Dwarven Combat Training: Being a dwarf, Xena was raised surrounded by classic dwarven weapons. She has proficiency with battleaxes, handaxes, throwing hammers, and warhammers.</p>
-						<p>Tool Proficiency: Dwarves get to pick whether they are proficient in smith’s tools, brewer’s supplies, or mason’s tools. Xena is proficient with smith’s tools, and likes making jewelry for fun.</p>
-						<p>Stonecunning: Dwarves have a special eye for stonework. Xena is considered proficient for History checks for stonework. Her proficiency bonus will be doubled!</p>
-						<p>Being a dwarf, Xena can speak Common and Dwarvish.</p>
-
-						<h4>There are two dwarf subraces, Hill and Mountain:</h4>
-						<p>Hill dwarves:</p>
-						<ul><li>Hill dwarves receive a +1 to wisdom</li>
-							<li>Dwarven Toughness: On first level, and every time you gain a level, add +1 to your hit point total. For example, Xena is a rogue. At level 1 her hit dice is 1d8 and her constitution is 16 (+3). Her hit points at level 1 is equal to 8 + 3 + 1, or 12. Next level she’ll add a 1d8 + 3 + 1 to her current total. </li>
-						</ul>
-						<p>Mountain dwarves</p>
-						<ul><li>Mountain dwarves receive a +1 to strength</li>
-							<li>Dwarven Armor Training: You have proficiency in light and medium armor. </li>
-						</ul>
-
+						<div class="row">
+							<div class="container-fluid race" id="hilldwarfText">
+								<h4>Xena and all other dwarves get:</h4>
+								<ul>
+									<li>2+ to their constitution score</li>
+									<li>25 base walking speed</li>
+									<li>Darkvision</li>
+									<li>Dwarven resilience</li>
+									<li>Dwarven combat training</li>
+									<li>Tool proficiency in Smith’s Tools, Brewer supplies, OR Mason’s tools</li>
+									<li>Stonecunning</li>
+									<li>Fluent in Common and Dwarvish</li>
+								</ul>
+								<h4>Hill dwarves also get:</h4>
+								<ul>
+									<li>+1 to their wisdom score</li>
+									<li>Dwarven Toughness</li>
+								</ul>
+								<h4>View more details below!</h4>
+							</div>
+							<div class="container-fluid race collapse" id="mountaindwarfText">
+								<h4>Xena and all other dwarves get:</h4>
+								<ul>
+									<li>2+ to their constitution score</li>
+									<li>25 base walking speed</li>
+									<li>Darkvision</li>
+									<li>Dwarven resilience</li>
+									<li>Dwarven combat training</li>
+									<li>Tool proficiency in Smith’s Tools, Brewer supplies, OR Mason’s tools</li>
+									<li>Stonecunning</li>
+									<li>Fluent in Common and Dwarvish</li>
+								</ul>
+								<h4>Mountain dwarves also get:</h4>
+								<ul>
+									<li>+1 to their strength score</li>
+									<li>Dwarven Armor Training</li>
+								</ul>
+								<h4>View more details below!</h4>
+							</div>
+						<div class="container-fluid race collapse" id="highelfText">
+						</div>
+						<div class="container-fluid race collapse" id="woodelfText">
+						</div>
+						<div class="container-fluid race collapse" id="lightfoothalflingText">
+						</div>
+						<div class="container-fluid race collapse" id="stouthalflingText">
+						</div>
+						<div class="container-fluid race collapse" id="humanText">
+						</div>
+						<div class="container-fluid race collapse" id="blackdragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="bluedragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="brassdragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="bronzedragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="copperdragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="golddragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="greendragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="reddragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="silverdragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="whitedragonbornText">
+						</div>
+						<div class="container-fluid race collapse" id="forestgnomeText">
+						</div>
+						<div class="container-fluid race collapse" id="rockgnomeText">
+						</div>
+						<div class="container-fluid race collapse" id="halfelfText">
+						</div>
+						<div class="container-fluid race collapse" id="halforcText">
+						</div>
+						<div class="container-fluid race collapse" id="tieflingText">
+						</div>
 					</div>
-
-					<div class="margot-text">
-						<h2>Mad Libs Character Sheet</h2>
 					</div>
-					<p>My race is ___. That means I gain ____ (trait bonus) and ____ (feats). I am proficient in ___ and know  ____ (languages).</p>
+						<div class="row">
+							<btn class="btn btn-lg btn-margot" id="raceSave" onclick="raceSave()">Save to Character Sheet</button>
+							</div>
+							<div class="row">
+								<div class="container-fluid collapse" id="raceSaveText">
+									<p>Saved!</p>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Dwarf Race Text-->
+			<div class="container-fluid margot-bodytext race" id="dwarfTextFull">
+				<h4>Dwarf:</h4>
+				<h4>Meet Xena!</h4>
+				<p>Dwarves mature at the same rate as human, but they’re considered young until they reach the age of 50. On average, they live about 350 years. Xena is age 30, and still considered pretty young!</p>
+				<p>They’re about 4 to 5 feet tall and are considered “Medium” size. Xena is 4’6”, which is an average height for dwarves!</p>
+				<p>Their walking speed is 25 feet, but their speed isn’t reduced by wearing Heavy Armor.</p>
+				<p>Darkvision: Xena has darkvision, which means she can see in the dark! She can’t make out color in the darkness, only shades of grades.</p>
+				<p>Dwarven Resilience: Xena has resilience to poison damage, which means that whatever damage she would take is halved. She also has advantage on saving throws against poison.</p>
+				<p>Dwarven Combat Training: Being a dwarf, Xena was raised surrounded by classic dwarven weapons. She has proficiency with battleaxes, handaxes, throwing hammers, and warhammers.</p>
+				<p>Tool Proficiency: Dwarves get to pick whether they are proficient in smith’s tools, brewer’s supplies, or mason’s tools. Xena is proficient with smith’s tools, and likes making jewelry for fun.</p>
+				<p>Stonecunning: Dwarves have a special eye for stonework. Xena is considered proficient for History checks for stonework. Her proficiency bonus will be doubled!</p>
+				<p>Being a dwarf, Xena can speak Common and Dwarvish.</p>
+
+				<h4>There are two dwarf subraces, Hill and Mountain:</h4>
+				<p>Hill dwarves:</p>
+				<ul><li>Hill dwarves receive a +1 to wisdom</li>
+					<li>Dwarven Toughness: On first level, and every time you gain a level, add +1 to your hit point total. For example, Xena is a rogue. At level 1 her hit dice is 1d8 and her constitution is 16 (+3). Her hit points at level 1 is equal to 8 + 3 + 1, or 12. Next level she’ll add a 1d8 + 3 + 1 to her current total. </li>
+				</ul>
+				<p>Mountain dwarves</p>
+				<ul><li>Mountain dwarves receive a +1 to strength</li>
+					<li>Dwarven Armor Training: You have proficiency in light and medium armor. </li>
+				</ul>
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="elfFullText">
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="halflingFullText">
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="humanFullText">
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="dragonbornFullText">
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="gnomeFullText">
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="halfelfFullText">
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="halforcFullText">
+			</div>
+			<div class="container-fluid margot-bodytext race collapse" id="tieflingFullText">
+			</div>
 
 		</div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/introHCI.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/introHCI.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 
-</body>
-</html>
+	</body>
+	</html>

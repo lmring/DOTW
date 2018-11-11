@@ -304,8 +304,8 @@ ul {
   padding: 16px;
 }
 
-.sticky + .content {
-  padding-top: 10px;
+.sticky + .wrapper {
+  padding-top: 102px;
 }
 
 .imgHeader{
