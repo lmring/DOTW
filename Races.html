@@ -65,7 +65,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<select class="form-control form-hank" id="races">
+					<select class="form-control form-hank" id="races" onchange="raceChange()">
 						<optgroup label="Dwarf">
 						<option value="hill dwarf" selected="selected">Hill Dwarf</option>
 						<option value="mountain dwarf" selected="selected">Mountain Dwarf</option>
@@ -631,6 +631,7 @@
 					<li>Skills: Caley would get proficiency in a skill of her choice. She’s a big nerd, so she’s proficient in History.</li>
 					<li>Feat: Caley gets one feat of her choice. You can see feats in the handbook on page 165. She chose Sentinel.</li>
 				</ul>
+			</div>
 			<div class="container-fluid margot-bodytext race collapse" id="dragonbornFullText">
 				<h4>Dragonborn:</h4>
 				<h4>Meet Balazar!</h4>
@@ -720,6 +721,7 @@
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/introHCI.js"></script>
+		<script src="js/Races.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 
 	</body>
