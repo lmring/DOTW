@@ -579,3 +579,14 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+function checkUserInfo() {
+	var username = $('#username').val();
+	var password = $('#password').val();
+	if(username=="tutter" && password=="mouse"){
+	window.location.href = "https://lmring.github.io/DOTW/home.html";
+	}
+	else{
+		$('#incorrectLogin').show();
+	}
+}
