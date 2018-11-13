@@ -415,69 +415,69 @@ function backgroundSave(){
   var background = backgroundSelectBox.options[backgroundSelectBox.selectedIndex].value;
     if(background=="acolyte"){
       localStorage.setItem('background', background);
-      var result = "the skills Insight and Religion. I also know two additional languages of my choice.";
+      var result = "the skills Insight and Religion. I also know two additional languages of my choice and have the feature Shelter of the Faithful.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="charlatan"){
       localStorage.setItem('background', background);
-      var result = "the skills Deception and Sleight of Hand, disguise kits, and forgery kits.";
+      var result = "the skills Deception and Sleight of Hand, disguise kits, and forgery kits. I also have the feature False Identity.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="criminal"){
       localStorage.setItem('background', background);
-      var result = "the skills Deception and Stealth, thieves' tools, and one type of gaming set.";
+      var result = "the skills Deception and Stealth, thieves' tools, and one type of gaming set. I also have the feature Criminal Contact.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="entertainer"){
       localStorage.setItem('background', background);
-      var result = "the skills Acrobatics and Performance, disguise kits, and one type of musical instrument.";
+      var result = "the skills Acrobatics and Performance, disguise kits, and one type of musical instrument. I also have the feature By Popular Demand.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="folk-hero"){
       background = "folk hero";
       localStorage.setItem('background', background);
-      var result = "the skills Animal Handling and Survival, land vehicles, and one type of artisan tools.";
+      var result = "the skills Animal Handling and Survival, land vehicles, and one type of artisan tools. I also have the feature Rustic Hospitality.";
       localStorage.setItem('backgroundResult', result);
     }
     else if(background=="guild-artisan"){
       background = "guild artisan";
       localStorage.setItem('background', background);
-      var result = "the skills Insight and Persuasion, and one type of artist's tools. I also know one additional language of my choice.";
+      var result = "the skills Insight and Persuasion, and one type of artist's tools. I also know one additional language of my choice and have the feature Guild Membership.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="hermit"){
       localStorage.setItem('background', background);
-      var result = "the skills Medicine and Religion, and herbalism kits. I also know one additional language of my choice.";
+      var result = "the skills Medicine and Religion, and herbalism kits. I also know one additional language of my choice and have the feature Discovery.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="noble"){
       localStorage.setItem('background', background);
-      var result = "the skills History and Persuasion, and one type of gaming set. I also know one additional language of my choice.";
+      var result = "the skills History and Persuasion, and one type of gaming set. I also know one additional language of my choice and have the feature Position of Privilege.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="outlander"){
       localStorage.setItem('background', background);
-      var result = "the skills Athletics and Survival, and one type of musical instrument. I also know one additional language of my choice.";
+      var result = "the skills Athletics and Survival, and one type of musical instrument. I also know one additional language of my choice and have the feature Wanderer.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="sage"){
       localStorage.setItem('background', background);
-      var result = "the skills Arcana and History. I also know two additional languages of my choice.";
+      var result = "the skills Arcana and History. I also know two additional languages of my choice. I also have the feature Researcher.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="sailor"){
       localStorage.setItem('background', background);
-      var result = "the skills Athletics and Perception, water vehicles, and navigator's tools.";
+      var result = "the skills Athletics and Perception, water vehicles, and navigator's tools. I also have the feature Ship's Passage.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="soldier"){
       localStorage.setItem('background', background);
-      var result = "the skills Athletics and Intimidation, land vehicles, and one type of gaming set.";
+      var result = "the skills Athletics and Intimidation, land vehicles, and one type of gaming set. I also have the feature Military Rank.";
       localStorage.setItem('backgroundResult', result);
     }
     if(background=="urchin"){
       localStorage.setItem('background', background);
-      var result = "the skills Sleight of Hand and Stealth, disguise kits, and thieves' tools.";
+      var result = "the skills Sleight of Hand and Stealth, disguise kits, and thieves' tools. I also have the feature City Secrets.";
       localStorage.setItem('backgroundResult', result);
     }
   $("#backgroundSaveText").show();

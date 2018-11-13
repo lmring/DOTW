@@ -49,17 +49,19 @@
 
 	<form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <label for="username">Username</label>
+    <input type="email" class="form-control" id="username" placeholder="Username">
   </div>
 	<div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
   </div>
 	</form>
-	<a href="./home.html">
-		<button type="submit" class="btn btn-lrg btn-block btn-gray">Submit</button>
-	</a>
+		<button type="submit" class="btn btn-lrg btn-block btn-gray" onclick="checkUserInfo()">Submit</button>
+
+	<div class="container-fluid collapse" id="incorrectLogin">
+		Incorrect Username or Password!
+	</div>
 
 
 	</div>
