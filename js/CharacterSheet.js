@@ -100,3 +100,32 @@ if(backgroundResult){
   $("#background-features").html(backgroundResult);
 }
 /*background end********************************************************/
+
+/*classes start********************************************************/
+var charClass = localStorage.getItem('class');
+if(charClass){
+  $("#class").html(charClass);
+}
+
+var startHP = localStorage.getItem('startHP');
+if(startHP){
+  $("#startHP").html(startHP);
+}
+
+var savingThrows = localStorage.getItem('savingThrows');
+if(savingThrows){
+  $("#savingThrows").html(savingThrows);
+}
+/*classes end********************************************************/
+
+/*races start********************************************************/
+var race = localStorage.getItem('race');
+if(race){
+  $("#race").html(race);
+}
+
+var raceFeatures = localStorage.getItem('raceFeatures');
+if(raceFeatures){
+  $("#raceFeatures").html(raceFeatures);
+}
+/*races end********************************************************/

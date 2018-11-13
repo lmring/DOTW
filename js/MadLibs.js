@@ -407,8 +407,6 @@ function armorSave(){
 /*armor end*********************************************************/
 
 /*backgrounds start********************************************************/
-
-
 function backgroundSave(){
   $("#backgroundSaveText").hide();
   var backgroundSelectBox = document.getElementById("backgrounds");
@@ -485,3 +483,216 @@ function backgroundSave(){
 /*backgrounds end********************************************************/
 
 /*classes start********************************************************/
+function classSave(){
+  $("#classSaveText").hide();
+  var classSelectBox = document.getElementById("classes");
+  var charClass = classSelectBox.options[classSelectBox.selectedIndex].value;
+
+  if(charClass =="barbarian"){
+    localStorage.setItem('class', charClass);
+    var startHP="12";
+    var savingThrows="strength and constitution";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="bard"){
+    localStorage.setItem('class', charClass);
+    var startHP="8";
+    var savingThrows="dexterity and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="cleric"){
+    localStorage.setItem('class', charClass);
+    var startHP="8";
+    var savingThrows="wisdom and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="druid"){
+    localStorage.setItem('class', charClass);
+    var startHP="8";
+    var savingThrows="intelligence and wisdom";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="fighter"){
+    localStorage.setItem('class', charClass);
+    var startHP="10";
+    var savingThrows="strength and constitution";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="monk"){
+    localStorage.setItem('class', charClass);
+    var startHP="8";
+    var savingThrows="dexterity and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="paladin"){
+    localStorage.setItem('class', charClass);
+    var startHP="10";
+    var savingThrows="wisdom and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="ranger"){
+    localStorage.setItem('class', charClass);
+    var startHP="10";
+    var savingThrows="strength and dexterity";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  /* check for updated info below this line on google doc */
+  if(charClass =="rogue"){
+    localStorage.setItem('class', charClass);
+    var startHP="8";
+    var savingThrows="dexterity and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="sorcerer"){
+    localStorage.setItem('class', charClass);
+    var startHP="6";
+    var savingThrows="dexterity and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="warlock"){
+    localStorage.setItem('class', charClass);
+    var startHP="8";
+    var savingThrows="dexterity and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  if(charClass =="wizard"){
+    localStorage.setItem('class', charClass);
+    var startHP="8";
+    var savingThrows="dexterity and charisma";
+    localStorage.setItem('startHP', startHP);
+    localStorage.setItem('savingThrows', savingThrows);
+  }
+  $("#classSaveText").show();
+}
+/*classes end********************************************************/
+
+/*races start********************************************************/
+function raceSave(){
+  $("#raceSaveText").hide();
+  var raceSelectBox = document.getElementById("races");
+  var race = raceSelectBox.options[raceSelectBox.selectedIndex].value;
+
+  if(race =="hill dwarf"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my constitution score, 25 base walking speed, Darkvision, Dwarven resilience, Dwarven combat training, Tool proficiency in Smith’s Tools, Brewer supplies, OR Mason’s tools, Stonecunning, fluency in Common and Dwarvish, +1 to my wisdom score, and Dwarven Toughness";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="mountain dwarf"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my constitution score, 25 base walking speed, Darkvision, Dwarven resilience, Dwarven combat training, Tool proficiency in Smith’s Tools, Brewer supplies, OR Mason’s tools, Stonecunning, fluency in Common and Dwarvish, +1 to my strength score, and Dwarven Armor Training";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="high elf"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my dexterity score, 30 base walking speed, Darkvision, proficiency in perception, Fey Ancestry, Trance, fluency in Common and Elvish, +1 to my intelligence score, Elf Weapon Training, one Wizard cantrip, and fluency in one additional language of my choice";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="wood elf"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my dexterity score, 30 base walking speed, Darkvision, proficiency in perception, Fey Ancestry, Trance, fluency in Common and Elvish, +1 to my wisdom score, Elf Weapon Training, Fleet of Foot, and Mask of the Wild";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="lightfoot halfling"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my dexterity score, 25 base walking speed, Lucky, Brave, Halfling Nimbleness, fluency in Common and the Halfling language, +1 to my charisma score, and Naturally Stealthy";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="stout halfling"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my dexterity score, 25 base walking speed, Lucky, Brave, Halfling Nimbleness, fluency in Common and the Halfling language, +1 to my constitution score, and Stout Resilience";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="human"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+1 to all of my attribute scores, 30 base walking speed, and fluency in Common and one language of my choice";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="black dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Acid), Damage Resistance (Acid), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="blue dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Lightning), Damage Resistance (Lightning), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="brass dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Fire), Damage Resistance (Fire), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="bronze dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Lightning), Damage Resistance (Lightning), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="copper dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Acid), Damage Resistance (Acid), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="gold dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Fire), Damage Resistance (Fire), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="green dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Poison), Damage Resistance (Poison), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="red dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Fire), Damage Resistance (Fire), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="silver dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Cold), Damage Resistance (Cold), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="white dragonborn"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my charisma score, 30 base walking speed, Draconic Ancestry, Breath Weapon (Cold), Damage Resistance (Cold), and fluency in Common and Draconic";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="forest gnome"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my intelligence score, 25 base walking speed, Darkvision, Gnome Cunning, fluency in Common and Gnomish, +1 to my dexterity score, Natural Illusionist, and Speak with Small Beasts";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="rock gnome"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my intelligence score, 25 base walking speed, Darkvision, Gnome Cunning, fluency in Common and Gnomish, +1 to my constitution score, Artificer's Lore, and Tinker";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="half-elf"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my charisma score, +1 to two other attribute scores of my choice, 30 base walking speed, Darkvision, Fey Ancestry, Skill Versatility, and fluency in Common, Elvish, and one other language of my choice";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="half-orc"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my strength score, +1 to my constitution score, 30 base walking speed, Darkvision, Menacing, Relentless Endurance, Savage Attacks, and fluency in Common and Orcish";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  if(race =="tiefling"){
+    localStorage.setItem('race', race);
+    var raceFeatures = "+2 to my charisma score, +1 to my intelligence score, 30 base walking speed, Darkvision, Hellish Resistance, Infernal Legacy, and fluency in Common and Infernal";
+    localStorage.setItem('raceFeatures', raceFeatures);
+  }
+  $("#raceSaveText").show();
+}
+/*races end********************************************************/
