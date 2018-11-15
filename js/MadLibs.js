@@ -548,28 +548,28 @@ function classSave(){
   if(charClass =="rogue"){
     localStorage.setItem('class', charClass);
     var startHP="8";
-    var savingThrows="dexterity and charisma";
+    var savingThrows="dexterity and intelligence";
     localStorage.setItem('startHP', startHP);
     localStorage.setItem('savingThrows', savingThrows);
   }
   if(charClass =="sorcerer"){
     localStorage.setItem('class', charClass);
     var startHP="6";
-    var savingThrows="dexterity and charisma";
+    var savingThrows="constitution and charisma";
     localStorage.setItem('startHP', startHP);
     localStorage.setItem('savingThrows', savingThrows);
   }
   if(charClass =="warlock"){
     localStorage.setItem('class', charClass);
     var startHP="8";
-    var savingThrows="dexterity and charisma";
+    var savingThrows="wisdom and charisma";
     localStorage.setItem('startHP', startHP);
     localStorage.setItem('savingThrows', savingThrows);
   }
   if(charClass =="wizard"){
     localStorage.setItem('class', charClass);
-    var startHP="8";
-    var savingThrows="dexterity and charisma";
+    var startHP="6";
+    var savingThrows="intelligence and wisdom";
     localStorage.setItem('startHP', startHP);
     localStorage.setItem('savingThrows', savingThrows);
   }
