@@ -39,6 +39,10 @@ body {
 	display: inline-block;
 }
 
+.container-homebutton {
+	margin-top: 20px;
+}
+
 .img-banner{
 	max-width: 100%;
 	display: inline-block;
