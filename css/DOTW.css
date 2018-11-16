@@ -48,6 +48,10 @@ body {
 	max-width: 23%;
 }
 
+.img-homebutton{
+	max-width: 23%;
+}
+
 .wrapper {
 	outline: 10px double white;
 	text-align: center;
