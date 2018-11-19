@@ -328,8 +328,6 @@ nav {
 	border-radius: 0px !important;
 	background-color: #383838;
 	color: white;
-	padding-left: 100px;
-	padding-right: 100px;
 	z-index: 2;
 }
 
@@ -345,12 +343,12 @@ nav a{
 	background-color: #de3c30;
 }
 
-#basics:hover{
+#basics a:hover{
 	color: #de3c30;
 	background-color: white;
 }
 
-#basics:focus{
+#basics a:focus{
 	color: #de3c30;
 	background-color: white;
 }
@@ -404,3 +402,19 @@ nav a{
 .navbar-right a:hover{
 	color: #383838;
 }
+
+.icon-bar{
+	background-color: white;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+.web-header{
+	display: none;
+}
+
+.mobile-header{
+	display: block;
+}
+	}
