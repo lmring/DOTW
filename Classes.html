@@ -745,6 +745,384 @@
 					</p>
 				</div>
 
+				<div class="margot-header">
+					<p>Skill Selector</p>
+				</div>
+					My class is <strong><span id="classFromSheet">???</span></strong>, so I can choose <strong><span id="skillNumber">???</span></strong> skills to be proficient in. Hold CTRL and click to select multiple!
+				<p class="collapse" id="noClass">Seeing question marks? Choose a class above, save it, and refresh this page!</p>
+<br>
+<br>
+
+<!--Class Skill Selects Start ************************************************************************-->
+<!--Barbarian Start-->
+					<div class="classSkillSelect collapse" id="barbarianSkills">
+						<select class="form-control form-hank" multiple="multiple" id="barbarianSkillSelect">
+						<option value="animal handling">Animal Handling</option>
+						<option value="athletics">Athletics</option>
+						<option value="intimidation">Intimidation</option>
+						<option value="nature">Nature</option>
+						<option value="perception">Perception</option>
+						<option value="survival">Survival</option>
+						</select>
+<br>
+						<div class="container-fluid">
+							<div class="row">
+								<btn class="btn btn-lg btn-margot" id="barbarianSkillSave" onclick="barbarianSkillSave()">Save to Story Sheet</button>
+								</div>
+								<div class="row">
+									<div class="container-fluid collapse" id="barbarianTooMany">
+										<p>ERROR: You selected too many skills!</p>
+									</div>
+									<div class="container-fluid collapse" id="barbarianTooFew">
+										<p>ERROR: You selected too few skills!</p>
+									</div>
+								<div class="container-fluid collapse" id="barbarianSkillSaveText">
+									<p>Saved!</p>
+								</div>
+							</div>
+							</div>
+					</div>
+<!--Barbarian  End-->
+
+<!--Bard Start-->
+					<div class="classSkillSelect collapse" id="bardSkills">
+						<select class="form-control form-hank" multiple="multiple" id="bardSkillSelect">
+						<option value="persuasion">Persuasion</option>
+						<option value="deception">Deception</option>
+						<option value="perception">Perception</option>
+						<option value="stealth">Stealth</option>
+						</select>
+<br>
+						<div class="container-fluid">
+							<div class="row">
+								<btn class="btn btn-lg btn-margot" id="bardSkillSave" onclick="bardSkillSave()">Save to Story Sheet</button>
+								</div>
+								<div class="row">
+									<div class="container-fluid collapse" id="bardTooMany">
+										<p>ERROR: You selected too many skills!</p>
+									</div>
+									<div class="container-fluid collapse" id="bardTooFew">
+										<p>ERROR: You selected too few skills!</p>
+									</div>
+								<div class="container-fluid collapse" id="bardSkillSaveText">
+									<p>Saved!</p>
+								</div>
+							</div>
+							</div>
+					</div>
+<!--Bard End-->
+
+<!--Cleric Start-->
+					<div class="classSkillSelect collapse" id="clericSkills">
+						<select class="form-control form-hank" multiple="multiple" id="clericSkillSelect">
+						<option value="history">History</option>
+						<option value="insight">Insight</option>
+						<option value="medicine">Medicine</option>
+						<option value="persuasion">Persuasion</option>
+						<option value="religion">Religion</option>
+						</select>
+<br>
+						<div class="container-fluid">
+							<div class="row">
+								<btn class="btn btn-lg btn-margot" id="clericSkillSave" onclick="clericSkillSave()">Save to Story Sheet</button>
+								</div>
+								<div class="row">
+									<div class="container-fluid collapse" id="clericTooMany">
+										<p>ERROR: You selected too many skills!</p>
+									</div>
+									<div class="container-fluid collapse" id="clericTooFew">
+										<p>ERROR: You selected too few skills!</p>
+									</div>
+								<div class="container-fluid collapse" id="clericSkillSaveText">
+									<p>Saved!</p>
+								</div>
+							</div>
+							</div>
+					</div>
+<!--Cleric End-->
+
+<!--Druid Start-->
+<div class="classSkillSelect collapse" id="druidSkills">
+	<select class="form-control form-hank" multiple="multiple" id="druidSkillSelect">
+	<option value="arcana">Arcana</option>
+	<option value="animal handling">Animal Handling</option>
+	<option value="insight">Insight</option>
+	<option value="medicine">Medicine</option>
+	<option value="nature">Nature</option>
+	<option value="perception">Perception</option>
+	<option value="religion">Religion</option>
+	<option value="survival">Survival</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="druidSkillSave" onclick="druidSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="druidTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="druidTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="druidSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Druid End-->
+
+<!--Fighter Start-->
+<div class="classSkillSelect collapse" id="fighterSkills">
+	<select class="form-control form-hank" multiple="multiple" id="fighterSkillSelect">
+	<option value="acrobatics">Acrobatics</option>
+	<option value="animal handling">Animal Handling</option>
+	<option value="athletics">Athletics</option>
+	<option value="history">History</option>
+	<option value="insight">Insight</option>
+	<option value="intimidation">Intimidation</option>
+	<option value="perception">Perception</option>
+	<option value="survival">Survival</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="fighterSkillSave" onclick="fighterSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="fighterTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="fighterTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="fighterSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Fighter End-->
+
+<!--Monk Start-->
+<div class="classSkillSelect collapse" id="monkSkills">
+	<select class="form-control form-hank" multiple="multiple" id="monkSkillSelect">
+	<option value="acrobatics">Acrobatics</option>
+	<option value="athletics">Athletics</option>
+	<option value="history">History</option>
+	<option value="insight">Insight</option>
+	<option value="religion">Religion</option>
+	<option value="stealth">Stealth</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="monkSkillSave" onclick="monkSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="monkTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="monkTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="monkSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Monk End-->
+
+<!--Paladin Start-->
+<div class="classSkillSelect collapse" id="paladinSkills">
+	<select class="form-control form-hank" multiple="multiple" id="paladinSkillSelect">
+	<option value="athletics">Athletics</option>
+	<option value="insight">Insight</option>
+	<option value="intimidation">Intimidation</option>
+	<option value="medicine">Medicine</option>
+	<option value="persuasion">Persuasion</option>
+	<option value="religion">Religion</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="paladinSkillSave" onclick="paladinSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="paladinTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="paladinTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="paladinSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Paladin End-->
+
+<!--Ranger Start-->
+<div class="classSkillSelect collapse" id="rangerSkills">
+	<select class="form-control form-hank" multiple="multiple" id="rangerSkillSelect">
+		<option value="animal handling">Animal Handling</option>
+		<option value="athletics">Athletics</option>
+		<option value="insight">Insight</option>
+		<option value="investigation">Investigation</option>
+		<option value="nature">Nature</option>
+		<option value="perception">Perception</option>
+		<option value="stealth">Stealth</option>
+		<option value="survival">Survival</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="rangerSkillSave" onclick="rangerSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="rangerTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="rangerTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="rangerSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Ranger End-->
+
+<!--Rogue Start-->
+<div class="classSkillSelect collapse" id="rogueSkills">
+	<select class="form-control form-hank" multiple="multiple" id="rogueSkillSelect">
+		<option value="acrobatics">Acrobatics</option>
+		<option value="athletics">Athletics</option>
+		<option value="deception">Deception</option>
+		<option value="insight">Insight</option>
+		<option value="intimidation">Intimidation</option>
+		<option value="investigation">Investigation</option>
+		<option value="perception">Perception</option>
+		<option value="performance">Performance</option>
+		<option value="sleight of hand">Sleight of Hand</option>
+		<option value="stealth">Stealth</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="rogueSkillSave" onclick="rogueSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="rogueTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="rogueTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="rogueSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Rogue End-->
+
+<!--Sorcerer Start-->
+<div class="classSkillSelect collapse" id="sorcererSkills">
+	<select class="form-control form-hank" multiple="multiple" id="sorcererSkillSelect">
+		<option value="arcana">Arcana</option>
+		<option value="deception">Deception</option>
+		<option value="insight">Insight</option>
+		<option value="intimidation">Intimidation</option>
+		<option value="persuasion">Persuasion</option>
+		<option value="religion">Religion</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="sorcererSkillSave" onclick="sorcererSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="sorcererTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="sorcererTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="sorcererSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Sorcerer End-->
+
+<!--Warlock Start-->
+<div class="classSkillSelect collapse" id="warlockSkills">
+	<select class="form-control form-hank" multiple="multiple" id="warlockSkillSelect">
+		<option value="arcana">Arcana</option>
+		<option value="deception">Deception</option>
+		<option value="history">History</option>
+		<option value="intimidation">Intimidation</option>
+		<option value="investigation">Investigation</option>
+		<option value="nature">Nature</option>
+		<option value="religion">Religion</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="warlockSkillSave" onclick="warlockSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="warlockTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="warlockTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="warlockSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Warlock End-->
+
+<!--Wizard Start-->
+<div class="classSkillSelect collapse" id="wizardSkills">
+	<select class="form-control form-hank" multiple="multiple" id="wizardSkillSelect">
+		<option value="arcana">Arcana</option>
+		<option value="history">History</option>
+		<option value="insight">Insight</option>
+		<option value="investigation">Investigation</option>
+		<option value="medicine">Medicine</option>
+		<option value="religion">Religion</option>
+	</select>
+<br>
+	<div class="container-fluid">
+		<div class="row">
+			<btn class="btn btn-lg btn-margot" id="wizardSkillSave" onclick="wizardSkillSave()">Save to Story Sheet</button>
+			</div>
+			<div class="row">
+				<div class="container-fluid collapse" id="wizardTooMany">
+					<p>ERROR: You selected too many skills!</p>
+				</div>
+				<div class="container-fluid collapse" id="wizardTooFew">
+					<p>ERROR: You selected too few skills!</p>
+				</div>
+			<div class="container-fluid collapse" id="wizardSkillSaveText">
+				<p>Saved!</p>
+			</div>
+		</div>
+		</div>
+</div>
+<!--Wizard End-->
+<!--Class Skill Selects End ************************************************************************-->
+
 		</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>

@@ -107,196 +107,196 @@ function weaponsSave(){
   $("#weaponsSaveText").hide();
   var weaponSelectBox = document.getElementById("weapons");
   var weapon = weaponSelectBox.options[weaponSelectBox.selectedIndex].value;
-    if(weapon=="club"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="dagger"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength or dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="greatclub"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="handaxe"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="javelin"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="light-hammer"){
-      weapon = "light hammer";
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="mace"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="quarterstaff"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="sickle"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    if(weapon=="spear"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="light-crossbow"){
-      weapon = "light crossbow";
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="dart"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength or dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="shortbow"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="sling"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="battleaxe"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="flail"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="glaive"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="greataxe"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="greatsword"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="halberd"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="lance"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="longsword"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="maul"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="morningstar"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="pike"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="rapier"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength or dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="scimitar"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength or dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="shortsword"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength or dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="trident"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="war-pick"){
-      weapon = "war pick";
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="warhammer"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="whip"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "strength or dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="blowgun"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="hand-crossbow"){
-      weapon = "hand crossbow";
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="heavy-crossbow"){
-      weapon = "heavy crossbow";
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="longbow"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
-    else if(weapon=="net"){
-      localStorage.setItem('weapon', weapon);
-      var newWeaponMod = "dexterity";
-      localStorage.setItem('weaponmod', newWeaponMod);
-    }
+  if(weapon=="club"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="dagger"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength or dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="greatclub"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="handaxe"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="javelin"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="light-hammer"){
+    weapon = "light hammer";
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="mace"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="quarterstaff"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="sickle"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  if(weapon=="spear"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="light-crossbow"){
+    weapon = "light crossbow";
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="dart"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength or dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="shortbow"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="sling"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="battleaxe"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="flail"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="glaive"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="greataxe"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="greatsword"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="halberd"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="lance"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="longsword"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="maul"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="morningstar"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="pike"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="rapier"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength or dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="scimitar"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength or dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="shortsword"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength or dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="trident"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="war-pick"){
+    weapon = "war pick";
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="warhammer"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="whip"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "strength or dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="blowgun"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="hand-crossbow"){
+    weapon = "hand crossbow";
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="heavy-crossbow"){
+    weapon = "heavy crossbow";
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="longbow"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
+  else if(weapon=="net"){
+    localStorage.setItem('weapon', weapon);
+    var newWeaponMod = "dexterity";
+    localStorage.setItem('weaponmod', newWeaponMod);
+  }
   $("#weaponsSaveText").show();
 }
 /*weapons end********************************************************/
@@ -306,102 +306,102 @@ function armorSave(){
   $("#armorSaveText").hide();
   var armorSelectBox = document.getElementById("armor");
   var armor = armorSelectBox.options[armorSelectBox.selectedIndex].value;
-    if(armor=="padded-armor"){
-      armor = "padded armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "11 + my dexterity modifier";
-      localStorage.setItem('ac', newAC);
-      var newAE = "I also have disadvantage to stealth rolls.";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="leather-armor"){
-      armor = "leather armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "11 + my dexterity modifier";
-      localStorage.setItem('ac', newAC);
-      var newAE = "";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="studded-leather-armor"){
-      armor = "studded leather armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "12 + my dexterity modifier";
-      localStorage.setItem('ac', newAC);
-      var newAE = "";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="hide-armor"){
-      armor = "hide armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "12 + my dexterity modifier (with a maximum of +2)";
-      localStorage.setItem('ac', newAC);
-      var newAE = "";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="chain-shirt"){
-      armor = "chain shirt";
-      localStorage.setItem('armor', armor);
-      var newAC = "13 + my dexterity modifier (with a maximum of +2)";
-      localStorage.setItem('ac', newAC);
-      var newAE = "";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="scale-mail-armor"){
-      armor = "scale mail armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "14 + my dexterity modifier (with a maximum of +2)";
-      localStorage.setItem('ac', newAC);
-      var newAE = "I also have disadvantage to stealth rolls.";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="breastplate"){
-      armor = "breastplate";
-      localStorage.setItem('armor', armor);
-      var newAC = "14 + my dexterity modifier (with a maximum of +2)";
-      localStorage.setItem('ac', newAC);
-      var newAE = "";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="half-plate-armor"){
-      armor = "half plate armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "15 + my dexterity modifier (with a maximum of +2)";
-      localStorage.setItem('ac', newAC);
-      var newAE = "I also have disadvantage to stealth rolls.";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="ring-mail-armor"){
-      armor = "ring mail armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "14";
-      localStorage.setItem('ac', newAC);
-      var newAE = "I also have disadvantage to stealth rolls.";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="chain-mail-armor"){
-      armor = "chain mail armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "16";
-      localStorage.setItem('ac', newAC);
-      var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 13 to use this armor.";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="splint-armor"){
-      armor = "splint armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "17";
-      localStorage.setItem('ac', newAC);
-      var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
-      localStorage.setItem('ae', newAE);
-    }
-    else if(armor=="plate-armor"){
-      armor = "plate armor";
-      localStorage.setItem('armor', armor);
-      var newAC = "18";
-      localStorage.setItem('ac', newAC);
-      var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
-      localStorage.setItem('ae', newAE);
-    }
+  if(armor=="padded-armor"){
+    armor = "padded armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "11 + my dexterity modifier";
+    localStorage.setItem('ac', newAC);
+    var newAE = "I also have disadvantage to stealth rolls.";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="leather-armor"){
+    armor = "leather armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "11 + my dexterity modifier";
+    localStorage.setItem('ac', newAC);
+    var newAE = "";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="studded-leather-armor"){
+    armor = "studded leather armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "12 + my dexterity modifier";
+    localStorage.setItem('ac', newAC);
+    var newAE = "";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="hide-armor"){
+    armor = "hide armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "12 + my dexterity modifier (with a maximum of +2)";
+    localStorage.setItem('ac', newAC);
+    var newAE = "";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="chain-shirt"){
+    armor = "chain shirt";
+    localStorage.setItem('armor', armor);
+    var newAC = "13 + my dexterity modifier (with a maximum of +2)";
+    localStorage.setItem('ac', newAC);
+    var newAE = "";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="scale-mail-armor"){
+    armor = "scale mail armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "14 + my dexterity modifier (with a maximum of +2)";
+    localStorage.setItem('ac', newAC);
+    var newAE = "I also have disadvantage to stealth rolls.";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="breastplate"){
+    armor = "breastplate";
+    localStorage.setItem('armor', armor);
+    var newAC = "14 + my dexterity modifier (with a maximum of +2)";
+    localStorage.setItem('ac', newAC);
+    var newAE = "";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="half-plate-armor"){
+    armor = "half plate armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "15 + my dexterity modifier (with a maximum of +2)";
+    localStorage.setItem('ac', newAC);
+    var newAE = "I also have disadvantage to stealth rolls.";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="ring-mail-armor"){
+    armor = "ring mail armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "14";
+    localStorage.setItem('ac', newAC);
+    var newAE = "I also have disadvantage to stealth rolls.";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="chain-mail-armor"){
+    armor = "chain mail armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "16";
+    localStorage.setItem('ac', newAC);
+    var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 13 to use this armor.";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="splint-armor"){
+    armor = "splint armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "17";
+    localStorage.setItem('ac', newAC);
+    var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
+    localStorage.setItem('ae', newAE);
+  }
+  else if(armor=="plate-armor"){
+    armor = "plate armor";
+    localStorage.setItem('armor', armor);
+    var newAC = "18";
+    localStorage.setItem('ac', newAC);
+    var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
+    localStorage.setItem('ae', newAE);
+  }
   $("#armorSaveText").show();
 }
 /*armor end*********************************************************/
@@ -411,73 +411,73 @@ function backgroundSave(){
   $("#backgroundSaveText").hide();
   var backgroundSelectBox = document.getElementById("backgrounds");
   var background = backgroundSelectBox.options[backgroundSelectBox.selectedIndex].value;
-    if(background=="acolyte"){
-      localStorage.setItem('background', background);
-      var result = "the skills Insight and Religion. I also know two additional languages of my choice and have the feature Shelter of the Faithful.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="charlatan"){
-      localStorage.setItem('background', background);
-      var result = "the skills Deception and Sleight of Hand, disguise kits, and forgery kits. I also have the feature False Identity.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="criminal"){
-      localStorage.setItem('background', background);
-      var result = "the skills Deception and Stealth, thieves' tools, and one type of gaming set. I also have the feature Criminal Contact.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="entertainer"){
-      localStorage.setItem('background', background);
-      var result = "the skills Acrobatics and Performance, disguise kits, and one type of musical instrument. I also have the feature By Popular Demand.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="folk-hero"){
-      background = "folk hero";
-      localStorage.setItem('background', background);
-      var result = "the skills Animal Handling and Survival, land vehicles, and one type of artisan tools. I also have the feature Rustic Hospitality.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    else if(background=="guild-artisan"){
-      background = "guild artisan";
-      localStorage.setItem('background', background);
-      var result = "the skills Insight and Persuasion, and one type of artist's tools. I also know one additional language of my choice and have the feature Guild Membership.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="hermit"){
-      localStorage.setItem('background', background);
-      var result = "the skills Medicine and Religion, and herbalism kits. I also know one additional language of my choice and have the feature Discovery.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="noble"){
-      localStorage.setItem('background', background);
-      var result = "the skills History and Persuasion, and one type of gaming set. I also know one additional language of my choice and have the feature Position of Privilege.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="outlander"){
-      localStorage.setItem('background', background);
-      var result = "the skills Athletics and Survival, and one type of musical instrument. I also know one additional language of my choice and have the feature Wanderer.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="sage"){
-      localStorage.setItem('background', background);
-      var result = "the skills Arcana and History. I also know two additional languages of my choice. I also have the feature Researcher.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="sailor"){
-      localStorage.setItem('background', background);
-      var result = "the skills Athletics and Perception, water vehicles, and navigator's tools. I also have the feature Ship's Passage.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="soldier"){
-      localStorage.setItem('background', background);
-      var result = "the skills Athletics and Intimidation, land vehicles, and one type of gaming set. I also have the feature Military Rank.";
-      localStorage.setItem('backgroundResult', result);
-    }
-    if(background=="urchin"){
-      localStorage.setItem('background', background);
-      var result = "the skills Sleight of Hand and Stealth, disguise kits, and thieves' tools. I also have the feature City Secrets.";
-      localStorage.setItem('backgroundResult', result);
-    }
+  if(background=="acolyte"){
+    localStorage.setItem('background', background);
+    var result = "the skills Insight and Religion. I also know two additional languages of my choice and have the feature Shelter of the Faithful.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="charlatan"){
+    localStorage.setItem('background', background);
+    var result = "the skills Deception and Sleight of Hand, disguise kits, and forgery kits. I also have the feature False Identity.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="criminal"){
+    localStorage.setItem('background', background);
+    var result = "the skills Deception and Stealth, thieves' tools, and one type of gaming set. I also have the feature Criminal Contact.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="entertainer"){
+    localStorage.setItem('background', background);
+    var result = "the skills Acrobatics and Performance, disguise kits, and one type of musical instrument. I also have the feature By Popular Demand.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="folk-hero"){
+    background = "folk hero";
+    localStorage.setItem('background', background);
+    var result = "the skills Animal Handling and Survival, land vehicles, and one type of artisan tools. I also have the feature Rustic Hospitality.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  else if(background=="guild-artisan"){
+    background = "guild artisan";
+    localStorage.setItem('background', background);
+    var result = "the skills Insight and Persuasion, and one type of artist's tools. I also know one additional language of my choice and have the feature Guild Membership.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="hermit"){
+    localStorage.setItem('background', background);
+    var result = "the skills Medicine and Religion, and herbalism kits. I also know one additional language of my choice and have the feature Discovery.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="noble"){
+    localStorage.setItem('background', background);
+    var result = "the skills History and Persuasion, and one type of gaming set. I also know one additional language of my choice and have the feature Position of Privilege.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="outlander"){
+    localStorage.setItem('background', background);
+    var result = "the skills Athletics and Survival, and one type of musical instrument. I also know one additional language of my choice and have the feature Wanderer.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="sage"){
+    localStorage.setItem('background', background);
+    var result = "the skills Arcana and History. I also know two additional languages of my choice. I also have the feature Researcher.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="sailor"){
+    localStorage.setItem('background', background);
+    var result = "the skills Athletics and Perception, water vehicles, and navigator's tools. I also have the feature Ship's Passage.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="soldier"){
+    localStorage.setItem('background', background);
+    var result = "the skills Athletics and Intimidation, land vehicles, and one type of gaming set. I also have the feature Military Rank.";
+    localStorage.setItem('backgroundResult', result);
+  }
+  if(background=="urchin"){
+    localStorage.setItem('background', background);
+    var result = "the skills Sleight of Hand and Stealth, disguise kits, and thieves' tools. I also have the feature City Secrets.";
+    localStorage.setItem('backgroundResult', result);
+  }
   $("#backgroundSaveText").show();
 }
 /*backgrounds end********************************************************/
@@ -544,7 +544,6 @@ function classSave(){
     localStorage.setItem('startHP', startHP);
     localStorage.setItem('savingThrows', savingThrows);
   }
-  /* check for updated info below this line on google doc */
   if(charClass =="rogue"){
     localStorage.setItem('class', charClass);
     var startHP="8";
@@ -696,3 +695,221 @@ function raceSave(){
   $("#raceSaveText").show();
 }
 /*races end********************************************************/
+
+/*skills start********************************************************/
+function barbarianSkillSave(){
+  $("#barbarianTooMany").hide();
+  $("#barbarianTooFew").hide();
+  $("#barbarianSkillSaveText").hide();
+  var skills = $('#barbarianSkillSelect').val();
+  if(skills.length > 2) {
+    $("#barbarianTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#barbarianTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#barbarianSkillSaveText").show();
+  }
+}
+
+function bardSkillSave(){
+  $("#bardTooMany").hide();
+  $("#bardTooFew").hide();
+  $("#bardSkillSaveText").hide();
+  var skills = $('#bardSkillSelect').val();
+  if(skills.length > 3) {
+    $("#bardTooMany").show();
+  }
+  if(skills.length < 3) {
+    $("#bardTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#bardSkillSaveText").show();
+  }
+}
+
+function clericSkillSave(){
+  $("#clericTooMany").hide();
+  $("#clericTooFew").hide();
+  $("#clericSkillSaveText").hide();
+  var skills = $('#clericSkillSelect').val();
+  if(skills.length > 2) {
+    $("#clericTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#clericTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#clericSkillSaveText").show();
+  }
+}
+
+function druidSkillSave(){
+  $("#druidTooMany").hide();
+  $("#druidTooFew").hide();
+  $("#druidSkillSaveText").hide();
+  var skills = $('#druidSkillSelect').val();
+  if(skills.length > 2) {
+    $("#druidTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#druidTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#druidSkillSaveText").show();
+  }
+}
+
+function fighterSkillSave(){
+  $("#fighterTooMany").hide();
+  $("#fighterTooFew").hide();
+  $("#fighterSkillSaveText").hide();
+  var skills = $('#fighterSkillSelect').val();
+  if(skills.length > 2) {
+    $("#fighterTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#fighterTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#fighterSkillSaveText").show();
+  }
+}
+
+function monkSkillSave(){
+  $("#monkTooMany").hide();
+  $("#monkTooFew").hide();
+  $("#monkSkillSaveText").hide();
+  var skills = $('#monkSkillSelect').val();
+  if(skills.length > 2) {
+    $("#monkTooMany").show();
+  }
+  else if(skills.length < 2) {
+    $("#monkTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#monkSkillSaveText").show();
+  }
+}
+
+function paladinSkillSave(){
+  $("#paladinTooMany").hide();
+  $("#paladinTooFew").hide();
+  $("#paladinSkillSaveText").hide();
+  var skills = $('#paladinSkillSelect').val();
+  if(skills.length > 2) {
+    $("#paladinTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#paladinTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#paladinSkillSaveText").show();
+  }
+}
+
+function rangerSkillSave(){
+  $("#rangerTooMany").hide();
+  $("#rangerTooFew").hide();
+  $("#rangerSkillSaveText").hide();
+  var skills = $('#rangerSkillSelect').val();
+  if(skills.length > 3) {
+    $("#rangerTooMany").show();
+  }
+  if(skills.length < 3) {
+    $("#rangerTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#rangerSkillSaveText").show();
+  }
+}
+
+function rogueSkillSave(){
+  $("#rogueTooMany").hide();
+  $("#rogueTooFew").hide();
+  $("#rogueSkillSaveText").hide();
+  var skills = $('#rogueSkillSelect').val();
+  if(skills.length > 4) {
+    $("#rogueTooMany").show();
+  }
+  if(skills.length < 4) {
+    $("#rogueTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#rogueSkillSaveText").show();
+  }
+}
+
+function sorcererSkillSave(){
+  $("#sorcererTooMany").hide();
+  $("#sorcererTooFew").hide();
+  $("#sorcererSkillSaveText").hide();
+  var skills = $('#sorcererSkillSelect').val();
+  if(skills.length > 2) {
+    $("#sorcererTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#sorcererTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#sorcererSkillSaveText").show();
+  }
+}
+
+function warlockSkillSave(){
+  $("#warlockTooMany").hide();
+  $("#warlockTooFew").hide();
+  $("#warlockSkillSaveText").hide();
+  var skills = $('#warlockSkillSelect').val();
+  if(skills.length > 2) {
+    $("#warlockTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#warlockTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#warlockSkillSaveText").show();
+  }
+}
+
+function wizardSkillSave(){
+  $("#wizardTooMany").hide();
+  $("#wizardTooFew").hide();
+  $("#wizardSkillSaveText").hide();
+  var skills = $('#wizardSkillSelect').val();
+  if(skills.length > 2) {
+    $("#wizardTooMany").show();
+  }
+  if(skills.length < 2) {
+    $("#wizardTooFew").show();
+  }
+  else{
+    var skillsString = skills.join(" and ")
+    localStorage.setItem('skills', skillsString);
+    $("#wizardSkillSaveText").show();
+  }
+}
+/*skills end********************************************************/

@@ -118,6 +118,13 @@ if(savingThrows){
 }
 /*classes end********************************************************/
 
+/*skills start********************************************************/
+var skills = localStorage.getItem('skills');
+if(skills){
+  $("#skills").html(skills);
+}
+/*skills end********************************************************/
+
 /*races start********************************************************/
 var race = localStorage.getItem('race');
 if(race){
