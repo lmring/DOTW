@@ -243,3 +243,13 @@ function toggleContent3() {
     moreText.style.display = "inline";
   }
 }
+
+document.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("weapon-catalog-button").click();
+  }
+});

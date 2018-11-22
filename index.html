@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Login - Dragons on Training Wheels</title>
+	<title>Dragons on Training Wheels</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -11,16 +11,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Montserrat" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- this is a comment in HTML -->
 
 </head>
 
 <body>
 
+	<div class="web-header">
 	<img src="header.png" class="imgHeader"></img>
 	<nav class="navbar" id="stickyNavBar">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="home.html" id="home"><img src="icon.png" class="navBarIcon"></img>DOTW</a>
+				<a class="navbar-brand" href="index.html" id="home"><img src="icon.png" class="navBarIcon"></img>DOTW</a>
 			</div>
 			<ul class="nav navbar-nav navText">
 					<li class="navBasics" id="basics"><a href="Statistics.html">STATISTICS</a></li>
@@ -31,40 +33,79 @@
 					<li><a href="Resources.html">LINKS</a></li>
 					<li><a href="Character Sheet.html">STORY SHEET</a></li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Sign Up</a></li>
-					<li><a href="index.html">Log In</a></li>
-				</ul>
 			</div>
 		</nav>
+	</div>
+
+<div class="mobile-header collapse">
+<img src="header.png" class="imgHeader"></img>
+		<nav class="navbar">
+<div class="container-fluid">
+ <div class="navbar-header">
+	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+	 </button>
+	 <a class="navbar-brand" href="home.html" id="home"><img src="icon.png" class="navBarIcon"></img>DOTW</a>
+ </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+	 <ul class="nav navbar-nav">
+		 <li class="navBasics" id="basics"><a href="Statistics.html">STATISTICS</a></li>
+		 <li class="navIntro" id="intro"><a href="Items.html">ITEMS</a></li>
+		 <li class="navResources" id="resources"><a href="Roleplay.html">ROLEPLAY</a></li>
+		 <li class="navStorySheet" id="storysheet"><a href="Spells.html">SPELLS</a></li>
+		 <li><a href="Introduction.html">INTRO</a></li>
+		 <li><a href="Resources.html">LINKS</a></li>
+		 <li><a href="Character Sheet.html">STORY SHEET</a></li>
+	 </ul>
+ </div>
+</div>
+</nav>
+</div>
+
 
 	<div class="wrapper">
-		<div class="purple-text">
-			<h1>Login</hi>
+
+		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
+		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
+		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+		<div class="row container-dragon">
+			<img src="./images/BannerBasics.png" alt="StatisticsButton" style="max-width: 900px; width: 100%; margin-bottom: 20px;">
 		</div>
 
-		<div class="divider">
-			<img src="divider.png"></img>
+		<div class="container-dragon">
+			<div class="row">
+					<a href="./Statistics.html">
+						<img class="img-dragonbutton" src="./images/HankButton.png" alt="StatisticsButton">
+					</a>
+					<a href="./Items.html">
+						<img class="img-dragonbutton" src="./images/LillyButton.png" alt="ItemsButton">
+					</a>
+					<a href="./Roleplay.html">
+						<img class="img-dragonbutton" src="./images/MargotButton.png" alt="RPButton">
+					</a>
+					<a href="./Spells.html">
+						<img class="img-dragonbutton" src="./images/TutterButton.png" alt="SpellButton">
+					</a>
+			</div>
 		</div>
 
-	<form>
-  <div class="form-group">
-    <label for="username">Username</label>
-    <input type="email" class="form-control" id="username" placeholder="Username">
-  </div>
-	<div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" id="password" placeholder="Password">
-  </div>
-	</form>
-		<button type="submit" class="btn btn-lrg btn-block btn-gray" onclick="checkUserInfo()">Submit</button>
-
-	<div class="container-fluid collapse" id="incorrectLogin">
-		Incorrect Username or Password!
-	</div>
+		<div class="row container-homebutton">
+		<a href="./Introduction.html">
+			<img class="img-homebutton" src="./images/ButtonIntro.png" alt="IntroButton" style="margin-right:35px; width: 20%;">
+		</a>
+		<a href="./Resources.html">
+			<img class="img-homebutton" src="./images/ButtonLinks.png" alt="LinksButton" style="margin-right:35px; width: 20%;">
+		</a>
+		<a href="./Character Sheet.html">
+			<img class="img-homebutton" src="./images/ButtonSheet.png" alt="SheetButton" style="width:20%;">
+		</a>
+		</div>
 
 
-	</div>
+</div>
+  <!-- include JavaScript near the end of the HTML file -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/introHCI.js"></script>
 	<script src="js/bootstrap.min.js"></script>

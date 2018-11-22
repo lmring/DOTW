@@ -1,3 +1,71 @@
+//skills get start ************************************************************
+var charClass = localStorage.getItem('class');
+if(charClass=="barbarian"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#barbarianSkills').show();
+}
+else if(charClass=="bard"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("THREE");
+  $('#bardSkills').show();
+}
+else if(charClass=="cleric"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#clericSkills').show();
+}
+else if(charClass=="druid"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#druidSkills').show();
+}
+else if(charClass=="fighter"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#fighterSkills').show();
+}
+else if(charClass=="monk"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#monkSkills').show();
+}
+else if(charClass=="paladin"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#paladinSkills').show();
+}
+else if(charClass=="ranger"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("THREE");
+  $('#rangerSkills').show();
+}
+else if(charClass=="rogue"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("FOUR");
+  $('#rogueSkills').show();
+}
+else if(charClass=="sorcerer"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#sorcererSkills').show();
+}
+else if(charClass=="warlock"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#warlockSkills').show();
+}
+else if(charClass=="wizard"){
+	$("#classFromSheet").html(charClass);
+	$("#skillNumber").html("TWO");
+  $('#wizardSkills').show();
+}
+else{
+	$('#noclass').show();
+}
+//skills get end ************************************************************
+
+
 function classChange(){
 	var selectBox = document.getElementById("classes");
 	var selected = selectBox.options[selectBox.selectedIndex].value;

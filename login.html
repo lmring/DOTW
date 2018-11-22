@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Resources</title>
+	<title>Login - Dragons on Training Wheels</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,6 @@
 
 <body>
 
-	<!-- header start ******************************************************** -->
 	<div class="web-header">
 	<img src="header.png" class="imgHeader"></img>
 	<nav class="navbar" id="stickyNavBar">
@@ -63,62 +62,36 @@
 </div>
 </nav>
 </div>
-	<!-- header end ******************************************************** -->
 
 	<div class="wrapper">
-
 		<div class="purple-text">
-			<h1>Resources</h1>
+			<h1>Login</hi>
 		</div>
+
 		<div class="divider">
 			<img src="divider.png"></img>
 		</div>
 
-		<div class="container-fluid margot-bodytext">
-			<div class="purple-text">
-				<h2>Official Character Sheets</h2>
-			</div>
-			Printable character sheets in the official 5E format. You will need to fill one of these out to play D&D--just transfer the information from your Story Sheet!
-			<p><a href="http://dnd.wizards.com/articles/features/character_sheets">http://dnd.wizards.com/articles/features/character_sheets</a></p>
-			<div class="purple-text">
-				<h2>Virtual Dice Roller</h2>
-			</div>
-			This website allows you to roll as many dice as you want! Very useful for if you don’t have physical dice, can’t find them, or just want something more convenient.
-			<p><a href="https://www.wizards.com/dnd/dice/dice.htm">https://www.wizards.com/dnd/dice/dice.htm</a></p>
-			<div class="purple-text">
-				<h2>Point Buy Calculator</h2>
-			</div>
-			A calculator for the “point buy” method of character attribute selection. Use this once you have chosen your race to determine your final statistics and modifiers!
-			<p><a href="http://chicken-dinner.com/5e/5e-point-buy.html">http://chicken-dinner.com/5e/5e-point-buy.html</a></p>
-			<div class="purple-text">
-				<h2>“Basic” Rules</h2>
-			</div>
-			Official “basic” rules provided by Wizards of the Coast, the creators of D&D. This is good reference material, but it’s 114 pages long!
-			<p><a href="https://media.wizards.com/2015/downloads/dnd/BasicRules_Playerv3.4.pdf">https://media.wizards.com/2015/downloads/dnd/BasicRules_Playerv3.4.pdf</a></p>
-			<div class="purple-text">
-				<h2>Turn Guides</h2>
-			</div>
-			Reminders of what you can do on each turn of combat. Click each icon for more details!
-			<p><a href="https://crobi.github.io/dnd5e-quickref/preview/quickref.html">https://crobi.github.io/dnd5e-quickref/preview/quickref.html</a></p>
-			<div class="purple-text">
-				<h2>Roll20</h2>
-			</div>
-			A platform for playing D&D digitally! Everything is included in the Roll20 system, from dice rolling to map creation. You can even search information about spells and items!
-			<p><a href="https://roll20.net/">https://roll20.net/</a></p>
-			<div class="purple-text">
-				<h2>Mythweavers</h2>
-			</div>
-			Digital character sheet creation. Don’t want to print out an official character sheet? Make an account on Mythweavers and fill everything out online!
-			<p><a href="https://www.myth-weavers.com/">https://www.myth-weavers.com/</a></p>
+	<form>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="email" class="form-control" id="username" placeholder="Username">
+  </div>
+	<div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+	</form>
+		<button type="submit" class="btn btn-lrg btn-block btn-gray" onclick="checkUserInfo()">Submit</button>
 
-		</div>
+	<div class="container-fluid collapse" id="incorrectLogin">
+		Incorrect Username or Password!
+	</div>
 
 
 	</div>
-
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/introHCI.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
 </body>
 </html>
