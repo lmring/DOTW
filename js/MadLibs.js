@@ -313,6 +313,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "I also have disadvantage to stealth rolls.";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "light armor");
   }
   else if(armor=="leather-armor"){
     armor = "leather armor";
@@ -321,6 +322,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "light armor");
   }
   else if(armor=="studded-leather-armor"){
     armor = "studded leather armor";
@@ -329,6 +331,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "light armor");
   }
   else if(armor=="hide-armor"){
     armor = "hide armor";
@@ -337,6 +340,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "medium armor");
   }
   else if(armor=="chain-shirt"){
     armor = "chain shirt";
@@ -345,6 +349,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "medium armor");
   }
   else if(armor=="scale-mail-armor"){
     armor = "scale mail armor";
@@ -353,6 +358,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "I also have disadvantage to stealth rolls.";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "medium armor");
   }
   else if(armor=="breastplate"){
     armor = "breastplate";
@@ -361,6 +367,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "medium armor");
   }
   else if(armor=="half-plate-armor"){
     armor = "half plate armor";
@@ -369,6 +376,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "I also have disadvantage to stealth rolls.";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "medium armor");
   }
   else if(armor=="ring-mail-armor"){
     armor = "ring mail armor";
@@ -377,6 +385,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "I also have disadvantage to stealth rolls.";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "heavy armor");
   }
   else if(armor=="chain-mail-armor"){
     armor = "chain mail armor";
@@ -385,6 +394,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 13 to use this armor.";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "heavy armor");
   }
   else if(armor=="splint-armor"){
     armor = "splint armor";
@@ -393,6 +403,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "heavy armor");
   }
   else if(armor=="plate-armor"){
     armor = "plate armor";
@@ -401,6 +412,7 @@ function armorSave(){
     localStorage.setItem('ac', newAC);
     var newAE = "I also have disadvantage to stealth rolls. I need a strength attribute of at least 15 to use this armor.";
     localStorage.setItem('ae', newAE);
+    localStorage.setItem('armortype', "heavy armor");
   }
   $("#armorSaveText").show();
 }

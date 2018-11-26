@@ -136,3 +136,19 @@ if(raceFeatures){
   $("#raceFeatures").html(raceFeatures);
 }
 /*races end********************************************************/
+
+/*armor error checking start********************************************************/
+var armortype = localStorage.getItem('armortype');
+
+if(charClass=="sorcerer" || charClass=="wizard"){
+  $("#noArmorNote").show();
+}
+
+if(armortype=="medium armor" && !(charClass=="barbarian" || charClass=="cleric" || charClass=="druid" || charClass=="fighter" || charClass=="paladin" || charClass=="ranger")){
+  $("#armorErrorNote").show();
+}
+
+if(armortype=="heavy armor" && !(charClass=="fighter" || charClass=="paladin")){
+  $("#armorErrorNote").show();
+}
+/*armor error checking end********************************************************/

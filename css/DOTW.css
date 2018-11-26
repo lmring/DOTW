@@ -456,6 +456,10 @@ nav a{
 	margin-bottom: 20px;
 }
 
+.sheetError{
+	color: red;
+}
+
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
 
