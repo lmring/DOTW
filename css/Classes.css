@@ -1,4 +1,7 @@
 .margot-header{
+	border-style: double;
+	border-color: white;
+	border-width: 10px;
 	background-color: #83de32;
 	color:white;
 	font-family: 'Caveat', cursive;

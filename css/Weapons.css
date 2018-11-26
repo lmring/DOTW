@@ -1,4 +1,7 @@
 .weapons-header{
+	border-style: double;
+	border-color: white;
+	border-width: 10px;
 	background-color: #ded931;
 	color:white;
 	font-family: 'Caveat', cursive;

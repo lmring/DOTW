@@ -62,6 +62,7 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	background-color: white;
+	margin-bottom: 150px;
 }
 
 .longbuttonbox {
@@ -208,7 +209,10 @@ a {
 
 .attribute-header{
 	background-color: #de3c30;
-	color:white;
+	color: white;
+	border-style: double;
+	border-color: white;
+	border-width: 10px;
 	font-family: 'Caveat', cursive;
 	font-size: 48px;
 	max-width: 500px;
@@ -379,6 +383,21 @@ nav a{
 	background-color: #ded931;
 }
 
+.introduction{
+	background-image: url("../images/intro-button-bg.png");
+	background-size: cover;
+}
+
+#introduction a{
+	color: white;
+	font-weight: bolder;
+}
+
+#introduction a:hover{
+	color: black;
+	background-color: white;
+}
+
 #intro a:hover{
 	color: #ded931;
 	background-color: white;
@@ -423,6 +442,18 @@ nav a{
 
 .icon-bar{
 	background-color: white;
+}
+
+.banner{
+	max-width: 900px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.banner-page{
+	max-width: 500px;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 /*MEDIA QUERY*/

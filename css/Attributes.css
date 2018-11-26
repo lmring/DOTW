@@ -52,7 +52,10 @@ h3 {
 
 .attribute-header{
 	background-color: #de3c30;
-	color:white;
+	color: white;
+	border-style: double;
+	border-color: white;
+	border-width: 10px;
 	font-family: 'Caveat', cursive;
 	font-size: 48px;
 	max-width: 500px;
