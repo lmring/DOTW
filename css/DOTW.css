@@ -43,6 +43,23 @@ body {
 	margin-top: 20px;
 }
 
+/*Start Resource Page CSS */
+.container-resourceimg{
+	width:25%;
+	max-width:300px;
+	vertical-align: middle;
+}
+
+.container-resourcetxt{
+	width: 75%;
+}
+
+.resource-icon{
+		max-width:200px;
+		vertical-align: middle;
+}
+/*End Resource Page CSS*/
+
 .img-banner{
 	max-width: 100%;
 	display: inline-block;
@@ -53,7 +70,7 @@ body {
 }
 
 .img-navbutton{
-	max-width: 500px; 
+	max-width: 500px;
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -468,9 +485,6 @@ nav a{
 	color: red;
 }
 
-.resource-icon{
-	max-width:200px;
-}
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
