@@ -140,11 +140,11 @@ if(raceFeatures){
 /*armor error checking start********************************************************/
 var armortype = localStorage.getItem('armortype');
 
-if(charClass=="sorcerer" || charClass=="wizard"){
+if((charClass=="sorcerer" || charClass=="wizard") && !(race=="mountain dwarf")){
   $("#noArmorNote").show();
 }
 
-if(armortype=="medium armor" && !(charClass=="barbarian" || charClass=="cleric" || charClass=="druid" || charClass=="fighter" || charClass=="paladin" || charClass=="ranger")){
+if(armortype=="medium armor" && !(charClass=="barbarian" || charClass=="cleric" || charClass=="druid" || charClass=="fighter" || charClass=="paladin" || charClass=="ranger" || race=="mountain dwarf")){
   $("#armorErrorNote").show();
 }
 
