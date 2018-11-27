@@ -111,191 +111,228 @@ function weaponsSave(){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="dagger"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength or dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="greatclub"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="handaxe"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="javelin"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="light-hammer"){
     weapon = "light hammer";
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="mace"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="quarterstaff"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="sickle"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   if(weapon=="spear"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple melee");
   }
   else if(weapon=="light-crossbow"){
     weapon = "light crossbow";
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple ranged");
   }
   else if(weapon=="dart"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength or dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple ranged");
   }
   else if(weapon=="shortbow"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple ranged");
   }
   else if(weapon=="sling"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "simple ranged");
   }
   else if(weapon=="battleaxe"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="flail"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="glaive"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="greataxe"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="greatsword"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="halberd"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="lance"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="longsword"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="maul"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="morningstar"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="pike"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="rapier"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength or dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="scimitar"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength or dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="shortsword"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength or dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="trident"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="war-pick"){
     weapon = "war pick";
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="warhammer"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="whip"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "strength or dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="blowgun"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial melee");
   }
   else if(weapon=="hand-crossbow"){
     weapon = "hand crossbow";
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial ranged");
   }
   else if(weapon=="heavy-crossbow"){
     weapon = "heavy crossbow";
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial ranged");
   }
   else if(weapon=="longbow"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial ranged");
   }
   else if(weapon=="net"){
     localStorage.setItem('weapon', weapon);
     var newWeaponMod = "dexterity";
     localStorage.setItem('weaponmod', newWeaponMod);
+    localStorage.setItem('weapontype', "martial ranged");
   }
   $("#weaponsSaveText").show();
 }
