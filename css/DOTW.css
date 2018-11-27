@@ -52,6 +52,12 @@ body {
 	max-width: 23%;
 }
 
+.img-navbutton{
+	max-width: 500px; 
+	width: 100%;
+	margin-bottom: 20px;
+}
+
 .img-homebutton{
 	max-width: 23%;
 }
@@ -213,7 +219,7 @@ a {
 	border-style: double;
 	border-color: white;
 	border-width: 10px;
-	font-family: 'Caveat', cursive;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 48px;
 	max-width: 500px;
 	height: auto;
@@ -225,18 +231,20 @@ a {
 }
 
 h1 {
-	font-family: 'Kaushan Script', cursive;
-	font-size: 60px;
-}
-
-h2 {
-	font-family: 'Caveat', cursive;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 48px;
 }
 
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+}
+
 h3 {
-	font-family: 'Caveat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: black;
+	font-weight: bold;
 }
 
 h4 {
@@ -281,14 +289,14 @@ ul {
 .panel-heading-spell{
 	background-color: #31a7de;
 	color:white;
-	font-family: 'Caveat', cursive;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 36px;
 }
 
 	.panel-heading-equipment{
 		background-color: #ded931;
 		color:white;
-		font-family: 'Caveat', cursive;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 36px;
 	}
 
