@@ -460,6 +460,10 @@ nav a{
 	color: red;
 }
 
+.resource-icon{
+	max-width:200px;
+}
+
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
 
