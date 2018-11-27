@@ -1,4 +1,4 @@
 $(".track").click(function() {
      console.log("button clicked");
-tracker.send('event', 'button', 'click');
+tracker.send('event', 'track', 'click');
 });
