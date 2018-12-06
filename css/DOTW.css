@@ -39,9 +39,35 @@ body {
 	display: inline-block;
 }
 
-.container-homebutton {
-	margin-top: 20px;
+/*Start Home Page Navigation Button CSS */
+.container-homebutton{
+	margin-bottom: 10px;
+	max-width: 950px;
+  display: inline-block;
 }
+
+.img-homebanner{
+	max-width: 98%;
+}
+
+.img-homebutton{
+	max-width: 49%;
+}
+/*End Home Page Navigation Button CSS */
+
+/*Start Navigation Button CSS */
+.container-navimg{
+	width:25%;
+	max-width:500px;
+	vertical-align: middle;
+}
+
+.img-navbutton{
+	max-width: 500px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+/*End Navigation Button CSS */
 
 /*Start Resource Page CSS */
 .container-resourceimg{
@@ -60,22 +86,6 @@ body {
 }
 /*End Resource Page CSS*/
 
-/*Start Navigation Page CSS */
-.container-navimg{
-	width:25%;
-	max-width:500px;
-	vertical-align: middle;
-}
-
-.img-navbutton{
-	max-width: 500px;
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-
-/*End Resource Page CSS*/
-
 .img-banner{
 	max-width: 100%;
 	display: inline-block;
@@ -83,12 +93,9 @@ body {
 
 .img-dragonbutton{
 	max-width: 23%;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
-.img-homebutton{
-	max-width: 23%;
-}
 
 .wrapper {
 	outline: 10px double white;
@@ -97,7 +104,7 @@ body {
 	margin: 0 auto;
 	background-color: white;
 	margin-bottom: 100px;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .longbuttonbox {
