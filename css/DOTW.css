@@ -60,6 +60,22 @@ body {
 }
 /*End Resource Page CSS*/
 
+/*Start Navigation Page CSS */
+.container-navimg{
+	width:25%;
+	max-width:500px;
+	vertical-align: middle;
+}
+
+.img-navbutton{
+	max-width: 500px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+/*End Resource Page CSS*/
+
 .img-banner{
 	max-width: 100%;
 	display: inline-block;
@@ -67,12 +83,6 @@ body {
 
 .img-dragonbutton{
 	max-width: 23%;
-}
-
-.img-navbutton{
-	max-width: 500px;
-	width: 100%;
-	margin-bottom: 20px;
 }
 
 .img-homebutton{
