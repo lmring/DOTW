@@ -83,6 +83,7 @@ body {
 
 .img-dragonbutton{
 	max-width: 23%;
+	margin-bottom: 20px;
 }
 
 .img-homebutton{
@@ -95,7 +96,8 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	background-color: white;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
+	margin-top: 50px;
 }
 
 .longbuttonbox {
@@ -142,6 +144,11 @@ a {
 }
 
 .btn-gray:hover {
+	background-color: black;
+	color:white;
+}
+
+.btn-gray:focus{
 	background-color: black;
 	color:white;
 }
@@ -494,6 +501,13 @@ nav a{
 
 .sheetError{
 	color: red;
+}
+
+.footer{
+	text-align: right;
+	border-top-style: solid;
+	border-top-color: white;
+	padding-top: 10px;
 }
 
 
